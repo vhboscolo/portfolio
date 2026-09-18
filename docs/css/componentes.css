@@ -173,3 +173,6 @@
   .assinatura .grito { font-size: 0.9375rem; }
   .botao-topo { padding: 0 0.7rem; font-size: 0.8125rem; }
 }
+
+/* ponytail: os dois filmes são 16:9; se entrar um vertical, ler a proporção do arquivo no build */
+.video video { aspect-ratio: 16 / 9; object-fit: cover; object-position: top; }
