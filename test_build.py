@@ -25,6 +25,19 @@ base_url = "https://exemplo.com/p/"
 fontes_css = "https://fonts.googleapis.com/css2?family=X"
 og_imagem = "img/og.jpg"
 ordem = ["alfa", "beta"]
+promessa = "Promessa da home"
+quem_faz = "Eu construo."
+cta_rotulo = "Chamar no WhatsApp"
+[[numeros]]
+numero = "8"
+rotulo = "sistemas"
+[[diferenciais]]
+titulo = "Direto com quem faz"
+texto = "Sem intermediário."
+[reel]
+arquivo = "video/reel.mp4"
+poster = "img/alfa/capa"
+alt = "Telas dos sistemas"
 [contato]
 whatsapp = "5500000000000"
 whatsapp_exibir = "(00) 00000-0000"
@@ -41,6 +54,7 @@ chamada = "Chamada"
 setor = "Setor"
 status = "Em produção"
 resumo = "Resumo."
+ganho = "O que muda no negócio."
 capa = "img/{slug}/capa"
 capa_alt = "Capa"
 problema = """Primeiro parágrafo.
@@ -69,6 +83,8 @@ def montar(titulo_alfa: str = "Alfa") -> Path:
         (raiz / f"docs/img/{slug}").mkdir(parents=True)
         (raiz / f"docs/img/{slug}/capa-g.webp").write_bytes(webp_vp8x(1600, 900))
     (raiz / "docs/img/og.jpg").write_bytes(b"")
+    (raiz / "docs/video").mkdir()
+    (raiz / "docs/video/reel.mp4").write_bytes(b"")
     return raiz
 
 
@@ -132,6 +148,57 @@ class TesteConstruir(unittest.TestCase):
         pagina = (raiz / "docs/alfa/index.html").read_text(encoding="utf-8")
         self.assertIn("capa-p.webp 800w", pagina)
         self.assertIn("capa-g.webp 1600w", pagina)
+
+
+class TesteCamadaDeVenda(unittest.TestCase):
+    def test_home_abre_com_promessa_numeros_diferenciais_e_quem_faz(self):
+        raiz = montar()
+        build.construir(raiz)
+        home = (raiz / "docs/index.html").read_text(encoding="utf-8")
+        for trecho in ("Promessa da home", "<dt>8</dt>", "Direto com quem faz", "Eu construo."):
+            self.assertIn(trecho, home)
+
+    def test_reel_toca_sozinho_mudo_em_loop_e_tem_poster(self):
+        raiz = montar()
+        build.construir(raiz)
+        home = (raiz / "docs/index.html").read_text(encoding="utf-8")
+        self.assertIn("autoplay muted loop playsinline", home)
+        self.assertIn('poster="img/alfa/capa-g.webp"', home)
+        self.assertIn('aria-label="Telas dos sistemas"', home)
+
+    def test_reel_e_opcional_mas_arquivo_citado_tem_de_existir(self):
+        raiz = montar()
+        (raiz / "docs/video/reel.mp4").unlink()
+        with self.assertRaises(build.ErroDeConteudo) as contexto:
+            build.construir(raiz)
+        self.assertIn("video/reel.mp4", str(contexto.exception))
+
+    def test_numero_sem_rotulo_derruba_o_build_nomeando_o_campo(self):
+        raiz = montar()
+        caminho = raiz / "conteudo/site.toml"
+        caminho.write_text(caminho.read_text(encoding="utf-8").replace('rotulo = "sistemas"\n', ""),
+                           encoding="utf-8")
+        with self.assertRaises(build.ErroDeConteudo) as contexto:
+            build.construir(raiz)
+        self.assertIn("numeros", str(contexto.exception))
+        self.assertIn("rotulo", str(contexto.exception))
+
+    def test_pagina_abre_pelo_ganho_e_fecha_com_chamada_que_cita_o_sistema(self):
+        raiz = montar(titulo_alfa="Sistema & Cia")
+        build.construir(raiz)
+        pagina = (raiz / "docs/alfa/index.html").read_text(encoding="utf-8")
+        self.assertIn("O que muda no negócio.", pagina)
+        self.assertLess(pagina.index("O que muda no negócio."), pagina.index("Primeiro parágrafo."))
+        self.assertIn("wa.me/5500000000000?text=", pagina)
+        self.assertIn("Sistema%20%26%20Cia", pagina)
+
+    def test_topo_de_toda_pagina_tem_botao_de_whatsapp(self):
+        raiz = montar()
+        build.construir(raiz)
+        for nome in ("docs/index.html", "docs/beta/index.html"):
+            pagina = (raiz / nome).read_text(encoding="utf-8")
+            self.assertIn('class="botao botao-topo"', pagina)
+            self.assertIn("Chamar no WhatsApp", pagina)
 
 
 class TesteDimensoes(unittest.TestCase):

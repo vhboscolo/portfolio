@@ -18,14 +18,15 @@ from urllib.parse import quote
 RAIZ = Path(__file__).resolve().parent
 
 CAMPOS_SITE = (
-    "assinatura", "subtitulo", "autor", "titulo_home", "intro", "descricao",
-    "base_url", "fontes_css", "og_imagem", "ordem", "contato",
+    "assinatura", "subtitulo", "autor", "promessa", "intro", "quem_faz", "cta_rotulo",
+    "descricao", "base_url", "fontes_css", "og_imagem", "ordem", "contato",
+    "numeros", "diferenciais",
 )
 CAMPOS_CONTATO = (
     "whatsapp", "whatsapp_exibir", "whatsapp_texto", "email", "site", "instagram", "linkedin",
 )
 CAMPOS_SISTEMA = (
-    "titulo", "chamada", "setor", "status", "resumo", "capa", "capa_alt",
+    "titulo", "chamada", "setor", "status", "resumo", "ganho", "capa", "capa_alt",
     "problema", "faz", "provas", "stack", "telas",
 )
 CAMPOS_TELA = ("arquivo", "alt", "legenda")
@@ -33,6 +34,7 @@ CAMPOS_PROVA = ("numero", "rotulo")
 CAMPOS_DECISAO = ("titulo", "texto")
 CAMPOS_VIDEO = ("arquivo", "poster", "legenda")
 CAMPOS_NOTA = ("titulo", "texto")
+CAMPOS_REEL = ("arquivo", "poster", "alt")
 
 ROTULO_DEMO = "dados de demonstração"
 SIZES_CARTAO = "(min-width: 900px) 50vw, 100vw"
@@ -67,6 +69,12 @@ def carregar(raiz: Path) -> tuple[dict, list[dict]]:
     site = ler_toml(conteudo / "site.toml")
     exigir(site, CAMPOS_SITE, "site.toml")
     exigir(site["contato"], CAMPOS_CONTATO, "site.toml [contato]")
+    for numero, item in enumerate(site["numeros"], start=1):
+        exigir(item, CAMPOS_PROVA, f"site.toml [[numeros]] nº {numero}")
+    for numero, item in enumerate(site["diferenciais"], start=1):
+        exigir(item, CAMPOS_DECISAO, f"site.toml [[diferenciais]] nº {numero}")
+    if "reel" in site:
+        exigir(site["reel"], CAMPOS_REEL, "site.toml [reel]")
     for numero, nota in enumerate(site.get("notas", []), start=1):
         exigir(nota, CAMPOS_NOTA, f"site.toml [[notas]] nº {numero}")
     sistemas = []
@@ -154,10 +162,41 @@ def paragrafos(texto: str) -> str:
     return "\n".join(f"<p>{e(' '.join(bloco.split()))}</p>" for bloco in blocos if bloco)
 
 
+def link_whatsapp(contato: dict, texto: str) -> str:
+    return f'https://wa.me/{contato["whatsapp"]}?text={quote(texto, safe="")}'
+
+
+def html_botao(site: dict, texto: str, classe: str) -> str:
+    return (f'<a class="botao {classe}" href="{e(link_whatsapp(site["contato"], texto))}" '
+            f'rel="noopener">{e(site["cta_rotulo"])}</a>')
+
+
+def html_reel(docs: Path, site: dict) -> str:
+    reel = site.get("reel")
+    if not reel:
+        return ""
+    if not (docs / reel["arquivo"]).is_file():
+        raise ErroDeConteudo(f"site.toml [reel]: vídeo '{reel['arquivo']}' não existe em docs/")
+    poster, largura, altura = fontes_da_imagem(docs, reel["poster"], "site.toml [reel]")[-1]
+    return (f'<video class="reel" autoplay muted loop playsinline preload="metadata" '
+            f'poster="{e(poster)}" width="{largura}" height="{altura}" aria-label="{e(reel["alt"])}">'
+            f'<source src="{e(reel["arquivo"])}" type="video/mp4"></video>')
+
+
+def html_numeros(numeros: list[dict]) -> str:
+    itens = "\n".join(f'<div class="numero"><dt>{e(n["numero"])}</dt><dd>{e(n["rotulo"])}</dd></div>'
+                      for n in numeros)
+    return f'<dl class="numeros">\n{itens}\n</dl>'
+
+
+def html_diferenciais(diferenciais: list[dict]) -> str:
+    return "\n".join(f'<article class="diferencial"><h3>{e(d["titulo"])}</h3>{paragrafos(d["texto"])}</article>'
+                     for d in diferenciais)
+
+
 def links_de_contato(contato: dict) -> list[tuple[str, str]]:
     return [
-        (f'WhatsApp {contato["whatsapp_exibir"]}',
-         f'https://wa.me/{contato["whatsapp"]}?text={quote(contato["whatsapp_texto"])}'),
+        (f'WhatsApp {contato["whatsapp_exibir"]}', link_whatsapp(contato, contato["whatsapp_texto"])),
         (contato["email"], f'mailto:{contato["email"]}'),
         (contato["site"].removeprefix("https://"), contato["site"]),
         (f'Instagram @{contato["instagram"]}', f'https://www.instagram.com/{contato["instagram"]}/'),
@@ -260,7 +299,7 @@ def modelo(raiz: Path, nome: str) -> Template:
 
 
 def envelopar(raiz: Path, site: dict, *, titulo: str, descricao: str, caminho: str,
-              og: str, prefixo: str, corpo: str) -> str:
+              og: str, prefixo: str, corpo: str, texto_cta: str) -> str:
     if not (raiz / "docs" / og).is_file():
         raise ErroDeConteudo(f"imagem de compartilhamento '{og}' não existe em docs/")
     return modelo(raiz, "base.html").substitute(
@@ -269,24 +308,32 @@ def envelopar(raiz: Path, site: dict, *, titulo: str, descricao: str, caminho: s
         fontes_css=e(site["fontes_css"]), raiz=prefixo,
         assinatura=e(site["assinatura"]), subtitulo=e(site["subtitulo"]), autor=e(site["autor"]),
         corpo=corpo, contato=html_contato(site["contato"]),
+        cta=html_botao(site, texto_cta, "botao-topo"),
     )
 
 
 def pagina_home(raiz: Path, site: dict, sistemas: list[dict]) -> str:
     docs = raiz / "docs"
+    texto_padrao = site["contato"]["whatsapp_texto"]
     corpo = modelo(raiz, "home.html").substitute(
-        titulo_home=e(site["titulo_home"]), intro=paragrafos(site["intro"]),
+        promessa=e(site["promessa"]), intro=paragrafos(site["intro"]),
+        reel=html_reel(docs, site), numeros=html_numeros(site["numeros"]),
+        diferenciais=html_diferenciais(site["diferenciais"]), quem_faz=paragrafos(site["quem_faz"]),
+        autor=e(site["autor"]),
+        cta_heroi=html_botao(site, texto_padrao, "botao-heroi"),
+        cta_final=html_botao(site, texto_padrao, "botao-final"),
         cartoes=html_cartoes(docs, sistemas), notas=html_notas(docs, site.get("notas", [])),
     )
     return envelopar(raiz, site, titulo=f'{site["assinatura"]} — {site["subtitulo"]}',
                      descricao=site["descricao"], caminho="", og=site["og_imagem"],
-                     prefixo="", corpo=corpo)
+                     prefixo="", corpo=corpo, texto_cta=texto_padrao)
 
 
 def pagina_sistema(raiz: Path, site: dict, sistemas: list[dict], posicao: int) -> str:
     docs = raiz / "docs"
     sistema = sistemas[posicao]
     origem = f'{sistema["slug"]}.toml'
+    texto_cta = f'Oi, {site["autor"].split()[0]}. Vi o {sistema["titulo"]} no portfólio e quero um sistema assim.'
     link = ""
     if sistema.get("link"):
         link = (f'<p class="link-publico"><a href="{e(sistema["link"])}" rel="noopener">'
@@ -294,6 +341,7 @@ def pagina_sistema(raiz: Path, site: dict, sistemas: list[dict], posicao: int) -
     corpo = modelo(raiz, "sistema.html").substitute(
         indice=f"{posicao + 1:02d}", titulo=e(sistema["titulo"]), chamada=e(sistema["chamada"]),
         setor=e(sistema["setor"]), status=e(sistema["status"]),
+        ganho=paragrafos(sistema["ganho"]), cta_sistema=html_botao(site, texto_cta, "botao-final"),
         capa=tag_img(docs, sistema["capa"], sistema["capa_alt"], "../", origem,
                      sizes=SIZES_TELA, prioridade=True),
         problema=paragrafos(sistema["problema"]),
@@ -304,7 +352,8 @@ def pagina_sistema(raiz: Path, site: dict, sistemas: list[dict], posicao: int) -
     )
     return envelopar(raiz, site, titulo=f'{sistema["titulo"]} — {site["assinatura"]}',
                      descricao=sistema["resumo"], caminho=f'{sistema["slug"]}/',
-                     og=sistema.get("og", site["og_imagem"]), prefixo="../", corpo=corpo)
+                     og=sistema.get("og", site["og_imagem"]), prefixo="../", corpo=corpo,
+                     texto_cta=texto_cta)
 
 
 def readme(raiz: Path, site: dict, sistemas: list[dict]) -> str:
