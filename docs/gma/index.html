@@ -1,52 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' https://unpkg.com; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>GMA — VH BRANDS</title>
 <meta name="description" content="Software de gestão de garantias para joias. Do zero ao ar: servidor, banco, painel de gestão, validação pública dos certificados, aplicativo que grava os cartões NFC e tudo o que envolve o certificado, do laudo ao cartão físico.">
-<link rel="canonical" href="https://vhboscolo.github.io/portfolio/gma/">
+<link rel="canonical" href="https://victorboscolo.com.br/gma/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="GMA — VH BRANDS">
 <meta property="og:description" content="Software de gestão de garantias para joias. Do zero ao ar: servidor, banco, painel de gestão, validação pública dos certificados, aplicativo que grava os cartões NFC e tudo o que envolve o certificado, do laudo ao cartão físico.">
-<meta property="og:url" content="https://vhboscolo.github.io/portfolio/gma/">
-<meta property="og:image" content="https://vhboscolo.github.io/portfolio/img/og.jpg">
+<meta property="og:url" content="https://victorboscolo.com.br/gma/">
+<meta property="og:image" content="https://victorboscolo.com.br/img/og.jpg">
+<link rel="icon" href="../img/marca/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap">
-<link rel="stylesheet" href="../css/tokens.css">
-<link rel="stylesheet" href="../css/base.css">
-<link rel="stylesheet" href="../css/componentes.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&amp;family=Quicksand:wght@300;400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/portfolio.css">
 </head>
 <body>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
-<header class="topo">
-  <a class="assinatura" href="../"><span class="grito">VH BRANDS</span> <span class="assinatura-sub">Sistemas sob medida</span></a>
-  <nav class="topo-nav" aria-label="Navegação principal"><a href="../#sistemas">Sistemas</a> <a href="#contato">Contato</a> <a class="botao botao-topo" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20GMA%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." rel="noopener">Chamar no WhatsApp</a></nav>
+<div class="bg-pattern glow-top-right" aria-hidden="true"></div>
+<div class="bg-pattern glow-bottom-left" aria-hidden="true"></div>
+
+<header>
+  <div class="container header-inner">
+    <a href="../" class="logo-link"><img src="../img/marca/logo.png" alt="Victor Boscolo — VH BRANDS" class="brand-logo" width="1024" height="250"></a>
+    <nav aria-label="Navegação principal">
+      <div class="nav-links">
+        <a href="../#projects">Portfólio</a>
+        <a href="../#benefits">Vantagens</a>
+        <a href="../#methodology">Metodologia</a>
+      </div>
+      <div class="nav-cta"><a class="botao botao-topo" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20GMA%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." rel="noopener">Chamar no WhatsApp</a></div>
+    </nav>
+  </div>
 </header>
+
 <main id="conteudo">
 <article class="sistema">
-  <header class="sistema-cabeca">
-    <h1>GMA</h1>
-    <p class="chamada">Uma empresa suíça me contratou para construir o sistema inteiro de certificação e garantia de joias</p>
-    <p class="meta"><span>Certificação e garantia de joias</span> <span class="status">No ar, em produção</span></p>
-  </header>
-  <div class="sistema-capa"><img src="../img/gma/home-g.webp" srcset="../img/gma/home-p.webp 800w, ../img/gma/home-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Página inicial da GMA com o campo para consultar um certificado e o cartão dourado numerado" width="1600" height="1000" fetchpriority="high" decoding="async"></div>
-  <section class="bloco bloco-ganho" aria-labelledby="t-ganho">
-    <h2 id="t-ganho">O que muda no seu negócio</h2>
+  <section class="sistema-cabeca">
+    <div class="container">
+      <a class="voltar" href="../#projects"><i data-lucide="arrow-left"></i> Portfólio</a>
+      <div class="project-badges sistema-selos"><span class="badge badge-success">No ar, em produção</span><span class="badge">Certificação e garantia de joias</span></div>
+      <h1 class="section-title">GMA</h1>
+      <p class="handwritten sistema-chamada">Uma empresa suíça me contratou para construir o sistema inteiro de certificação e garantia de joias</p>
+    </div>
+  </section>
+
+  <div class="container sistema-capa"><img src="../img/gma/home-g.webp" srcset="../img/gma/home-p.webp 800w, ../img/gma/home-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Página inicial da GMA com o campo para consultar um certificado e o cartão dourado numerado" width="1600" height="1000" fetchpriority="high" decoding="async"></div>
+
+  <section class="container bloco bloco-ganho glass-panel" aria-labelledby="t-ganho">
+    <span class="eyebrow">O que muda no seu negócio</span>
+    <h2 id="t-ganho" class="bloco-titulo">O resultado</h2>
     <p>A GMA vende confiança: o laudo é do laboratório, não da loja, e o comprador confere sozinho, apontando o celular para o cartão. Para isso funcionar, cada peça precisa de identidade própria, rastreável do laboratório até o dono atual.</p>
 <p>Entreguei a operação inteira em um sistema só: a joalheria é credenciada, a peça é certificada, o cartão é gravado e impresso, a garantia é acionada e resolvida. E a marca ainda enxerga onde e quando cada peça foi conferida.</p>
   </section>
-  <section class="bloco" aria-labelledby="t-problema">
-    <h2 id="t-problema">O problema</h2>
+
+  <section class="container bloco" aria-labelledby="t-problema">
+    <span class="eyebrow">Antes</span>
+    <h2 id="t-problema" class="bloco-titulo">O problema</h2>
     <p>Quando uma joalheria diz que o ouro é 18 quilates e a pedra é natural, quem garante é ela mesma. Do outro lado do balcão, ninguém tem como conferir, e a garantia vira promessa de boca.</p>
 <p>A GMA precisava de um sistema que separasse quem vende de quem atesta, e que desse a cada joia um certificado impossível de falsificar e fácil de conferir, em qualquer país e em qualquer idioma.</p>
   </section>
-  <section class="bloco" aria-labelledby="t-faz">
-    <h2 id="t-faz">O que o sistema faz</h2>
+
+  <section class="container bloco" aria-labelledby="t-faz">
+    <span class="eyebrow">Capacidades</span>
+    <h2 id="t-faz" class="bloco-titulo">O que o sistema faz</h2>
     <ul class="faz">
 <li>Gestão de garantias: o cliente abre a solicitação e a equipe acompanha até a resolução.</li>
 <li>Emissão de certificado com laudo técnico, fotos da peça e normas aplicadas.</li>
@@ -58,32 +81,39 @@
 <li>Painel da marca com cada leitura do cartão: onde e quando a peça foi conferida.</li>
 </ul>
   </section>
-  <section class="bloco bloco-telas" aria-labelledby="t-telas">
-    <h2 id="t-telas">Telas</h2>
+
+  <section class="container bloco bloco-telas" aria-labelledby="t-telas">
+    <span class="eyebrow">Por dentro</span>
+    <h2 id="t-telas" class="bloco-titulo">Telas</h2>
+    
     <figure class="tela"><img src="../img/gma/credenciamento-g.webp" srcset="../img/gma/credenciamento-p.webp 800w, ../img/gma/credenciamento-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Página de credenciamento da GMA com formulário para a joalheria" width="1600" height="1000" loading="lazy" decoding="async"><figcaption>Credenciamento: a joalheria entra só depois de analisada.</figcaption></figure>
 <figure class="tela"><img src="../img/gma/celular-g.webp" srcset="../img/gma/celular-g.webp 780w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Página inicial da GMA na largura de um celular, com o campo de consulta do certificado" width="780" height="1688" loading="lazy" decoding="async"><figcaption>No celular, onde a conferência realmente acontece.</figcaption></figure>
-    
   </section>
-  <section class="bloco bloco-provas" aria-labelledby="t-provas">
-    <h2 id="t-provas">O que prova a engenharia</h2>
+
+  <section class="container bloco" aria-labelledby="t-provas">
+    <span class="eyebrow">Engenharia</span>
+    <h2 id="t-provas" class="bloco-titulo">Feito para durar</h2>
     <dl class="provas">
 <div class="prova"><dt>Tudo</dt><dd>servidor, banco, painel, validação, app NFC e cartão: um só desenvolvedor</dd></div>
 <div class="prova"><dt>83</dt><dd>regras de acesso dentro do banco: cada joalheria só enxerga o que é dela</dd></div>
 <div class="prova"><dt>146</dt><dd>testes automáticos rodando a cada entrega</dd></div>
 <div class="prova"><dt>3</dt><dd>idiomas: o laudo abre na língua de quem lê</dd></div>
 </dl>
-    <div class="decisao"><h3>Cartão com número que se confere sozinho</h3><p>Cada número de série tem dígito verificador, calculado igual no aplicativo e no banco. Um número digitado errado é recusado antes mesmo da consulta.</p></div>
+    <div class="decisoes"><div class="decisao"><h3>Cartão com número que se confere sozinho</h3><p>Cada número de série tem dígito verificador, calculado igual no aplicativo e no banco. Um número digitado errado é recusado antes mesmo da consulta.</p></div>
 <div class="decisao"><h3>A permissão mora no banco, não na tela</h3><p>Mesmo que alguém burle a interface, o banco recusa: cada registro sabe a que empresa pertence. É o que isola joalherias concorrentes dentro do mesmo sistema.</p></div>
-<div class="decisao"><h3>Cada entrega reconstrói o banco do zero</h3><p>Antes de publicar, as 60 migrações são aplicadas num banco vazio e as regras de acesso são testadas de novo. O que está no ar é sempre reproduzível.</p></div>
+<div class="decisao"><h3>Cada entrega reconstrói o banco do zero</h3><p>Antes de publicar, as 60 migrações são aplicadas num banco vazio e as regras de acesso são testadas de novo. O que está no ar é sempre reproduzível.</p></div></div>
   </section>
-  <section class="bloco" aria-labelledby="t-stack">
-    <h2 id="t-stack">Stack</h2>
+
+  <section class="container bloco" aria-labelledby="t-stack">
+    <span class="eyebrow">Tecnologia</span>
+    <h2 id="t-stack" class="bloco-titulo">Stack</h2>
     <p class="stack">React 18, TypeScript e Vite, com Supabase (Postgres) e publicação na Vercel. Aplicativo instalável, funciona sem internet, em português, inglês e francês.</p>
     <p class="link-publico"><a href="https://gmassay.com" rel="noopener">Abrir gmassay.com</a></p>
   </section>
-  <aside class="chamada-final" aria-labelledby="t-chamada">
-    <div class="chamada-caixa">
-      <h2 id="t-chamada">Quer um sistema assim no seu negócio?</h2>
+
+  <aside class="container chamada-final" aria-labelledby="t-chamada">
+    <div class="chamada-caixa glass-panel">
+      <h2 id="t-chamada" class="handwritten">Quer um sistema assim no seu negócio?</h2>
       <p><a class="botao botao-final" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20GMA%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." rel="noopener">Chamar no WhatsApp</a></p>
     </div>
   </aside>
@@ -91,15 +121,31 @@
 <nav class="vizinhos" aria-label="Outros sistemas"><a class="vizinho proximo" href="../clinicas/"><span>Próximo</span> Plataforma de saúde da Serfaty Clínicas</a></nav>
 
 </main>
-<footer class="rodape" id="contato">
-  <h2>Vamos conversar sobre o seu sistema</h2>
-  <ul class="contato">
+
+<footer id="contato">
+  <div class="container footer-content">
+    <div class="footer-brand">
+      <img src="../img/marca/logo.png" alt="Victor Boscolo" class="footer-logo" width="1024" height="250">
+      <p>Sistemas sob medida e automação com IA. VH BRANDS · Victor Boscolo.</p>
+    </div>
+    <div class="footer-contato">
+      <h2 class="handwritten">Vamos conversar sobre o seu sistema</h2>
+      <ul class="contato">
 <li><a href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20portf%C3%B3lio%20de%20sistemas%20e%20quero%20conversar." rel="noopener">WhatsApp (19) 98959-0630</a></li>
 <li><a href="mailto:vhboscolo@gmail.com" rel="noopener">vhboscolo@gmail.com</a></li>
 <li><a href="https://www.instagram.com/vhboscolo/" rel="noopener">Instagram @vhboscolo</a></li>
 <li><a href="https://www.linkedin.com/in/vhboscolo/" rel="noopener">LinkedIn /in/vhboscolo</a></li>
 </ul>
-  <p class="rodape-nota">VH BRANDS · Victor Boscolo. As telas usam dados de demonstração.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>As telas do portfólio usam dados de demonstração. © 2026 Victor Boscolo.</p>
+  </div>
 </footer>
+
+<a href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20GMA%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." class="floating-cta pulse-effect" aria-label="Falar no WhatsApp"><i data-lucide="message-circle"></i></a>
+
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" integrity="sha384-hJnF5AwidE18GSWTAGHv3ByzzvfNZ1Tcx5y1UUV3WkauuMCEzBJBMSwSt/PUPXnM" crossorigin="anonymous" defer></script>
+<script src="../js/site.js" defer></script>
 </body>
 </html>

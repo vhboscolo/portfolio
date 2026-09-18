@@ -194,11 +194,11 @@ def html_reel(docs: Path, site: dict) -> str:
 def html_numeros(numeros: list[dict]) -> str:
     itens = "\n".join(f'<div class="numero"><dt>{e(n["numero"])}</dt><dd>{e(n["rotulo"])}</dd></div>'
                       for n in numeros)
-    return f'<dl class="numeros">\n{itens}\n</dl>'
+    return f'<dl class="numeros hero-stats">\n{itens}\n</dl>'
 
 
 def html_diferenciais(diferenciais: list[dict]) -> str:
-    return "\n".join(f'<article class="diferencial"><h3>{e(d["titulo"])}</h3>{paragrafos(d["texto"])}</article>'
+    return "\n".join(f'<article class="feature-card diferencial"><h3>{e(d["titulo"])}</h3>{paragrafos(d["texto"])}</article>'
                      for d in diferenciais)
 
 
@@ -224,16 +224,18 @@ def html_cartoes(docs: Path, sistemas: list[dict]) -> str:
         imagem = tag_img(docs, sistema["capa"], sistema["capa_alt"], "", f'{sistema["slug"]}.toml',
                          sizes=SIZES_CARTAO, prioridade=numero == 1)
         cartoes.append(
-            f'<article class="cartao">\n'
-            f'  <div class="cartao-imagem">{imagem}</div>\n'
-            f'  <div class="cartao-texto">\n'
-            f'    <h2><a href="{e(sistema["slug"])}/">{e(sistema["titulo"])}</a></h2>\n'
-            f'    <p class="chamada">{e(sistema["chamada"])}</p>\n'
-            f'    <p class="resumo">{e(sistema["resumo"])}</p>\n'
-            f'    <p class="meta"><span>{e(sistema["setor"])}</span> '
-            f'<span class="status">{e(sistema["status"])}</span></p>\n'
+            f'<a class="glass-card cartao" href="{e(sistema["slug"])}/">\n'
+            f'  <div class="project-image-wrapper">\n'
+            f'    <div class="project-badges"><span class="badge badge-success">{e(sistema["status"])}</span></div>\n'
+            f'    {imagem}\n'
             f'  </div>\n'
-            f'</article>')
+            f'  <div class="card-content">\n'
+            f'    <div class="project-meta"><span>{e(sistema["setor"])}</span></div>\n'
+            f'    <h3>{e(sistema["titulo"])}</h3>\n'
+            f'    <p>{e(sistema["chamada"])}</p>\n'
+            f'    <span class="case-link">Ver o sistema <i data-lucide="arrow-right"></i></span>\n'
+            f'  </div>\n'
+            f'</a>')
     return "\n".join(cartoes)
 
 
@@ -318,6 +320,7 @@ def envelopar(raiz: Path, site: dict, *, titulo: str, descricao: str, caminho: s
         assinatura=e(site["assinatura"]), subtitulo=e(site["subtitulo"]), autor=e(site["autor"]),
         corpo=corpo, contato=html_contato(site["contato"]),
         cta=html_botao(site, texto_cta, "botao-topo"),
+        whatsapp=e(link_whatsapp(site["contato"], texto_cta)),
     )
 
 

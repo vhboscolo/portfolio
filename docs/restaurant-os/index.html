@@ -1,52 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' https://unpkg.com; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>RESTAURANT OS — VH BRANDS</title>
 <meta name="description" content="Salão, balcão, cozinha, delivery, estoque, ficha técnica e financeiro num sistema só, rodando na máquina do próprio salão. Se o Wi-Fi cair numa sexta à noite, a casa segue lançando pedido.">
-<link rel="canonical" href="https://vhboscolo.github.io/portfolio/restaurant-os/">
+<link rel="canonical" href="https://victorboscolo.com.br/restaurant-os/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="RESTAURANT OS — VH BRANDS">
 <meta property="og:description" content="Salão, balcão, cozinha, delivery, estoque, ficha técnica e financeiro num sistema só, rodando na máquina do próprio salão. Se o Wi-Fi cair numa sexta à noite, a casa segue lançando pedido.">
-<meta property="og:url" content="https://vhboscolo.github.io/portfolio/restaurant-os/">
-<meta property="og:image" content="https://vhboscolo.github.io/portfolio/img/og.jpg">
+<meta property="og:url" content="https://victorboscolo.com.br/restaurant-os/">
+<meta property="og:image" content="https://victorboscolo.com.br/img/og.jpg">
+<link rel="icon" href="../img/marca/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap">
-<link rel="stylesheet" href="../css/tokens.css">
-<link rel="stylesheet" href="../css/base.css">
-<link rel="stylesheet" href="../css/componentes.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&amp;family=Quicksand:wght@300;400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/portfolio.css">
 </head>
 <body>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
-<header class="topo">
-  <a class="assinatura" href="../"><span class="grito">VH BRANDS</span> <span class="assinatura-sub">Sistemas sob medida</span></a>
-  <nav class="topo-nav" aria-label="Navegação principal"><a href="../#sistemas">Sistemas</a> <a href="#contato">Contato</a> <a class="botao botao-topo" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20RESTAURANT%20OS%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." rel="noopener">Chamar no WhatsApp</a></nav>
+<div class="bg-pattern glow-top-right" aria-hidden="true"></div>
+<div class="bg-pattern glow-bottom-left" aria-hidden="true"></div>
+
+<header>
+  <div class="container header-inner">
+    <a href="../" class="logo-link"><img src="../img/marca/logo.png" alt="Victor Boscolo — VH BRANDS" class="brand-logo" width="1024" height="250"></a>
+    <nav aria-label="Navegação principal">
+      <div class="nav-links">
+        <a href="../#projects">Portfólio</a>
+        <a href="../#benefits">Vantagens</a>
+        <a href="../#methodology">Metodologia</a>
+      </div>
+      <div class="nav-cta"><a class="botao botao-topo" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20RESTAURANT%20OS%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." rel="noopener">Chamar no WhatsApp</a></div>
+    </nav>
+  </div>
 </header>
+
 <main id="conteudo">
 <article class="sistema">
-  <header class="sistema-cabeca">
-    <h1>RESTAURANT OS</h1>
-    <p class="chamada">O bar continua vendendo com a internet caída</p>
-    <p class="meta"><span>Bar e restaurante</span> <span class="status">Pronto para implantar</span></p>
-  </header>
-  <div class="sistema-capa"><img src="../img/restaurant-os/salao-g.webp" srcset="../img/restaurant-os/salao-p.webp 800w, ../img/restaurant-os/salao-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Tela do salão do RESTAURANT OS com dezoito mesas, as ocupadas mostrando comanda aberta e valor" width="1600" height="895" fetchpriority="high" decoding="async"></div>
-  <section class="bloco bloco-ganho" aria-labelledby="t-ganho">
-    <h2 id="t-ganho">O que muda no seu negócio</h2>
+  <section class="sistema-cabeca">
+    <div class="container">
+      <a class="voltar" href="../#projects"><i data-lucide="arrow-left"></i> Portfólio</a>
+      <div class="project-badges sistema-selos"><span class="badge badge-success">Pronto para implantar</span><span class="badge">Bar e restaurante</span></div>
+      <h1 class="section-title">RESTAURANT OS</h1>
+      <p class="handwritten sistema-chamada">O bar continua vendendo com a internet caída</p>
+    </div>
+  </section>
+
+  <div class="container sistema-capa"><img src="../img/restaurant-os/salao-g.webp" srcset="../img/restaurant-os/salao-p.webp 800w, ../img/restaurant-os/salao-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Tela do salão do RESTAURANT OS com dezoito mesas, as ocupadas mostrando comanda aberta e valor" width="1600" height="895" fetchpriority="high" decoding="async"></div>
+
+  <section class="container bloco bloco-ganho glass-panel" aria-labelledby="t-ganho">
+    <span class="eyebrow">O que muda no seu negócio</span>
+    <h2 id="t-ganho" class="bloco-titulo">O resultado</h2>
     <p>Um cadastro, um login e um número só. O dono para de conciliar quatro programas no olho e passa a abrir uma tela que mostra o que está fora do lugar, com valor em reais e com dono.</p>
 <p>A equipe para de repetir pedido: o que o garçom lança chega sozinho na praça certa da cozinha, e o que acaba some do cardápio com um toque.</p>
   </section>
-  <section class="bloco" aria-labelledby="t-problema">
-    <h2 id="t-problema">O problema</h2>
+
+  <section class="container bloco" aria-labelledby="t-problema">
+    <span class="eyebrow">Antes</span>
+    <h2 id="t-problema" class="bloco-titulo">O problema</h2>
     <p>Restaurante pequeno costuma operar com quatro programas que não conversam: o caixa numa ponta, a planilha de estoque na outra, o delivery num terceiro e o contador num quarto. O resultado é cadastro em dobro, cardápio diferente em cada canal e um número financeiro diferente em cada tela.</p>
 <p>E quando a internet cai no meio do movimento, o salão volta para o bloco de papel. Este sistema roda dentro da casa. A internet é um bônus, não uma condição.</p>
   </section>
-  <section class="bloco" aria-labelledby="t-faz">
-    <h2 id="t-faz">O que o sistema faz</h2>
+
+  <section class="container bloco" aria-labelledby="t-faz">
+    <span class="eyebrow">Capacidades</span>
+    <h2 id="t-faz" class="bloco-titulo">O que o sistema faz</h2>
     <ul class="faz">
 <li>Mesas e comandas por pessoa ou por mesa, com transferência de item e envio para a praça certa.</li>
 <li>Venda rápida de balcão e caixa com abertura, sangria, gorjeta e fechamento cego.</li>
@@ -58,8 +81,11 @@
 <li>Entrada de mercadoria e contagem de estoque por foto ou áudio no WhatsApp.</li>
 </ul>
   </section>
-  <section class="bloco bloco-telas" aria-labelledby="t-telas">
-    <h2 id="t-telas">Telas</h2>
+
+  <section class="container bloco bloco-telas" aria-labelledby="t-telas">
+    <span class="eyebrow">Por dentro</span>
+    <h2 id="t-telas" class="bloco-titulo">Telas</h2>
+    <figure class="video"><video controls preload="none" playsinline poster="../img/restaurant-os/poster-g.webp" width="1600" height="900"><source src="../video/restaurant-os.mp4" type="video/mp4"></video><figcaption>Do toque no produto ao dinheiro na gaveta, em dois minutos.</figcaption></figure>
     <figure class="tela"><img src="../img/restaurant-os/delivery-g.webp" srcset="../img/restaurant-os/delivery-p.webp 800w, ../img/restaurant-os/delivery-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Quadro de delivery com pedidos a decidir, na cozinha e prontos para sair" width="1600" height="895" loading="lazy" decoding="async"><figcaption>Delivery próprio e de aplicativo no mesmo quadro, do aceite à entrega. <span class="selo-demo">dados de demonstração</span></figcaption></figure>
 <figure class="tela"><img src="../img/restaurant-os/pin-g.webp" srcset="../img/restaurant-os/pin-p.webp 800w, ../img/restaurant-os/pin-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Tela de entrada com teclado numérico para o PIN de cada pessoa" width="1600" height="895" loading="lazy" decoding="async"><figcaption>Cada pessoa entra com o seu PIN e só vê as telas que opera. <span class="selo-demo">dados de demonstração</span></figcaption></figure>
 <figure class="tela"><img src="../img/restaurant-os/acabou-g.webp" srcset="../img/restaurant-os/acabou-p.webp 800w, ../img/restaurant-os/acabou-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Lista de produtos com um botão para marcar o que acabou" width="1600" height="895" loading="lazy" decoding="async"><figcaption>Acabou o chopp? Um toque tira do salão e do balcão na hora. <span class="selo-demo">dados de demonstração</span></figcaption></figure>
@@ -67,28 +93,32 @@
 <figure class="tela"><img src="../img/restaurant-os/cockpit-g.webp" srcset="../img/restaurant-os/cockpit-p.webp 800w, ../img/restaurant-os/cockpit-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Painel do dono listando exceções com valor em reais e responsável" width="1600" height="895" loading="lazy" decoding="async"><figcaption>O que está fora do lugar, com preço em reais e com dono. <span class="selo-demo">dados de demonstração</span></figcaption></figure>
 <figure class="tela"><img src="../img/restaurant-os/financeiro-g.webp" srcset="../img/restaurant-os/financeiro-p.webp 800w, ../img/restaurant-os/financeiro-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Tela financeira com contas a pagar e a receber por centro de resultado" width="1600" height="895" loading="lazy" decoding="async"><figcaption>O dinheiro do mês: venda, recebível e obrigação sem se confundirem. <span class="selo-demo">dados de demonstração</span></figcaption></figure>
 <figure class="tela"><img src="../img/restaurant-os/clientes-g.webp" srcset="../img/restaurant-os/clientes-p.webp 800w, ../img/restaurant-os/clientes-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Busca de clientes com ficha mostrando compras e gasto" width="1600" height="895" loading="lazy" decoding="async"><figcaption>Quem compra, quanto gasta e quem sumiu. <span class="selo-demo">dados de demonstração</span></figcaption></figure>
-    <figure class="video"><video controls preload="none" playsinline poster="../img/restaurant-os/poster-g.webp" width="1600" height="900"><source src="../video/restaurant-os.mp4" type="video/mp4"></video><figcaption>Do toque no produto ao dinheiro na gaveta, em dois minutos.</figcaption></figure>
   </section>
-  <section class="bloco bloco-provas" aria-labelledby="t-provas">
-    <h2 id="t-provas">O que prova a engenharia</h2>
+
+  <section class="container bloco" aria-labelledby="t-provas">
+    <span class="eyebrow">Engenharia</span>
+    <h2 id="t-provas" class="bloco-titulo">Feito para durar</h2>
     <dl class="provas">
 <div class="prova"><dt>1.852</dt><dd>testes automáticos em 145 arquivos</dd></div>
 <div class="prova"><dt>146</dt><dd>tabelas num modelo de dados único</dd></div>
 <div class="prova"><dt>48</dt><dd>telas, do garçom ao dono</dd></div>
 <div class="prova"><dt>0</dt><dd>dependências externas: nada para quebrar em atualização</dd></div>
 </dl>
-    <div class="decisao"><h3>Dinheiro é número inteiro, em centavos</h3><p>Conta com vírgula erra centavo. Aqui todo valor é inteiro, e há um teste que reprova qualquer campo de dinheiro que aceite número quebrado.</p></div>
+    <div class="decisoes"><div class="decisao"><h3>Dinheiro é número inteiro, em centavos</h3><p>Conta com vírgula erra centavo. Aqui todo valor é inteiro, e há um teste que reprova qualquer campo de dinheiro que aceite número quebrado.</p></div>
 <div class="decisao"><h3>Nada acontece sem deixar rastro</h3><p>Cada fato e o seu registro são gravados juntos ou nenhum dos dois é. É o que permite responder, três meses depois, por que aquele número mudou.</p></div>
-<div class="decisao"><h3>O botão do caminho quente tem 64 pixels</h3><p>O garçom opera com uma mão e pressa. Um teste mede o tamanho dos botões que ele mais usa e reprova a tela se encolherem.</p></div>
+<div class="decisao"><h3>O botão do caminho quente tem 64 pixels</h3><p>O garçom opera com uma mão e pressa. Um teste mede o tamanho dos botões que ele mais usa e reprova a tela se encolherem.</p></div></div>
   </section>
-  <section class="bloco" aria-labelledby="t-stack">
-    <h2 id="t-stack">Stack</h2>
+
+  <section class="container bloco" aria-labelledby="t-stack">
+    <span class="eyebrow">Tecnologia</span>
+    <h2 id="t-stack" class="bloco-titulo">Stack</h2>
     <p class="stack">Python 3.12 só com a biblioteca padrão, SQLite, HTML e JavaScript sem framework. Instalador para o computador do salão.</p>
     
   </section>
-  <aside class="chamada-final" aria-labelledby="t-chamada">
-    <div class="chamada-caixa">
-      <h2 id="t-chamada">Quer um sistema assim no seu negócio?</h2>
+
+  <aside class="container chamada-final" aria-labelledby="t-chamada">
+    <div class="chamada-caixa glass-panel">
+      <h2 id="t-chamada" class="handwritten">Quer um sistema assim no seu negócio?</h2>
       <p><a class="botao botao-final" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20RESTAURANT%20OS%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." rel="noopener">Chamar no WhatsApp</a></p>
     </div>
   </aside>
@@ -96,15 +126,31 @@
 <nav class="vizinhos" aria-label="Outros sistemas"><a class="vizinho anterior" href="../crm-solen/"><span>Anterior</span> CRM de vendas com prospecção por IA</a><a class="vizinho proximo" href="../jewelry-os/"><span>Próximo</span> Jewelry OS</a></nav>
 
 </main>
-<footer class="rodape" id="contato">
-  <h2>Vamos conversar sobre o seu sistema</h2>
-  <ul class="contato">
+
+<footer id="contato">
+  <div class="container footer-content">
+    <div class="footer-brand">
+      <img src="../img/marca/logo.png" alt="Victor Boscolo" class="footer-logo" width="1024" height="250">
+      <p>Sistemas sob medida e automação com IA. VH BRANDS · Victor Boscolo.</p>
+    </div>
+    <div class="footer-contato">
+      <h2 class="handwritten">Vamos conversar sobre o seu sistema</h2>
+      <ul class="contato">
 <li><a href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20portf%C3%B3lio%20de%20sistemas%20e%20quero%20conversar." rel="noopener">WhatsApp (19) 98959-0630</a></li>
 <li><a href="mailto:vhboscolo@gmail.com" rel="noopener">vhboscolo@gmail.com</a></li>
 <li><a href="https://www.instagram.com/vhboscolo/" rel="noopener">Instagram @vhboscolo</a></li>
 <li><a href="https://www.linkedin.com/in/vhboscolo/" rel="noopener">LinkedIn /in/vhboscolo</a></li>
 </ul>
-  <p class="rodape-nota">VH BRANDS · Victor Boscolo. As telas usam dados de demonstração.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>As telas do portfólio usam dados de demonstração. © 2026 Victor Boscolo.</p>
+  </div>
 </footer>
+
+<a href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20RESTAURANT%20OS%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." class="floating-cta pulse-effect" aria-label="Falar no WhatsApp"><i data-lucide="message-circle"></i></a>
+
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" integrity="sha384-hJnF5AwidE18GSWTAGHv3ByzzvfNZ1Tcx5y1UUV3WkauuMCEzBJBMSwSt/PUPXnM" crossorigin="anonymous" defer></script>
+<script src="../js/site.js" defer></script>
 </body>
 </html>

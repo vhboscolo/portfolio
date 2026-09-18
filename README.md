@@ -1,10 +1,10 @@
 <!-- Gerado por build.py a partir de conteudo/. Não edite à mão. -->
 
-# VH BRANDS — Sistemas sob medida
+# VH BRANDS — Sistemas sob medida e automação com IA
 
-De uma empresa suíça de certificação de joias a uma rede de clínicas: sistemas completos, do banco de dados ao aplicativo no celular, construídos para a regra de cada negócio e testados antes de chegar na mão de quem usa.
+Sistemas sob medida e automação com IA que assumem o trabalho repetitivo, organizam a operação e liberam seu tempo para o que realmente importa: lucro e estratégia. De uma empresa suíça de certificação de joias a uma rede de clínicas, cada sistema aqui foi construído do banco de dados ao aplicativo no celular.
 
-**[Abrir o portfólio completo →](https://vhboscolo.github.io/portfolio/)**
+**[Abrir o portfólio completo →](https://victorboscolo.com.br/)**
 
 ---
 
@@ -12,11 +12,11 @@ De uma empresa suíça de certificação de joias a uma rede de clínicas: siste
 
 **Uma empresa suíça me contratou para construir o sistema inteiro de certificação e garantia de joias**
 
-[![Página inicial da GMA com o campo para consultar um certificado e o cartão dourado numerado](docs/img/gma/home-p.webp)](https://vhboscolo.github.io/portfolio/gma/)
+[![Página inicial da GMA com o campo para consultar um certificado e o cartão dourado numerado](docs/img/gma/home-p.webp)](https://victorboscolo.com.br/gma/)
 
 Software de gestão de garantias para joias. Do zero ao ar: servidor, banco, painel de gestão, validação pública dos certificados, aplicativo que grava os cartões NFC e tudo o que envolve o certificado, do laudo ao cartão físico.
 
-`Certificação e garantia de joias` · `No ar, em produção` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/gma/)
+`Certificação e garantia de joias` · `No ar, em produção` — [ver telas e engenharia →](https://victorboscolo.com.br/gma/)
 
 ---
 
@@ -24,11 +24,11 @@ Software de gestão de garantias para joias. Do zero ao ar: servidor, banco, pai
 
 **Do agendamento pelo celular ao prontuário assinado, a clínica inteira numa plataforma**
 
-[![Agenda do dia da clínica com a chegada da paciente registrada e a fila de documentos](docs/img/clinicas/hub-recepcao-p.webp)](https://vhboscolo.github.io/portfolio/clinicas/)
+[![Agenda do dia da clínica com a chegada da paciente registrada e a fila de documentos](docs/img/clinicas/hub-recepcao-p.webp)](https://victorboscolo.com.br/clinicas/)
 
 Três pontas na mesma plataforma: a paciente, que agenda, preenche a ficha e manda exames pelo celular; a equipe, que recebe, atende, prescreve e assina; e a direção, que controla quem acessa cada prontuário. Mais o site da clínica, com atlas do corpo em 3D e calculadora de risco.
 
-`Saúde` · `Plataforma completa, site no ar` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/clinicas/)
+`Saúde` · `Plataforma completa, site no ar` — [ver telas e engenharia →](https://victorboscolo.com.br/clinicas/)
 
 ---
 
@@ -36,11 +36,11 @@ Três pontas na mesma plataforma: a paciente, que agenda, preenche a ficha e man
 
 **A distribuidora acha o cliente no Google Maps, a IA qualifica e o vendedor fecha pelo WhatsApp**
 
-[![Dashboard da CRM com receita realizada, valor em estoque, pipeline de leads e validades críticas](docs/img/crm-solen/dashboard-p.webp)](https://vhboscolo.github.io/portfolio/crm-solen/)
+[![Dashboard da CRM com receita realizada, valor em estoque, pipeline de leads e validades críticas](docs/img/crm-solen/dashboard-p.webp)](https://victorboscolo.com.br/crm-solen/)
 
 Sistema comercial de uma distribuidora de chocolates importados. Prospecta supermercados e empórios no Google Maps, qualifica os leads com inteligência artificial, dispara sequências de follow-up no WhatsApp, monta a proposta, controla o estoque pela validade e mostra ao dono o que fazer hoje.
 
-`Distribuição e vendas B2B` · `No ar, em uso` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/crm-solen/)
+`Distribuição e vendas B2B` · `No ar, em uso` — [ver telas e engenharia →](https://victorboscolo.com.br/crm-solen/)
 
 ---
 
@@ -48,11 +48,11 @@ Sistema comercial de uma distribuidora de chocolates importados. Prospecta super
 
 **O bar continua vendendo com a internet caída**
 
-[![Tela do salão do RESTAURANT OS com dezoito mesas, as ocupadas mostrando comanda aberta e valor](docs/img/restaurant-os/salao-p.webp)](https://vhboscolo.github.io/portfolio/restaurant-os/)
+[![Tela do salão do RESTAURANT OS com dezoito mesas, as ocupadas mostrando comanda aberta e valor](docs/img/restaurant-os/salao-p.webp)](https://victorboscolo.com.br/restaurant-os/)
 
 Salão, balcão, cozinha, delivery, estoque, ficha técnica e financeiro num sistema só, rodando na máquina do próprio salão. Se o Wi-Fi cair numa sexta à noite, a casa segue lançando pedido.
 
-`Bar e restaurante` · `Pronto para implantar` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/restaurant-os/)
+`Bar e restaurante` · `Pronto para implantar` — [ver telas e engenharia →](https://victorboscolo.com.br/restaurant-os/)
 
 ---
 
@@ -60,11 +60,11 @@ Salão, balcão, cozinha, delivery, estoque, ficha técnica e financeiro num sis
 
 **A live termina com pedido, estoque, cobrança e etiqueta prontos**
 
-[![Tela O que fazer agora do Jewelry OS com faturamento do mês, fila de cobrança e pedidos para despachar](docs/img/jewelry-os/hoje-p.webp)](https://vhboscolo.github.io/portfolio/jewelry-os/)
+[![Tela O que fazer agora do Jewelry OS com faturamento do mês, fila de cobrança e pedidos para despachar](docs/img/jewelry-os/hoje-p.webp)](https://victorboscolo.com.br/jewelry-os/)
 
 Live, balcão, loja online, atacado e consignação sobre o mesmo estoque, o mesmo cliente e o mesmo resultado. A tela inicial não mostra o que aconteceu: mostra o que fazer agora.
 
-`Joias e semijoias` · `Pronto para implantar` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/jewelry-os/)
+`Joias e semijoias` · `Pronto para implantar` — [ver telas e engenharia →](https://victorboscolo.com.br/jewelry-os/)
 
 ---
 
@@ -72,11 +72,11 @@ Live, balcão, loja online, atacado e consignação sobre o mesmo estoque, o mes
 
 **Quanto está na rua, quanto apodreceu e se a garantia cobre**
 
-[![Painel do COBRANÇA OS com o total na rua, a régua de atraso por faixa e a cobertura de garantia](docs/img/cobranca-os/painel-p.webp)](https://vhboscolo.github.io/portfolio/cobranca-os/)
+[![Painel do COBRANÇA OS com o total na rua, a régua de atraso por faixa e a cobertura de garantia](docs/img/cobranca-os/painel-p.webp)](https://victorboscolo.com.br/cobranca-os/)
 
 Sistema para casa de crédito que empresta com bem em custódia. Reparte cada pagamento em multa, mora, juros e principal, e calcula a cobertura pelo valor de liquidação do bem, não pelo de vitrine.
 
-`Crédito com garantia` · `Pronto para implantar` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/cobranca-os/)
+`Crédito com garantia` · `Pronto para implantar` — [ver telas e engenharia →](https://victorboscolo.com.br/cobranca-os/)
 
 ---
 
@@ -84,11 +84,11 @@ Sistema para casa de crédito que empresta com bem em custódia. Reparte cada pa
 
 **A lojista escolhe a peça de fábrica e vê quanto paga e quando**
 
-[![Abertura do catálogo de atacado: Esmeralda sobre Prata 925, com brincos de gota em destaque](docs/img/catalogos-importacao/atacado-p.webp)](https://vhboscolo.github.io/portfolio/catalogos-importacao/)
+[![Abertura do catálogo de atacado: Esmeralda sobre Prata 925, com brincos de gota em destaque](docs/img/catalogos-importacao/atacado-p.webp)](https://victorboscolo.com.br/catalogos-importacao/)
 
 Dois sistemas para vender peça importada no atacado. Um transforma a planilha da fábrica em catálogo técnico com foto tratada. O outro deixa a lojista montar o pedido vendo o preço de fábrica, a taxa de intermediação em linha separada e o sinal que vai pagar.
 
-`Importação e atacado de joias` · `Dois catálogos no ar` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/catalogos-importacao/)
+`Importação e atacado de joias` · `Dois catálogos no ar` — [ver telas e engenharia →](https://victorboscolo.com.br/catalogos-importacao/)
 
 ---
 
@@ -96,11 +96,11 @@ Dois sistemas para vender peça importada no atacado. Um transforma a planilha d
 
 **Onde olhar primeiro nos leilões da Receita Federal**
 
-[![Relatório do radar de leilões com lotes, custo esperado e pistas de cada um](docs/img/radar-leiloes/painel-p.webp)](https://vhboscolo.github.io/portfolio/radar-leiloes/)
+[![Relatório do radar de leilões com lotes, custo esperado e pistas de cada um](docs/img/radar-leiloes/painel-p.webp)](https://victorboscolo.com.br/radar-leiloes/)
 
 Varre os leilões abertos, estima o custo real de cada lote com imposto e frete, lê o edital atrás de travas escondidas e destaca onde há menos gente disputando. Conferido contra 12.813 arremates que o modelo nunca tinha visto.
 
-`Leilões de mercadoria apreendida` · `Em uso próprio` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/radar-leiloes/)
+`Leilões de mercadoria apreendida` · `Em uso próprio` — [ver telas e engenharia →](https://victorboscolo.com.br/radar-leiloes/)
 
 ---
 
@@ -108,11 +108,11 @@ Varre os leilões abertos, estima o custo real de cada lote com imposto e frete,
 
 **Uma IA que trabalha sozinha e deixa rastro de tudo que faz**
 
-[![Diagrama: fontes passam por um portão de validação, chegam ao orquestrador, toda ação vai para um registro que só cresce e um auditor independente revisa](docs/img/agente-auditavel/arquitetura.svg)](https://vhboscolo.github.io/portfolio/agente-auditavel/)
+[![Diagrama: fontes passam por um portão de validação, chegam ao orquestrador, toda ação vai para um registro que só cresce e um auditor independente revisa](docs/img/agente-auditavel/arquitetura.svg)](https://victorboscolo.com.br/agente-auditavel/)
 
 Um agente que observa e-mail, WhatsApp, reuniões e Notion, organiza o que importa e age. Cada ação vira uma linha num registro que ninguém reescreve, e um segundo agente, em outro modelo de IA, audita o primeiro duas vezes por dia.
 
-`Automação com inteligência artificial` · `Protótipo funcional` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/agente-auditavel/)
+`Automação com inteligência artificial` · `Protótipo funcional` — [ver telas e engenharia →](https://victorboscolo.com.br/agente-auditavel/)
 
 ---
 

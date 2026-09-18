@@ -1,40 +1,57 @@
 <article class="sistema">
-  <header class="sistema-cabeca">
-    <h1>$titulo</h1>
-    <p class="chamada">$chamada</p>
-    <p class="meta"><span>$setor</span> <span class="status">$status</span></p>
-  </header>
-  <div class="sistema-capa">$capa</div>
-  <section class="bloco bloco-ganho" aria-labelledby="t-ganho">
-    <h2 id="t-ganho">O que muda no seu negócio</h2>
+  <section class="sistema-cabeca">
+    <div class="container">
+      <a class="voltar" href="../#projects"><i data-lucide="arrow-left"></i> Portfólio</a>
+      <div class="project-badges sistema-selos"><span class="badge badge-success">$status</span><span class="badge">$setor</span></div>
+      <h1 class="section-title">$titulo</h1>
+      <p class="handwritten sistema-chamada">$chamada</p>
+    </div>
+  </section>
+
+  <div class="container sistema-capa">$capa</div>
+
+  <section class="container bloco bloco-ganho glass-panel" aria-labelledby="t-ganho">
+    <span class="eyebrow">O que muda no seu negócio</span>
+    <h2 id="t-ganho" class="bloco-titulo">O resultado</h2>
     $ganho
   </section>
-  <section class="bloco" aria-labelledby="t-problema">
-    <h2 id="t-problema">O problema</h2>
+
+  <section class="container bloco" aria-labelledby="t-problema">
+    <span class="eyebrow">Antes</span>
+    <h2 id="t-problema" class="bloco-titulo">O problema</h2>
     $problema
   </section>
-  <section class="bloco" aria-labelledby="t-faz">
-    <h2 id="t-faz">O que o sistema faz</h2>
+
+  <section class="container bloco" aria-labelledby="t-faz">
+    <span class="eyebrow">Capacidades</span>
+    <h2 id="t-faz" class="bloco-titulo">O que o sistema faz</h2>
     $faz
   </section>
-  <section class="bloco bloco-telas" aria-labelledby="t-telas">
-    <h2 id="t-telas">Telas</h2>
-    $telas
+
+  <section class="container bloco bloco-telas" aria-labelledby="t-telas">
+    <span class="eyebrow">Por dentro</span>
+    <h2 id="t-telas" class="bloco-titulo">Telas</h2>
     $video
+    $telas
   </section>
-  <section class="bloco bloco-provas" aria-labelledby="t-provas">
-    <h2 id="t-provas">O que prova a engenharia</h2>
+
+  <section class="container bloco" aria-labelledby="t-provas">
+    <span class="eyebrow">Engenharia</span>
+    <h2 id="t-provas" class="bloco-titulo">Feito para durar</h2>
     $provas
-    $decisoes
+    <div class="decisoes">$decisoes</div>
   </section>
-  <section class="bloco" aria-labelledby="t-stack">
-    <h2 id="t-stack">Stack</h2>
+
+  <section class="container bloco" aria-labelledby="t-stack">
+    <span class="eyebrow">Tecnologia</span>
+    <h2 id="t-stack" class="bloco-titulo">Stack</h2>
     <p class="stack">$stack</p>
     $link
   </section>
-  <aside class="chamada-final" aria-labelledby="t-chamada">
-    <div class="chamada-caixa">
-      <h2 id="t-chamada">Quer um sistema assim no seu negócio?</h2>
+
+  <aside class="container chamada-final" aria-labelledby="t-chamada">
+    <div class="chamada-caixa glass-panel">
+      <h2 id="t-chamada" class="handwritten">Quer um sistema assim no seu negócio?</h2>
       <p>$cta_sistema</p>
     </div>
   </aside>

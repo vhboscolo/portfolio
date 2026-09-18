@@ -1,149 +1,407 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' https://unpkg.com; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>VH BRANDS — Sistemas sob medida</title>
-<meta name="description" content="Sistemas sob medida para bar, joalheria, clínica, crédito e importação. Veja as telas, o que cada um resolve e como foi construído.">
-<link rel="canonical" href="https://vhboscolo.github.io/portfolio/">
+<title>VH BRANDS — Sistemas sob medida e automação com IA</title>
+<meta name="description" content="Victor Boscolo constrói sistemas sob medida e automações com IA. Veja o portfólio: certificação de joias, plataforma de saúde, CRM com prospecção por IA, ERP de bar e mais.">
+<link rel="canonical" href="https://victorboscolo.com.br/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="VH BRANDS — Sistemas sob medida">
-<meta property="og:description" content="Sistemas sob medida para bar, joalheria, clínica, crédito e importação. Veja as telas, o que cada um resolve e como foi construído.">
-<meta property="og:url" content="https://vhboscolo.github.io/portfolio/">
-<meta property="og:image" content="https://vhboscolo.github.io/portfolio/img/og.jpg">
+<meta property="og:title" content="VH BRANDS — Sistemas sob medida e automação com IA">
+<meta property="og:description" content="Victor Boscolo constrói sistemas sob medida e automações com IA. Veja o portfólio: certificação de joias, plataforma de saúde, CRM com prospecção por IA, ERP de bar e mais.">
+<meta property="og:url" content="https://victorboscolo.com.br/">
+<meta property="og:image" content="https://victorboscolo.com.br/img/og.jpg">
+<link rel="icon" href="img/marca/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap">
-<link rel="stylesheet" href="css/tokens.css">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/componentes.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&amp;family=Quicksand:wght@300;400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
-<header class="topo">
-  <a class="assinatura" href=""><span class="grito">VH BRANDS</span> <span class="assinatura-sub">Sistemas sob medida</span></a>
-  <nav class="topo-nav" aria-label="Navegação principal"><a href="#sistemas">Sistemas</a> <a href="#contato">Contato</a> <a class="botao botao-topo" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20portf%C3%B3lio%20de%20sistemas%20e%20quero%20conversar." rel="noopener">Chamar no WhatsApp</a></nav>
-</header>
-<main id="conteudo">
-<section class="heroi" aria-labelledby="promessa">
-  <div class="heroi-texto">
-    <h1 id="promessa">Eu construo o sistema que roda o seu negócio.</h1>
-    <div class="heroi-intro"><p>De uma empresa suíça de certificação de joias a uma rede de clínicas: sistemas completos, do banco de dados ao aplicativo no celular, construídos para a regra de cada negócio e testados antes de chegar na mão de quem usa.</p></div>
-    <p class="heroi-acoes"><a class="botao botao-heroi" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20portf%C3%B3lio%20de%20sistemas%20e%20quero%20conversar." rel="noopener">Chamar no WhatsApp</a> <a class="botao botao-fantasma" href="#sistemas">Ver os sistemas</a></p>
+<div class="bg-pattern glow-top-right" aria-hidden="true"></div>
+<div class="bg-pattern glow-bottom-left" aria-hidden="true"></div>
+
+<header>
+  <div class="container header-inner">
+    <a href="" class="logo-link"><img src="img/marca/logo.png" alt="Victor Boscolo — VH BRANDS" class="brand-logo" width="1024" height="250"></a>
+    <nav aria-label="Navegação principal">
+      <div class="nav-links">
+        <a href="#projects">Portfólio</a>
+        <a href="#benefits">Vantagens</a>
+        <a href="#methodology">Metodologia</a>
+      </div>
+      <div class="nav-cta"><a class="botao botao-topo" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20portf%C3%B3lio%20de%20sistemas%20e%20quero%20conversar." rel="noopener">Chamar no WhatsApp</a></div>
+    </nav>
   </div>
-  <div class="heroi-palco"><video class="reel" autoplay muted loop playsinline preload="metadata" poster="img/reel-g.webp" width="1280" height="720" aria-label="Sequência de telas dos sistemas: certificação de joias, agenda de clínica, painel de vendas, salão de bar, painel de joalheria, ficha de saúde no celular, carteira de crédito e atlas do corpo em 3D"><source src="video/reel.mp4" type="video/mp4"></video></div>
-</section>
-<section class="faixa-numeros" aria-label="Em números">
-<dl class="numeros">
+</header>
+
+<main id="conteudo">
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="trust-badge">
+                <i data-lucide="shield-check" class="icon-accent"></i>
+                <span>Estrategista Digital de Alta Performance</span>
+            </div>
+            <h1 class="handwritten">Escale sua operação sem inchar a folha de pagamento.</h1>
+            <div class="subtitle"><p>Sistemas sob medida e automação com IA que assumem o trabalho repetitivo, organizam a operação e liberam seu tempo para o que realmente importa: lucro e estratégia.</p>
+<p>De uma empresa suíça de certificação de joias a uma rede de clínicas, cada sistema aqui foi construído do banco de dados ao aplicativo no celular.</p></div>
+            
+            <div class="hero-actions">
+                <a href="https://wa.me/5519989590630" class="btn-primary pulse-effect">
+                    <i data-lucide="bot"></i>
+                    Diagnóstico de Automação Gratuito
+                </a>
+                <a href="#projects" class="btn-secondary">
+                    <i data-lucide="play-circle"></i>
+                    Ver o portfólio
+                </a>
+            </div>
+
+            <dl class="numeros hero-stats">
 <div class="numero"><dt>9</dt><dd>sistemas nesta página, todos com tela para você ver</dd></div>
 <div class="numero"><dt>8</dt><dd>setores: certificação, saúde, distribuição, bar, joias, crédito, importação e leilões</dd></div>
 <div class="numero"><dt>3</dt><dd>no ar hoje, com link para você abrir agora</dd></div>
 <div class="numero"><dt>4.300+</dt><dd>testes automáticos somados, rodando a cada mudança</dd></div>
 </dl>
-</section>
-<section class="sistemas" id="sistemas" aria-labelledby="t-sistemas">
-  <h2 id="t-sistemas">Sistemas que já estão de pé</h2>
-<article class="cartao">
-  <div class="cartao-imagem"><img src="img/gma/home-g.webp" srcset="img/gma/home-p.webp 800w, img/gma/home-g.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Página inicial da GMA com o campo para consultar um certificado e o cartão dourado numerado" width="1600" height="1000" fetchpriority="high" decoding="async"></div>
-  <div class="cartao-texto">
-    <h2><a href="gma/">GMA</a></h2>
-    <p class="chamada">Uma empresa suíça me contratou para construir o sistema inteiro de certificação e garantia de joias</p>
-    <p class="resumo">Software de gestão de garantias para joias. Do zero ao ar: servidor, banco, painel de gestão, validação pública dos certificados, aplicativo que grava os cartões NFC e tudo o que envolve o certificado, do laudo ao cartão físico.</p>
-    <p class="meta"><span>Certificação e garantia de joias</span> <span class="status">No ar, em produção</span></p>
+            <div class="heroi-palco"><video class="reel" autoplay muted loop playsinline preload="metadata" poster="img/reel-g.webp" width="1280" height="720" aria-label="Sequência de telas dos sistemas: certificação de joias, agenda de clínica, painel de vendas, salão de bar, painel de joalheria, ficha de saúde no celular, carteira de crédito e atlas do corpo em 3D"><source src="video/reel.mp4" type="video/mp4"></video></div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Portfólio</span>
+                <h2 class="section-title">Sistemas que já estão de pé</h2>
+                <p class="section-sub">Cada um nasceu de uma operação de verdade e foi testado antes de chegar na mão de quem usa. Clique para ver as telas e como foi construído.</p>
+            </div>
+            <div class="projects-grid">
+<a class="glass-card cartao" href="gma/">
+  <div class="project-image-wrapper">
+    <div class="project-badges"><span class="badge badge-success">No ar, em produção</span></div>
+    <img src="img/gma/home-g.webp" srcset="img/gma/home-p.webp 800w, img/gma/home-g.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Página inicial da GMA com o campo para consultar um certificado e o cartão dourado numerado" width="1600" height="1000" fetchpriority="high" decoding="async">
   </div>
-</article>
-<article class="cartao">
-  <div class="cartao-imagem"><img src="img/clinicas/hub-recepcao-g.webp" srcset="img/clinicas/hub-recepcao-p.webp 800w, img/clinicas/hub-recepcao-g.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Agenda do dia da clínica com a chegada da paciente registrada e a fila de documentos" width="1600" height="900" loading="lazy" decoding="async"></div>
-  <div class="cartao-texto">
-    <h2><a href="clinicas/">Plataforma de saúde da Serfaty Clínicas</a></h2>
-    <p class="chamada">Do agendamento pelo celular ao prontuário assinado, a clínica inteira numa plataforma</p>
-    <p class="resumo">Três pontas na mesma plataforma: a paciente, que agenda, preenche a ficha e manda exames pelo celular; a equipe, que recebe, atende, prescreve e assina; e a direção, que controla quem acessa cada prontuário. Mais o site da clínica, com atlas do corpo em 3D e calculadora de risco.</p>
-    <p class="meta"><span>Saúde</span> <span class="status">Plataforma completa, site no ar</span></p>
+  <div class="card-content">
+    <div class="project-meta"><span>Certificação e garantia de joias</span></div>
+    <h3>GMA</h3>
+    <p>Uma empresa suíça me contratou para construir o sistema inteiro de certificação e garantia de joias</p>
+    <span class="case-link">Ver o sistema <i data-lucide="arrow-right"></i></span>
   </div>
-</article>
-<article class="cartao">
-  <div class="cartao-imagem"><img src="img/crm-solen/dashboard-g.webp" srcset="img/crm-solen/dashboard-p.webp 800w, img/crm-solen/dashboard-g.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Dashboard da CRM com receita realizada, valor em estoque, pipeline de leads e validades críticas" width="1600" height="1000" loading="lazy" decoding="async"></div>
-  <div class="cartao-texto">
-    <h2><a href="crm-solen/">CRM de vendas com prospecção por IA</a></h2>
-    <p class="chamada">A distribuidora acha o cliente no Google Maps, a IA qualifica e o vendedor fecha pelo WhatsApp</p>
-    <p class="resumo">Sistema comercial de uma distribuidora de chocolates importados. Prospecta supermercados e empórios no Google Maps, qualifica os leads com inteligência artificial, dispara sequências de follow-up no WhatsApp, monta a proposta, controla o estoque pela validade e mostra ao dono o que fazer hoje.</p>
-    <p class="meta"><span>Distribuição e vendas B2B</span> <span class="status">No ar, em uso</span></p>
+</a>
+<a class="glass-card cartao" href="clinicas/">
+  <div class="project-image-wrapper">
+    <div class="project-badges"><span class="badge badge-success">Plataforma completa, site no ar</span></div>
+    <img src="img/clinicas/hub-recepcao-g.webp" srcset="img/clinicas/hub-recepcao-p.webp 800w, img/clinicas/hub-recepcao-g.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Agenda do dia da clínica com a chegada da paciente registrada e a fila de documentos" width="1600" height="900" loading="lazy" decoding="async">
   </div>
-</article>
-<article class="cartao">
-  <div class="cartao-imagem"><img src="img/restaurant-os/salao-g.webp" srcset="img/restaurant-os/salao-p.webp 800w, img/restaurant-os/salao-g.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Tela do salão do RESTAURANT OS com dezoito mesas, as ocupadas mostrando comanda aberta e valor" width="1600" height="895" loading="lazy" decoding="async"></div>
-  <div class="cartao-texto">
-    <h2><a href="restaurant-os/">RESTAURANT OS</a></h2>
-    <p class="chamada">O bar continua vendendo com a internet caída</p>
-    <p class="resumo">Salão, balcão, cozinha, delivery, estoque, ficha técnica e financeiro num sistema só, rodando na máquina do próprio salão. Se o Wi-Fi cair numa sexta à noite, a casa segue lançando pedido.</p>
-    <p class="meta"><span>Bar e restaurante</span> <span class="status">Pronto para implantar</span></p>
+  <div class="card-content">
+    <div class="project-meta"><span>Saúde</span></div>
+    <h3>Plataforma de saúde da Serfaty Clínicas</h3>
+    <p>Do agendamento pelo celular ao prontuário assinado, a clínica inteira numa plataforma</p>
+    <span class="case-link">Ver o sistema <i data-lucide="arrow-right"></i></span>
   </div>
-</article>
-<article class="cartao">
-  <div class="cartao-imagem"><img src="img/jewelry-os/hoje-g.webp" srcset="img/jewelry-os/hoje-p.webp 800w, img/jewelry-os/hoje-g.webp 1457w" sizes="(min-width: 900px) 50vw, 100vw" alt="Tela O que fazer agora do Jewelry OS com faturamento do mês, fila de cobrança e pedidos para despachar" width="1457" height="812" loading="lazy" decoding="async"></div>
-  <div class="cartao-texto">
-    <h2><a href="jewelry-os/">Jewelry OS</a></h2>
-    <p class="chamada">A live termina com pedido, estoque, cobrança e etiqueta prontos</p>
-    <p class="resumo">Live, balcão, loja online, atacado e consignação sobre o mesmo estoque, o mesmo cliente e o mesmo resultado. A tela inicial não mostra o que aconteceu: mostra o que fazer agora.</p>
-    <p class="meta"><span>Joias e semijoias</span> <span class="status">Pronto para implantar</span></p>
+</a>
+<a class="glass-card cartao" href="crm-solen/">
+  <div class="project-image-wrapper">
+    <div class="project-badges"><span class="badge badge-success">No ar, em uso</span></div>
+    <img src="img/crm-solen/dashboard-g.webp" srcset="img/crm-solen/dashboard-p.webp 800w, img/crm-solen/dashboard-g.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Dashboard da CRM com receita realizada, valor em estoque, pipeline de leads e validades críticas" width="1600" height="1000" loading="lazy" decoding="async">
   </div>
-</article>
-<article class="cartao">
-  <div class="cartao-imagem"><img src="img/cobranca-os/painel-g.webp" srcset="img/cobranca-os/painel-p.webp 800w, img/cobranca-os/painel-g.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Painel do COBRANÇA OS com o total na rua, a régua de atraso por faixa e a cobertura de garantia" width="1600" height="1423" loading="lazy" decoding="async"></div>
-  <div class="cartao-texto">
-    <h2><a href="cobranca-os/">COBRANÇA OS</a></h2>
-    <p class="chamada">Quanto está na rua, quanto apodreceu e se a garantia cobre</p>
-    <p class="resumo">Sistema para casa de crédito que empresta com bem em custódia. Reparte cada pagamento em multa, mora, juros e principal, e calcula a cobertura pelo valor de liquidação do bem, não pelo de vitrine.</p>
-    <p class="meta"><span>Crédito com garantia</span> <span class="status">Pronto para implantar</span></p>
+  <div class="card-content">
+    <div class="project-meta"><span>Distribuição e vendas B2B</span></div>
+    <h3>CRM de vendas com prospecção por IA</h3>
+    <p>A distribuidora acha o cliente no Google Maps, a IA qualifica e o vendedor fecha pelo WhatsApp</p>
+    <span class="case-link">Ver o sistema <i data-lucide="arrow-right"></i></span>
   </div>
-</article>
-<article class="cartao">
-  <div class="cartao-imagem"><img src="img/catalogos-importacao/atacado-g.webp" srcset="img/catalogos-importacao/atacado-p.webp 800w, img/catalogos-importacao/atacado-g.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Abertura do catálogo de atacado: Esmeralda sobre Prata 925, com brincos de gota em destaque" width="1600" height="1000" loading="lazy" decoding="async"></div>
-  <div class="cartao-texto">
-    <h2><a href="catalogos-importacao/">Catálogos de importação para lojistas</a></h2>
-    <p class="chamada">A lojista escolhe a peça de fábrica e vê quanto paga e quando</p>
-    <p class="resumo">Dois sistemas para vender peça importada no atacado. Um transforma a planilha da fábrica em catálogo técnico com foto tratada. O outro deixa a lojista montar o pedido vendo o preço de fábrica, a taxa de intermediação em linha separada e o sinal que vai pagar.</p>
-    <p class="meta"><span>Importação e atacado de joias</span> <span class="status">Dois catálogos no ar</span></p>
+</a>
+<a class="glass-card cartao" href="restaurant-os/">
+  <div class="project-image-wrapper">
+    <div class="project-badges"><span class="badge badge-success">Pronto para implantar</span></div>
+    <img src="img/restaurant-os/salao-g.webp" srcset="img/restaurant-os/salao-p.webp 800w, img/restaurant-os/salao-g.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Tela do salão do RESTAURANT OS com dezoito mesas, as ocupadas mostrando comanda aberta e valor" width="1600" height="895" loading="lazy" decoding="async">
   </div>
-</article>
-<article class="cartao">
-  <div class="cartao-imagem"><img src="img/radar-leiloes/painel-g.webp" srcset="img/radar-leiloes/painel-p.webp 800w, img/radar-leiloes/painel-g.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Relatório do radar de leilões com lotes, custo esperado e pistas de cada um" width="1600" height="1200" loading="lazy" decoding="async"></div>
-  <div class="cartao-texto">
-    <h2><a href="radar-leiloes/">Radar de leilões</a></h2>
-    <p class="chamada">Onde olhar primeiro nos leilões da Receita Federal</p>
-    <p class="resumo">Varre os leilões abertos, estima o custo real de cada lote com imposto e frete, lê o edital atrás de travas escondidas e destaca onde há menos gente disputando. Conferido contra 12.813 arremates que o modelo nunca tinha visto.</p>
-    <p class="meta"><span>Leilões de mercadoria apreendida</span> <span class="status">Em uso próprio</span></p>
+  <div class="card-content">
+    <div class="project-meta"><span>Bar e restaurante</span></div>
+    <h3>RESTAURANT OS</h3>
+    <p>O bar continua vendendo com a internet caída</p>
+    <span class="case-link">Ver o sistema <i data-lucide="arrow-right"></i></span>
   </div>
-</article>
-<article class="cartao">
-  <div class="cartao-imagem"><img src="img/agente-auditavel/arquitetura.svg" alt="Diagrama: fontes passam por um portão de validação, chegam ao orquestrador, toda ação vai para um registro que só cresce e um auditor independente revisa" width="1600" height="900" loading="lazy" decoding="async"></div>
-  <div class="cartao-texto">
-    <h2><a href="agente-auditavel/">Agente autônomo auditável</a></h2>
-    <p class="chamada">Uma IA que trabalha sozinha e deixa rastro de tudo que faz</p>
-    <p class="resumo">Um agente que observa e-mail, WhatsApp, reuniões e Notion, organiza o que importa e age. Cada ação vira uma linha num registro que ninguém reescreve, e um segundo agente, em outro modelo de IA, audita o primeiro duas vezes por dia.</p>
-    <p class="meta"><span>Automação com inteligência artificial</span> <span class="status">Protótipo funcional</span></p>
+</a>
+<a class="glass-card cartao" href="jewelry-os/">
+  <div class="project-image-wrapper">
+    <div class="project-badges"><span class="badge badge-success">Pronto para implantar</span></div>
+    <img src="img/jewelry-os/hoje-g.webp" srcset="img/jewelry-os/hoje-p.webp 800w, img/jewelry-os/hoje-g.webp 1457w" sizes="(min-width: 900px) 50vw, 100vw" alt="Tela O que fazer agora do Jewelry OS com faturamento do mês, fila de cobrança e pedidos para despachar" width="1457" height="812" loading="lazy" decoding="async">
   </div>
-</article>
-</section>
-<section class="diferenciais" aria-labelledby="t-diferenciais">
-  <h2 id="t-diferenciais">Por que me contratar</h2>
-  <div class="diferenciais-grade">
-<article class="diferencial"><h3>Você fala com quem constrói</h3><p>Sem atendente e sem repasse. Quem ouve o seu problema é quem desenha e entrega o sistema.</p></article>
-<article class="diferencial"><h3>Feito para a sua regra, não para a média</h3><p>Comanda por pessoa no bar. Garantia calculada pelo valor de liquidação, não pelo de vitrine. Laudo que só sai se for conclusivo. A regra do seu negócio vira regra do sistema.</p></article>
-<article class="diferencial"><h3>O que quebraria na sua mão quebra antes na minha</h3><p>Cada sistema carrega centenas ou milhares de testes automáticos. Eles rodam sozinhos a cada mudança, antes de qualquer coisa chegar em você.</p></article>
-<article class="diferencial"><h3>Seu dado protegido desde a primeira linha</h3><p>Acesso por papel, rastro de quem fez o quê, cópia de segurança cifrada. No prontuário, isso foi desenhado sob a LGPD antes da primeira tela existir.</p></article>
+  <div class="card-content">
+    <div class="project-meta"><span>Joias e semijoias</span></div>
+    <h3>Jewelry OS</h3>
+    <p>A live termina com pedido, estoque, cobrança e etiqueta prontos</p>
+    <span class="case-link">Ver o sistema <i data-lucide="arrow-right"></i></span>
   </div>
-</section>
-<section class="quem-faz" aria-labelledby="t-quem">
-  <h2 id="t-quem">Quem faz</h2>
-  <p class="quem-faz-nome">Victor Boscolo</p>
-  <div class="quem-faz-texto"><p>Desenho, construo e coloco no ar sistemas para negócios que não cabem em software de prateleira. Começo pela sua operação, não pela tecnologia: como o pedido entra, onde o dinheiro some, o que hoje mora em planilha e caderno.</p>
+</a>
+<a class="glass-card cartao" href="cobranca-os/">
+  <div class="project-image-wrapper">
+    <div class="project-badges"><span class="badge badge-success">Pronto para implantar</span></div>
+    <img src="img/cobranca-os/painel-g.webp" srcset="img/cobranca-os/painel-p.webp 800w, img/cobranca-os/painel-g.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Painel do COBRANÇA OS com o total na rua, a régua de atraso por faixa e a cobertura de garantia" width="1600" height="1423" loading="lazy" decoding="async">
+  </div>
+  <div class="card-content">
+    <div class="project-meta"><span>Crédito com garantia</span></div>
+    <h3>COBRANÇA OS</h3>
+    <p>Quanto está na rua, quanto apodreceu e se a garantia cobre</p>
+    <span class="case-link">Ver o sistema <i data-lucide="arrow-right"></i></span>
+  </div>
+</a>
+<a class="glass-card cartao" href="catalogos-importacao/">
+  <div class="project-image-wrapper">
+    <div class="project-badges"><span class="badge badge-success">Dois catálogos no ar</span></div>
+    <img src="img/catalogos-importacao/atacado-g.webp" srcset="img/catalogos-importacao/atacado-p.webp 800w, img/catalogos-importacao/atacado-g.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Abertura do catálogo de atacado: Esmeralda sobre Prata 925, com brincos de gota em destaque" width="1600" height="1000" loading="lazy" decoding="async">
+  </div>
+  <div class="card-content">
+    <div class="project-meta"><span>Importação e atacado de joias</span></div>
+    <h3>Catálogos de importação para lojistas</h3>
+    <p>A lojista escolhe a peça de fábrica e vê quanto paga e quando</p>
+    <span class="case-link">Ver o sistema <i data-lucide="arrow-right"></i></span>
+  </div>
+</a>
+<a class="glass-card cartao" href="radar-leiloes/">
+  <div class="project-image-wrapper">
+    <div class="project-badges"><span class="badge badge-success">Em uso próprio</span></div>
+    <img src="img/radar-leiloes/painel-g.webp" srcset="img/radar-leiloes/painel-p.webp 800w, img/radar-leiloes/painel-g.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Relatório do radar de leilões com lotes, custo esperado e pistas de cada um" width="1600" height="1200" loading="lazy" decoding="async">
+  </div>
+  <div class="card-content">
+    <div class="project-meta"><span>Leilões de mercadoria apreendida</span></div>
+    <h3>Radar de leilões</h3>
+    <p>Onde olhar primeiro nos leilões da Receita Federal</p>
+    <span class="case-link">Ver o sistema <i data-lucide="arrow-right"></i></span>
+  </div>
+</a>
+<a class="glass-card cartao" href="agente-auditavel/">
+  <div class="project-image-wrapper">
+    <div class="project-badges"><span class="badge badge-success">Protótipo funcional</span></div>
+    <img src="img/agente-auditavel/arquitetura.svg" alt="Diagrama: fontes passam por um portão de validação, chegam ao orquestrador, toda ação vai para um registro que só cresce e um auditor independente revisa" width="1600" height="900" loading="lazy" decoding="async">
+  </div>
+  <div class="card-content">
+    <div class="project-meta"><span>Automação com inteligência artificial</span></div>
+    <h3>Agente autônomo auditável</h3>
+    <p>Uma IA que trabalha sozinha e deixa rastro de tudo que faz</p>
+    <span class="case-link">Ver o sistema <i data-lucide="arrow-right"></i></span>
+  </div>
+</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="roi-calculator" class="roi-section">
+        <div class="container">
+            <div class="roi-grid glass-panel">
+                <div class="roi-content">
+                    <span class="eyebrow">Calculadora de Eficiência</span>
+                    <h2 class="section-title" style="font-size: 32px; text-align: left; margin-bottom: 20px;">Quanto você está deixando na mesa?</h3>
+                    <p style="margin-bottom: 30px; color: var(--text-secondary);">Pequenas automações geram grandes retornos. Calcule o potencial de economia da sua operação.</p>
+                    
+                    <div class="calculator-box">
+                        <div class="input-group" style="margin-bottom: 25px;">
+                            <label style="display: block; margin-bottom: 10px; font-weight: 700;">Horas gastas/semana em tarefas manuais</label>
+                            <input type="range" id="hours-range" min="5" max="100" value="20" style="width: 100%;">
+                            <div class="range-value" style="margin-top: 10px; font-weight: 700; color: var(--color-accent);"><span id="hours-display">20</span>h cada semana</div>
+                        </div>
+                        <div class="input-group">
+                            <label style="display: block; margin-bottom: 10px; font-weight: 700;">Custo médio da hora (R$)</label>
+                            <input type="number" id="hourly-rate" value="150" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--card-border); background: rgba(255,255,255,0.05); color: white;">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="roi-result-card" style="background: rgba(14, 165, 233, 0.1); padding: 40px; border-radius: 20px; border: 1px solid rgba(14, 165, 233, 0.2); display: flex; flex-direction: column; justify-content: center; gap: 30px;">
+                    <div class="result-item">
+                        <span class="result-label" style="display: block; font-size: 14px; color: var(--text-secondary); margin-bottom: 5px;">Economia Anual Projetada</span>
+                        <span class="result-value" id="savings-value" style="display: block; font-size: 36px; font-weight: 800; color: #4ade80;">R$ 144.000</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label" style="display: block; font-size: 14px; color: var(--text-secondary); margin-bottom: 5px;">Tempo Recuperado/Ano</span>
+                        <span class="result-value" id="time-value" style="display: block; font-size: 36px; font-weight: 800; color: var(--color-accent);">960 horas</span>
+                    </div>
+                    <a href="https://wa.me/5519989590630" class="btn-primary" style="width: 100%;">
+                        Reivindicar esse Tempo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-stack" style="padding: 60px 0; border-bottom: 1px solid var(--card-border);">
+        <div class="container">
+            <div class="stack-header" style="text-align: center; margin-bottom: 40px;">
+                <p style="color: var(--text-secondary); font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 2px;">Expertise em tecnologias de ponta para automação</p>
+            </div>
+            <div class="stack-grid" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 50px; opacity: 0.6;">
+                <div class="tech-item" title="OpenAI GPT-4o" style="display: flex; align-items: center; gap: 10px; font-weight: 700;">
+                    <i data-lucide="brain"></i>
+                    <span>GPT-4o</span>
+                </div>
+                <div class="tech-item" title="Claude 3.5 Sonnet" style="display: flex; align-items: center; gap: 10px; font-weight: 700;">
+                    <i data-lucide="sparkles"></i>
+                    <span>Claude 3.5</span>
+                </div>
+                <div class="tech-item" title="Make.com / Zapier" style="display: flex; align-items: center; gap: 10px; font-weight: 700;">
+                    <i data-lucide="workflow"></i>
+                    <span>Make / Zapier</span>
+                </div>
+                <div class="tech-item" title="Python / LangChain" style="display: flex; align-items: center; gap: 10px; font-weight: 700;">
+                    <i data-lucide="code-2"></i>
+                    <span>Custom AI</span>
+                </div>
+                <div class="tech-item" title="WhatsApp Automation" style="display: flex; align-items: center; gap: 10px; font-weight: 700;">
+                    <i data-lucide="message-square"></i>
+                    <span>WA Agents</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Por que IA?</span>
+                <h2 class="section-title">A vantagem injusta para negócios modernos</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="brain-circuit"></i>
+                    </div>
+                    <h4>Decisões Baseadas em Dados</h4>
+                    <p>Agentes de IA analisam vastas quantidades de dados em segundos, oferecendo insights precisos que humanos levariam semanas para compilar.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="workflow"></i>
+                    </div>
+                    <h4>Workflows Sem Atrito</h4>
+                    <p>Integração perfeita entre as ferramentas que você já usa (CRMs, ERPs, Slack, WhatsApp), criando um ecossistema autossuficiente.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="scale"></i>
+                    </div>
+                    <h4>Escalabilidade Infinita</h4>
+                    <p>Cresça suas vendas e atendimento de forma exponencial sem precisar aumentar proporcionalmente sua equipe e custos fixos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process-section" style="padding: 100px 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">The VictorAI Method</span>
+                <h2 class="section-title">De 0 a Automatizado em 3 Sprints</h2>
+            </div>
+            
+            <div class="process-grid" >
+                <div class="process-item" style="text-align: center;">
+                    <div class="step-num" style="font-size: 80px; font-weight: 800; color: rgba(14, 165, 233, 0.1); margin-bottom: -40px;">01</div>
+                    <div class="process-card glass-card" style="padding: 30px; position: relative; z-index: 1;">
+                        <i data-lucide="search" style="color: var(--color-accent); margin-bottom: 20px;"></i>
+                        <h4 style="margin-bottom: 15px;">Audit Digital</h4>
+                        <p>Mapeamos cada clique e tarefa repetitiva da sua operação para encontrar os vazamentos de produtividade.</p>
+                    </div>
+                </div>
+                <div class="process-item" style="text-align: center;">
+                    <div class="step-num" style="font-size: 80px; font-weight: 800; color: rgba(99, 102, 241, 0.1); margin-bottom: -40px;">02</div>
+                    <div class="process-card glass-card" style="padding: 30px; position: relative; z-index: 1;">
+                        <i data-lucide="cpu" style="color: var(--color-indigo); margin-bottom: 20px;"></i>
+                        <h4 style="margin-bottom: 15px;">AI Architecture</h4>
+                        <p>Desenhamos e treinamos seus Agentes de IA customizados com o tom de voz e dados da sua empresa.</p>
+                    </div>
+                </div>
+                <div class="process-item" style="text-align: center;">
+                    <div class="step-num" style="font-size: 80px; font-weight: 800; color: rgba(14, 165, 233, 0.1); margin-bottom: -40px;">03</div>
+                    <div class="process-card glass-card" style="padding: 30px; position: relative; z-index: 1;">
+                        <i data-lucide="rocket" style="color: var(--color-accent); margin-bottom: 20px;"></i>
+                        <h4 style="margin-bottom: 15px;">Scale & Profit</h4>
+                        <p>Implementação live, monitoramento de performance e escala do que está gerando mais lucro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenciais" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Por que me contratar</span>
+                <h2 class="section-title">O que você leva além do código</h2>
+            </div>
+            <div class="features-grid diferenciais-grade">
+<article class="feature-card diferencial"><h3>Você fala com quem constrói</h3><p>Sem atendente e sem repasse. Quem ouve o seu problema é quem desenha e entrega o sistema.</p></article>
+<article class="feature-card diferencial"><h3>Feito para a sua regra, não para a média</h3><p>Comanda por pessoa no bar. Garantia calculada pelo valor de liquidação, não pelo de vitrine. Laudo que só sai se for conclusivo. A regra do seu negócio vira regra do sistema.</p></article>
+<article class="feature-card diferencial"><h3>O que quebraria na sua mão quebra antes na minha</h3><p>Cada sistema carrega centenas ou milhares de testes automáticos. Eles rodam sozinhos a cada mudança, antes de qualquer coisa chegar em você.</p></article>
+<article class="feature-card diferencial"><h3>Seu dado protegido desde a primeira linha</h3><p>Acesso por papel, rastro de quem fez o quê, cópia de segurança cifrada. No prontuário, isso foi desenhado sob a LGPD antes da primeira tela existir.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section id="methodology" class="methodology-section">
+        <div class="container">
+            <div class="methodology-content glass-panel">
+                <div class="methodology-text">
+                    <h3 class="handwritten" style="color: white; font-size: 36px;">Como transformamos seu negócio</h3>
+                    <p>Meu processo é estratégico, focado em ROI e implementação cirúrgica. Sem promessas vazias, apenas tecnologia aplicada a resultados de negócios.</p>
+                    
+                    <ul class="steps-list">
+                        <li>
+                            <div class="step-icon">1</div>
+                            <div class="step-desc">
+                                <strong>Mapeamento Operacional</strong>
+                                <span>Auditoria completa para identificar os maiores gargalos e vazamentos de capital intelectual.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-icon">2</div>
+                            <div class="step-desc">
+                                <strong>Arquitetura AI</strong>
+                                <span>Desenho de fluxos de automação utilizando LLMs (Claude, GPT-4) e agentes especializados.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-icon">3</div>
+                            <div class="step-desc">
+                                <strong>Deploy & Treinamento</strong>
+                                <span>Implementação contínua e treinamento da sua equipe para governar os novos sistemas.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="methodology-visual">
+                    <div class="floating-element float-1">
+                        <i data-lucide="database"></i> System Audit
+                    </div>
+                    <div class="floating-element float-2">
+                        <i data-lucide="cpu"></i> AI Integration
+                    </div>
+                    <div class="floating-element float-3">
+                        <i data-lucide="line-chart"></i> Profit Scale
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quem-faz">
+        <div class="container">
+            <div class="quem-faz-painel glass-panel">
+                <span class="eyebrow">Quem faz</span>
+                <h2 class="section-title">Victor Boscolo</h2>
+                <div class="quem-faz-texto"><p>Desenho, construo e coloco no ar sistemas para negócios que não cabem em software de prateleira. Começo pela sua operação, não pela tecnologia: como o pedido entra, onde o dinheiro some, o que hoje mora em planilha e caderno.</p>
 <p>Se o seu negócio tem uma regra que nenhum sistema pronto respeita, é por aí que a conversa começa.</p></div>
-  <p class="quem-faz-acao"><a class="botao botao-final" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20portf%C3%B3lio%20de%20sistemas%20e%20quero%20conversar." rel="noopener">Chamar no WhatsApp</a></p>
-</section>
+                <p class="quem-faz-acao"><a class="botao botao-final" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20portf%C3%B3lio%20de%20sistemas%20e%20quero%20conversar." rel="noopener">Chamar no WhatsApp</a></p>
+            </div>
+        </div>
+    </section>
+
 <section class="notas" aria-labelledby="t-notas">
 <h2 id="t-notas">Também fizemos</h2>
 <div class="nota-grade">
@@ -152,16 +410,50 @@
 </div>
 </section>
 
+    <section class="cta-section">
+        <div class="bg-vector-lines"></div>
+        <div class="container cta-content">
+            <div class="cta-icon-top">
+                <i data-lucide="zap"></i>
+            </div>
+            <h3 class="handwritten">Sua empresa continua analógica?</h3>
+            <p>A janela de oportunidade para se tornar uma empresa 'AI-First' está se fechando. Vamos desenhar o futuro digital da sua operação hoje.</p>
+            <a href="https://wa.me/5519989590630" class="btn-whatsapp pulse-effect">
+                <i data-lucide="message-circle"></i>
+                Falar com Victor no WhatsApp
+            </a>
+            <p class="cta-guarantee">
+                <i data-lucide="shield"></i> Resposta em até 2 horas. Diagnóstico inicial gratuito.
+            </p>
+        </div>
+    </section>
+
 </main>
-<footer class="rodape" id="contato">
-  <h2>Vamos conversar sobre o seu sistema</h2>
-  <ul class="contato">
+
+<footer id="contato">
+  <div class="container footer-content">
+    <div class="footer-brand">
+      <img src="img/marca/logo.png" alt="Victor Boscolo" class="footer-logo" width="1024" height="250">
+      <p>Sistemas sob medida e automação com IA. VH BRANDS · Victor Boscolo.</p>
+    </div>
+    <div class="footer-contato">
+      <h2 class="handwritten">Vamos conversar sobre o seu sistema</h2>
+      <ul class="contato">
 <li><a href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20portf%C3%B3lio%20de%20sistemas%20e%20quero%20conversar." rel="noopener">WhatsApp (19) 98959-0630</a></li>
 <li><a href="mailto:vhboscolo@gmail.com" rel="noopener">vhboscolo@gmail.com</a></li>
 <li><a href="https://www.instagram.com/vhboscolo/" rel="noopener">Instagram @vhboscolo</a></li>
 <li><a href="https://www.linkedin.com/in/vhboscolo/" rel="noopener">LinkedIn /in/vhboscolo</a></li>
 </ul>
-  <p class="rodape-nota">VH BRANDS · Victor Boscolo. As telas usam dados de demonstração.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>As telas do portfólio usam dados de demonstração. © 2026 Victor Boscolo.</p>
+  </div>
 </footer>
+
+<a href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20portf%C3%B3lio%20de%20sistemas%20e%20quero%20conversar." class="floating-cta pulse-effect" aria-label="Falar no WhatsApp"><i data-lucide="message-circle"></i></a>
+
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" integrity="sha384-hJnF5AwidE18GSWTAGHv3ByzzvfNZ1Tcx5y1UUV3WkauuMCEzBJBMSwSt/PUPXnM" crossorigin="anonymous" defer></script>
+<script src="js/site.js" defer></script>
 </body>
 </html>

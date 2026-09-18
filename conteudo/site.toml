@@ -1,9 +1,11 @@
 assinatura = "VH BRANDS"
-subtitulo = "Sistemas sob medida"
+subtitulo = "Sistemas sob medida e automação com IA"
 autor = "Victor Boscolo"
-promessa = "Eu construo o sistema que roda o seu negócio."
+promessa = "Escale sua operação sem inchar a folha de pagamento."
 intro = """
-De uma empresa suíça de certificação de joias a uma rede de clínicas: sistemas completos, do banco de dados ao aplicativo no celular, construídos para a regra de cada negócio e testados antes de chegar na mão de quem usa.
+Sistemas sob medida e automação com IA que assumem o trabalho repetitivo, organizam a operação e liberam seu tempo para o que realmente importa: lucro e estratégia.
+
+De uma empresa suíça de certificação de joias a uma rede de clínicas, cada sistema aqui foi construído do banco de dados ao aplicativo no celular.
 """
 cta_rotulo = "Chamar no WhatsApp"
 quem_faz = """
@@ -11,9 +13,9 @@ Desenho, construo e coloco no ar sistemas para negócios que não cabem em softw
 
 Se o seu negócio tem uma regra que nenhum sistema pronto respeita, é por aí que a conversa começa.
 """
-descricao = "Sistemas sob medida para bar, joalheria, clínica, crédito e importação. Veja as telas, o que cada um resolve e como foi construído."
-base_url = "https://vhboscolo.github.io/portfolio/"
-fontes_css = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap"
+descricao = "Victor Boscolo constrói sistemas sob medida e automações com IA. Veja o portfólio: certificação de joias, plataforma de saúde, CRM com prospecção por IA, ERP de bar e mais."
+base_url = "https://victorboscolo.com.br/"
+fontes_css = "https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
 og_imagem = "img/og.jpg"
 ordem = ["gma", "clinicas", "crm-solen", "restaurant-os", "jewelry-os", "cobranca-os", "catalogos-importacao", "radar-leiloes", "agente-auditavel"]
 

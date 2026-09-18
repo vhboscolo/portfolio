@@ -1,52 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' https://unpkg.com; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Agente autônomo auditável — VH BRANDS</title>
 <meta name="description" content="Um agente que observa e-mail, WhatsApp, reuniões e Notion, organiza o que importa e age. Cada ação vira uma linha num registro que ninguém reescreve, e um segundo agente, em outro modelo de IA, audita o primeiro duas vezes por dia.">
-<link rel="canonical" href="https://vhboscolo.github.io/portfolio/agente-auditavel/">
+<link rel="canonical" href="https://victorboscolo.com.br/agente-auditavel/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="Agente autônomo auditável — VH BRANDS">
 <meta property="og:description" content="Um agente que observa e-mail, WhatsApp, reuniões e Notion, organiza o que importa e age. Cada ação vira uma linha num registro que ninguém reescreve, e um segundo agente, em outro modelo de IA, audita o primeiro duas vezes por dia.">
-<meta property="og:url" content="https://vhboscolo.github.io/portfolio/agente-auditavel/">
-<meta property="og:image" content="https://vhboscolo.github.io/portfolio/img/og.jpg">
+<meta property="og:url" content="https://victorboscolo.com.br/agente-auditavel/">
+<meta property="og:image" content="https://victorboscolo.com.br/img/og.jpg">
+<link rel="icon" href="../img/marca/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap">
-<link rel="stylesheet" href="../css/tokens.css">
-<link rel="stylesheet" href="../css/base.css">
-<link rel="stylesheet" href="../css/componentes.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&amp;family=Quicksand:wght@300;400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/portfolio.css">
 </head>
 <body>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
-<header class="topo">
-  <a class="assinatura" href="../"><span class="grito">VH BRANDS</span> <span class="assinatura-sub">Sistemas sob medida</span></a>
-  <nav class="topo-nav" aria-label="Navegação principal"><a href="../#sistemas">Sistemas</a> <a href="#contato">Contato</a> <a class="botao botao-topo" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20Agente%20aut%C3%B4nomo%20audit%C3%A1vel%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." rel="noopener">Chamar no WhatsApp</a></nav>
+<div class="bg-pattern glow-top-right" aria-hidden="true"></div>
+<div class="bg-pattern glow-bottom-left" aria-hidden="true"></div>
+
+<header>
+  <div class="container header-inner">
+    <a href="../" class="logo-link"><img src="../img/marca/logo.png" alt="Victor Boscolo — VH BRANDS" class="brand-logo" width="1024" height="250"></a>
+    <nav aria-label="Navegação principal">
+      <div class="nav-links">
+        <a href="../#projects">Portfólio</a>
+        <a href="../#benefits">Vantagens</a>
+        <a href="../#methodology">Metodologia</a>
+      </div>
+      <div class="nav-cta"><a class="botao botao-topo" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20Agente%20aut%C3%B4nomo%20audit%C3%A1vel%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." rel="noopener">Chamar no WhatsApp</a></div>
+    </nav>
+  </div>
 </header>
+
 <main id="conteudo">
 <article class="sistema">
-  <header class="sistema-cabeca">
-    <h1>Agente autônomo auditável</h1>
-    <p class="chamada">Uma IA que trabalha sozinha e deixa rastro de tudo que faz</p>
-    <p class="meta"><span>Automação com inteligência artificial</span> <span class="status">Protótipo funcional</span></p>
-  </header>
-  <div class="sistema-capa"><img src="../img/agente-auditavel/arquitetura.svg" alt="Diagrama: fontes passam por um portão de validação, chegam ao orquestrador, toda ação vai para um registro que só cresce e um auditor independente revisa" width="1600" height="900" fetchpriority="high" decoding="async"></div>
-  <section class="bloco bloco-ganho" aria-labelledby="t-ganho">
-    <h2 id="t-ganho">O que muda no seu negócio</h2>
+  <section class="sistema-cabeca">
+    <div class="container">
+      <a class="voltar" href="../#projects"><i data-lucide="arrow-left"></i> Portfólio</a>
+      <div class="project-badges sistema-selos"><span class="badge badge-success">Protótipo funcional</span><span class="badge">Automação com inteligência artificial</span></div>
+      <h1 class="section-title">Agente autônomo auditável</h1>
+      <p class="handwritten sistema-chamada">Uma IA que trabalha sozinha e deixa rastro de tudo que faz</p>
+    </div>
+  </section>
+
+  <div class="container sistema-capa"><img src="../img/agente-auditavel/arquitetura.svg" alt="Diagrama: fontes passam por um portão de validação, chegam ao orquestrador, toda ação vai para um registro que só cresce e um auditor independente revisa" width="1600" height="900" fetchpriority="high" decoding="async"></div>
+
+  <section class="container bloco bloco-ganho glass-panel" aria-labelledby="t-ganho">
+    <span class="eyebrow">O que muda no seu negócio</span>
+    <h2 id="t-ganho" class="bloco-titulo">O resultado</h2>
     <p>A diferença entre contratar uma IA e ter um sistema cujas decisões você consegue ler, reverter e levar embora. Tudo o que o agente sabe está em arquivo de texto versionado, não numa caixa-preta.</p>
 <p>O que é sensível espera o seu sim por mensagem. E existe um teto de gasto que desliga tudo sozinho.</p>
   </section>
-  <section class="bloco" aria-labelledby="t-problema">
-    <h2 id="t-problema">O problema</h2>
+
+  <section class="container bloco" aria-labelledby="t-problema">
+    <span class="eyebrow">Antes</span>
+    <h2 id="t-problema" class="bloco-titulo">O problema</h2>
     <p>A informação de uma operação pequena mora espalhada em e-mail, WhatsApp, transcrição de reunião e Notion, e ninguém liga os pontos.</p>
 <p>Ferramenta de IA comum resolve isso virando caixa-preta: você não sabe o que ela sabe nem por que decidiu o que decidiu. Em negócio, isso não serve.</p>
   </section>
-  <section class="bloco" aria-labelledby="t-faz">
-    <h2 id="t-faz">O que o sistema faz</h2>
+
+  <section class="container bloco" aria-labelledby="t-faz">
+    <span class="eyebrow">Capacidades</span>
+    <h2 id="t-faz" class="bloco-titulo">O que o sistema faz</h2>
     <ul class="faz">
 <li>Captura de e-mail, WhatsApp, reuniões transcritas e Notion.</li>
 <li>Portão de validação: nada entra na memória sem passar por um esquema.</li>
@@ -57,29 +80,36 @@
 <li>Relatórios em PDF e radar de tendências com filtro de novidade.</li>
 </ul>
   </section>
-  <section class="bloco bloco-telas" aria-labelledby="t-telas">
-    <h2 id="t-telas">Telas</h2>
-    <figure class="tela"><img src="../img/agente-auditavel/arquitetura.svg" alt="Diagrama da arquitetura do agente com portão de validação, orquestrador, registro e auditor" width="1600" height="900" loading="lazy" decoding="async"><figcaption>A arquitetura em uma imagem. O conteúdo que o agente guarda é privado e não aparece aqui.</figcaption></figure>
+
+  <section class="container bloco bloco-telas" aria-labelledby="t-telas">
+    <span class="eyebrow">Por dentro</span>
+    <h2 id="t-telas" class="bloco-titulo">Telas</h2>
     
+    <figure class="tela"><img src="../img/agente-auditavel/arquitetura.svg" alt="Diagrama da arquitetura do agente com portão de validação, orquestrador, registro e auditor" width="1600" height="900" loading="lazy" decoding="async"><figcaption>A arquitetura em uma imagem. O conteúdo que o agente guarda é privado e não aparece aqui.</figcaption></figure>
   </section>
-  <section class="bloco bloco-provas" aria-labelledby="t-provas">
-    <h2 id="t-provas">O que prova a engenharia</h2>
+
+  <section class="container bloco" aria-labelledby="t-provas">
+    <span class="eyebrow">Engenharia</span>
+    <h2 id="t-provas" class="bloco-titulo">Feito para durar</h2>
     <dl class="provas">
 <div class="prova"><dt>202</dt><dd>testes automáticos em 36 arquivos</dd></div>
 <div class="prova"><dt>39</dt><dd>módulos, cada um com uma responsabilidade</dd></div>
 <div class="prova"><dt>2</dt><dd>modelos de IA diferentes: um age, outro confere</dd></div>
 </dl>
-    <div class="decisao"><h3>O auditor usa outro modelo de propósito</h3><p>O mesmo modelo auditando a si mesmo compartilha os mesmos pontos cegos. Quem confere precisa errar em lugares diferentes.</p></div>
-<div class="decisao"><h3>Só desfaz sozinho o que é grave e reversível</h3><p>Todo o resto vira alerta para uma pessoa decidir. Autonomia com supervisão, não no lugar dela.</p></div>
+    <div class="decisoes"><div class="decisao"><h3>O auditor usa outro modelo de propósito</h3><p>O mesmo modelo auditando a si mesmo compartilha os mesmos pontos cegos. Quem confere precisa errar em lugares diferentes.</p></div>
+<div class="decisao"><h3>Só desfaz sozinho o que é grave e reversível</h3><p>Todo o resto vira alerta para uma pessoa decidir. Autonomia com supervisão, não no lugar dela.</p></div></div>
   </section>
-  <section class="bloco" aria-labelledby="t-stack">
-    <h2 id="t-stack">Stack</h2>
+
+  <section class="container bloco" aria-labelledby="t-stack">
+    <span class="eyebrow">Tecnologia</span>
+    <h2 id="t-stack" class="bloco-titulo">Stack</h2>
     <p class="stack">Python 3.11, Docker Compose, mensageria por Telegram e WhatsApp, e Git como fonte da verdade. Modelos de IA diferentes para executar e para auditar.</p>
     
   </section>
-  <aside class="chamada-final" aria-labelledby="t-chamada">
-    <div class="chamada-caixa">
-      <h2 id="t-chamada">Quer um sistema assim no seu negócio?</h2>
+
+  <aside class="container chamada-final" aria-labelledby="t-chamada">
+    <div class="chamada-caixa glass-panel">
+      <h2 id="t-chamada" class="handwritten">Quer um sistema assim no seu negócio?</h2>
       <p><a class="botao botao-final" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20Agente%20aut%C3%B4nomo%20audit%C3%A1vel%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." rel="noopener">Chamar no WhatsApp</a></p>
     </div>
   </aside>
@@ -87,15 +117,31 @@
 <nav class="vizinhos" aria-label="Outros sistemas"><a class="vizinho anterior" href="../radar-leiloes/"><span>Anterior</span> Radar de leilões</a></nav>
 
 </main>
-<footer class="rodape" id="contato">
-  <h2>Vamos conversar sobre o seu sistema</h2>
-  <ul class="contato">
+
+<footer id="contato">
+  <div class="container footer-content">
+    <div class="footer-brand">
+      <img src="../img/marca/logo.png" alt="Victor Boscolo" class="footer-logo" width="1024" height="250">
+      <p>Sistemas sob medida e automação com IA. VH BRANDS · Victor Boscolo.</p>
+    </div>
+    <div class="footer-contato">
+      <h2 class="handwritten">Vamos conversar sobre o seu sistema</h2>
+      <ul class="contato">
 <li><a href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20portf%C3%B3lio%20de%20sistemas%20e%20quero%20conversar." rel="noopener">WhatsApp (19) 98959-0630</a></li>
 <li><a href="mailto:vhboscolo@gmail.com" rel="noopener">vhboscolo@gmail.com</a></li>
 <li><a href="https://www.instagram.com/vhboscolo/" rel="noopener">Instagram @vhboscolo</a></li>
 <li><a href="https://www.linkedin.com/in/vhboscolo/" rel="noopener">LinkedIn /in/vhboscolo</a></li>
 </ul>
-  <p class="rodape-nota">VH BRANDS · Victor Boscolo. As telas usam dados de demonstração.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>As telas do portfólio usam dados de demonstração. © 2026 Victor Boscolo.</p>
+  </div>
 </footer>
+
+<a href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20Agente%20aut%C3%B4nomo%20audit%C3%A1vel%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." class="floating-cta pulse-effect" aria-label="Falar no WhatsApp"><i data-lucide="message-circle"></i></a>
+
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" integrity="sha384-hJnF5AwidE18GSWTAGHv3ByzzvfNZ1Tcx5y1UUV3WkauuMCEzBJBMSwSt/PUPXnM" crossorigin="anonymous" defer></script>
+<script src="../js/site.js" defer></script>
 </body>
 </html>

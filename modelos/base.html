@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' https://unpkg.com; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>$titulo</title>
 <meta name="description" content="$descricao">
@@ -14,26 +14,55 @@
 <meta property="og:description" content="$descricao">
 <meta property="og:url" content="$canonica">
 <meta property="og:image" content="$og_imagem">
+<link rel="icon" href="${raiz}img/marca/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="$fontes_css">
-<link rel="stylesheet" href="${raiz}css/tokens.css">
-<link rel="stylesheet" href="${raiz}css/base.css">
-<link rel="stylesheet" href="${raiz}css/componentes.css">
+<link rel="stylesheet" href="${raiz}css/site.css">
+<link rel="stylesheet" href="${raiz}css/portfolio.css">
 </head>
 <body>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
-<header class="topo">
-  <a class="assinatura" href="${raiz}"><span class="grito">$assinatura</span> <span class="assinatura-sub">$subtitulo</span></a>
-  <nav class="topo-nav" aria-label="Navegação principal"><a href="${raiz}#sistemas">Sistemas</a> <a href="#contato">Contato</a> $cta</nav>
+<div class="bg-pattern glow-top-right" aria-hidden="true"></div>
+<div class="bg-pattern glow-bottom-left" aria-hidden="true"></div>
+
+<header>
+  <div class="container header-inner">
+    <a href="${raiz}" class="logo-link"><img src="${raiz}img/marca/logo.png" alt="$autor — $assinatura" class="brand-logo" width="1024" height="250"></a>
+    <nav aria-label="Navegação principal">
+      <div class="nav-links">
+        <a href="${raiz}#projects">Portfólio</a>
+        <a href="${raiz}#benefits">Vantagens</a>
+        <a href="${raiz}#methodology">Metodologia</a>
+      </div>
+      <div class="nav-cta">$cta</div>
+    </nav>
+  </div>
 </header>
+
 <main id="conteudo">
 $corpo
 </main>
-<footer class="rodape" id="contato">
-  <h2>Vamos conversar sobre o seu sistema</h2>
-  $contato
-  <p class="rodape-nota">$assinatura · $autor. As telas usam dados de demonstração.</p>
+
+<footer id="contato">
+  <div class="container footer-content">
+    <div class="footer-brand">
+      <img src="${raiz}img/marca/logo.png" alt="$autor" class="footer-logo" width="1024" height="250">
+      <p>$subtitulo. $assinatura · $autor.</p>
+    </div>
+    <div class="footer-contato">
+      <h2 class="handwritten">Vamos conversar sobre o seu sistema</h2>
+      $contato
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>As telas do portfólio usam dados de demonstração. © 2026 $autor.</p>
+  </div>
 </footer>
+
+<a href="$whatsapp" class="floating-cta pulse-effect" aria-label="Falar no WhatsApp"><i data-lucide="message-circle"></i></a>
+
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" integrity="sha384-hJnF5AwidE18GSWTAGHv3ByzzvfNZ1Tcx5y1UUV3WkauuMCEzBJBMSwSt/PUPXnM" crossorigin="anonymous" defer></script>
+<script src="${raiz}js/site.js" defer></script>
 </body>
 </html>

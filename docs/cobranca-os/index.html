@@ -1,52 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' https://unpkg.com; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>COBRANÇA OS — VH BRANDS</title>
 <meta name="description" content="Sistema para casa de crédito que empresta com bem em custódia. Reparte cada pagamento em multa, mora, juros e principal, e calcula a cobertura pelo valor de liquidação do bem, não pelo de vitrine.">
-<link rel="canonical" href="https://vhboscolo.github.io/portfolio/cobranca-os/">
+<link rel="canonical" href="https://victorboscolo.com.br/cobranca-os/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="COBRANÇA OS — VH BRANDS">
 <meta property="og:description" content="Sistema para casa de crédito que empresta com bem em custódia. Reparte cada pagamento em multa, mora, juros e principal, e calcula a cobertura pelo valor de liquidação do bem, não pelo de vitrine.">
-<meta property="og:url" content="https://vhboscolo.github.io/portfolio/cobranca-os/">
-<meta property="og:image" content="https://vhboscolo.github.io/portfolio/img/og.jpg">
+<meta property="og:url" content="https://victorboscolo.com.br/cobranca-os/">
+<meta property="og:image" content="https://victorboscolo.com.br/img/og.jpg">
+<link rel="icon" href="../img/marca/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap">
-<link rel="stylesheet" href="../css/tokens.css">
-<link rel="stylesheet" href="../css/base.css">
-<link rel="stylesheet" href="../css/componentes.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&amp;family=Quicksand:wght@300;400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/portfolio.css">
 </head>
 <body>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
-<header class="topo">
-  <a class="assinatura" href="../"><span class="grito">VH BRANDS</span> <span class="assinatura-sub">Sistemas sob medida</span></a>
-  <nav class="topo-nav" aria-label="Navegação principal"><a href="../#sistemas">Sistemas</a> <a href="#contato">Contato</a> <a class="botao botao-topo" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20COBRAN%C3%87A%20OS%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." rel="noopener">Chamar no WhatsApp</a></nav>
+<div class="bg-pattern glow-top-right" aria-hidden="true"></div>
+<div class="bg-pattern glow-bottom-left" aria-hidden="true"></div>
+
+<header>
+  <div class="container header-inner">
+    <a href="../" class="logo-link"><img src="../img/marca/logo.png" alt="Victor Boscolo — VH BRANDS" class="brand-logo" width="1024" height="250"></a>
+    <nav aria-label="Navegação principal">
+      <div class="nav-links">
+        <a href="../#projects">Portfólio</a>
+        <a href="../#benefits">Vantagens</a>
+        <a href="../#methodology">Metodologia</a>
+      </div>
+      <div class="nav-cta"><a class="botao botao-topo" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20COBRAN%C3%87A%20OS%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." rel="noopener">Chamar no WhatsApp</a></div>
+    </nav>
+  </div>
 </header>
+
 <main id="conteudo">
 <article class="sistema">
-  <header class="sistema-cabeca">
-    <h1>COBRANÇA OS</h1>
-    <p class="chamada">Quanto está na rua, quanto apodreceu e se a garantia cobre</p>
-    <p class="meta"><span>Crédito com garantia</span> <span class="status">Pronto para implantar</span></p>
-  </header>
-  <div class="sistema-capa"><img src="../img/cobranca-os/painel-g.webp" srcset="../img/cobranca-os/painel-p.webp 800w, ../img/cobranca-os/painel-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Painel do COBRANÇA OS com o total na rua, a régua de atraso por faixa e a cobertura de garantia" width="1600" height="1423" fetchpriority="high" decoding="async"></div>
-  <section class="bloco bloco-ganho" aria-labelledby="t-ganho">
-    <h2 id="t-ganho">O que muda no seu negócio</h2>
+  <section class="sistema-cabeca">
+    <div class="container">
+      <a class="voltar" href="../#projects"><i data-lucide="arrow-left"></i> Portfólio</a>
+      <div class="project-badges sistema-selos"><span class="badge badge-success">Pronto para implantar</span><span class="badge">Crédito com garantia</span></div>
+      <h1 class="section-title">COBRANÇA OS</h1>
+      <p class="handwritten sistema-chamada">Quanto está na rua, quanto apodreceu e se a garantia cobre</p>
+    </div>
+  </section>
+
+  <div class="container sistema-capa"><img src="../img/cobranca-os/painel-g.webp" srcset="../img/cobranca-os/painel-p.webp 800w, ../img/cobranca-os/painel-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Painel do COBRANÇA OS com o total na rua, a régua de atraso por faixa e a cobertura de garantia" width="1600" height="1423" fetchpriority="high" decoding="async"></div>
+
+  <section class="container bloco bloco-ganho glass-panel" aria-labelledby="t-ganho">
+    <span class="eyebrow">O que muda no seu negócio</span>
+    <h2 id="t-ganho" class="bloco-titulo">O resultado</h2>
     <p>O dono abre uma tela e lê a carteira em um número: quanto está na rua, quanto disso passou de noventa dias e se o que está no cofre cobre o que falta receber.</p>
 <p>De manhã, a fila do dia já diz quem cobrar primeiro: promessa quebrada, atraso novo, atraso antigo. Ninguém decide isso olhando planilha.</p>
   </section>
-  <section class="bloco" aria-labelledby="t-problema">
-    <h2 id="t-problema">O problema</h2>
+
+  <section class="container bloco" aria-labelledby="t-problema">
+    <span class="eyebrow">Antes</span>
+    <h2 id="t-problema" class="bloco-titulo">O problema</h2>
     <p>Casa de crédito pequena controla carteira em planilha, e a planilha mente em três lugares ao mesmo tempo. O pior deles é o quanto o cliente já pagou: dez mil pagos podem ter abatido oitocentos da dívida, porque o resto foi multa, mora e juros.</p>
 <p>Cobertura calculada pelo valor de avaliação também é ilusão. Avaliação é preço de vitrine, e garantia só é acionada quando não há tempo de vitrine.</p>
   </section>
-  <section class="bloco" aria-labelledby="t-faz">
-    <h2 id="t-faz">O que o sistema faz</h2>
+
+  <section class="container bloco" aria-labelledby="t-faz">
+    <span class="eyebrow">Capacidades</span>
+    <h2 id="t-faz" class="bloco-titulo">O que o sistema faz</h2>
     <ul class="faz">
 <li>Três modalidades de contrato: parcela fixa, só juros e juros simples divididos.</li>
 <li>Baixa de pagamento que reparte o valor parcela a parcela e mostra para onde foi cada real.</li>
@@ -58,33 +81,40 @@
 <li>Mapa da carteira por bairro, com montante e inadimplência.</li>
 </ul>
   </section>
-  <section class="bloco bloco-telas" aria-labelledby="t-telas">
-    <h2 id="t-telas">Telas</h2>
+
+  <section class="container bloco bloco-telas" aria-labelledby="t-telas">
+    <span class="eyebrow">Por dentro</span>
+    <h2 id="t-telas" class="bloco-titulo">Telas</h2>
+    <figure class="video"><video controls preload="none" playsinline poster="../img/cobranca-os/painel-g.webp" width="1600" height="1423"><source src="../video/cobranca-os.mp4" type="video/mp4"></video><figcaption>O produto em 78 segundos.</figcaption></figure>
     <figure class="tela"><img src="../img/cobranca-os/cofre-g.webp" srcset="../img/cobranca-os/cofre-p.webp 800w, ../img/cobranca-os/cofre-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Tela do cofre com oito bens em custódia, valor avaliado, valor de liquidação e deságio" width="1600" height="1284" loading="lazy" decoding="async"><figcaption>Cofre: o valor de vitrine ao lado do valor que realmente cobre a dívida. <span class="selo-demo">dados de demonstração</span></figcaption></figure>
 <figure class="tela"><img src="../img/cobranca-os/checklist-g.webp" srcset="../img/cobranca-os/checklist-p.webp 800w, ../img/cobranca-os/checklist-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Fila de cobrança do dia separada em promessa quebrada, atraso recente e atraso antigo" width="1600" height="1284" loading="lazy" decoding="async"><figcaption>Quem cobrar hoje, na ordem que importa. <span class="selo-demo">dados de demonstração</span></figcaption></figure>
 <figure class="tela"><img src="../img/cobranca-os/mapa-g.webp" srcset="../img/cobranca-os/mapa-p.webp 800w, ../img/cobranca-os/mapa-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Mapa de bolhas com a concentração da carteira por bairro" width="1600" height="1284" loading="lazy" decoding="async"><figcaption>Onde a carteira está concentrada, e onde ela atrasa. <span class="selo-demo">dados de demonstração</span></figcaption></figure>
 <figure class="tela"><img src="../img/cobranca-os/conciliacao-g.webp" srcset="../img/cobranca-os/conciliacao-p.webp 800w, ../img/cobranca-os/conciliacao-g.webp 1600w" sizes="(min-width: 1100px) 1000px, 100vw" alt="Conciliação com extrato do banco de um lado e lançamentos do sistema do outro" width="1600" height="1284" loading="lazy" decoding="async"><figcaption>Conciliação: o que está no banco sem baixa e o que está no sistema sem extrato. <span class="selo-demo">dados de demonstração</span></figcaption></figure>
-    <figure class="video"><video controls preload="none" playsinline poster="../img/cobranca-os/painel-g.webp" width="1600" height="1423"><source src="../video/cobranca-os.mp4" type="video/mp4"></video><figcaption>O produto em 78 segundos.</figcaption></figure>
   </section>
-  <section class="bloco bloco-provas" aria-labelledby="t-provas">
-    <h2 id="t-provas">O que prova a engenharia</h2>
+
+  <section class="container bloco" aria-labelledby="t-provas">
+    <span class="eyebrow">Engenharia</span>
+    <h2 id="t-provas" class="bloco-titulo">Feito para durar</h2>
     <dl class="provas">
 <div class="prova"><dt>219</dt><dd>testes automáticos em 29 arquivos, um por módulo</dd></div>
 <div class="prova"><dt>27</dt><dd>tabelas, nenhuma com saldo gravado: saldo é sempre calculado</dd></div>
 <div class="prova"><dt>0</dt><dd>dependências externas</dd></div>
 </dl>
-    <div class="decisao"><h3>Nada que envolve dinheiro é sobrescrito</h3><p>Saldo, situação de parcela e saldo de conta são calculados a partir de um registro que só cresce. Correção é lançamento novo, nunca edição do antigo.</p></div>
+    <div class="decisoes"><div class="decisao"><h3>Nada que envolve dinheiro é sobrescrito</h3><p>Saldo, situação de parcela e saldo de conta são calculados a partir de um registro que só cresce. Correção é lançamento novo, nunca edição do antigo.</p></div>
 <div class="decisao"><h3>Cliente novo não é cliente ruim</h3><p>Quem não tem histórico fica com pontuação neutra. Zero significaria que quebrou todas as promessas, que é o oposto de não sabermos nada.</p></div>
-<div class="decisao"><h3>Cópia de segurança cifrada, todo dia</h3><p>O banco guarda CPF, dívida e bens de terceiros. Por isso a cópia é feita todo dia, conferida, cifrada com AES-256 e mantida por trinta dias.</p></div>
+<div class="decisao"><h3>Cópia de segurança cifrada, todo dia</h3><p>O banco guarda CPF, dívida e bens de terceiros. Por isso a cópia é feita todo dia, conferida, cifrada com AES-256 e mantida por trinta dias.</p></div></div>
   </section>
-  <section class="bloco" aria-labelledby="t-stack">
-    <h2 id="t-stack">Stack</h2>
+
+  <section class="container bloco" aria-labelledby="t-stack">
+    <span class="eyebrow">Tecnologia</span>
+    <h2 id="t-stack" class="bloco-titulo">Stack</h2>
     <p class="stack">Python 3 só com a biblioteca padrão, SQLite, HTML, CSS e JavaScript sem framework. Cópia de segurança cifrada com AES-256.</p>
     
   </section>
-  <aside class="chamada-final" aria-labelledby="t-chamada">
-    <div class="chamada-caixa">
-      <h2 id="t-chamada">Quer um sistema assim no seu negócio?</h2>
+
+  <aside class="container chamada-final" aria-labelledby="t-chamada">
+    <div class="chamada-caixa glass-panel">
+      <h2 id="t-chamada" class="handwritten">Quer um sistema assim no seu negócio?</h2>
       <p><a class="botao botao-final" href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20COBRAN%C3%87A%20OS%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." rel="noopener">Chamar no WhatsApp</a></p>
     </div>
   </aside>
@@ -92,15 +122,31 @@
 <nav class="vizinhos" aria-label="Outros sistemas"><a class="vizinho anterior" href="../jewelry-os/"><span>Anterior</span> Jewelry OS</a><a class="vizinho proximo" href="../catalogos-importacao/"><span>Próximo</span> Catálogos de importação para lojistas</a></nav>
 
 </main>
-<footer class="rodape" id="contato">
-  <h2>Vamos conversar sobre o seu sistema</h2>
-  <ul class="contato">
+
+<footer id="contato">
+  <div class="container footer-content">
+    <div class="footer-brand">
+      <img src="../img/marca/logo.png" alt="Victor Boscolo" class="footer-logo" width="1024" height="250">
+      <p>Sistemas sob medida e automação com IA. VH BRANDS · Victor Boscolo.</p>
+    </div>
+    <div class="footer-contato">
+      <h2 class="handwritten">Vamos conversar sobre o seu sistema</h2>
+      <ul class="contato">
 <li><a href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20portf%C3%B3lio%20de%20sistemas%20e%20quero%20conversar." rel="noopener">WhatsApp (19) 98959-0630</a></li>
 <li><a href="mailto:vhboscolo@gmail.com" rel="noopener">vhboscolo@gmail.com</a></li>
 <li><a href="https://www.instagram.com/vhboscolo/" rel="noopener">Instagram @vhboscolo</a></li>
 <li><a href="https://www.linkedin.com/in/vhboscolo/" rel="noopener">LinkedIn /in/vhboscolo</a></li>
 </ul>
-  <p class="rodape-nota">VH BRANDS · Victor Boscolo. As telas usam dados de demonstração.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>As telas do portfólio usam dados de demonstração. © 2026 Victor Boscolo.</p>
+  </div>
 </footer>
+
+<a href="https://wa.me/5519989590630?text=Oi%2C%20Victor.%20Vi%20o%20COBRAN%C3%87A%20OS%20no%20portf%C3%B3lio%20e%20quero%20um%20sistema%20assim." class="floating-cta pulse-effect" aria-label="Falar no WhatsApp"><i data-lucide="message-circle"></i></a>
+
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" integrity="sha384-hJnF5AwidE18GSWTAGHv3ByzzvfNZ1Tcx5y1UUV3WkauuMCEzBJBMSwSt/PUPXnM" crossorigin="anonymous" defer></script>
+<script src="../js/site.js" defer></script>
 </body>
 </html>

@@ -1,28 +1,263 @@
-<section class="heroi" aria-labelledby="promessa">
-  <div class="heroi-texto">
-    <h1 id="promessa">$promessa</h1>
-    <div class="heroi-intro">$intro</div>
-    <p class="heroi-acoes">$cta_heroi <a class="botao botao-fantasma" href="#sistemas">Ver os sistemas</a></p>
-  </div>
-  <div class="heroi-palco">$reel</div>
-</section>
-<section class="faixa-numeros" aria-label="Em números">
-$numeros
-</section>
-<section class="sistemas" id="sistemas" aria-labelledby="t-sistemas">
-  <h2 id="t-sistemas">Sistemas que já estão de pé</h2>
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="trust-badge">
+                <i data-lucide="shield-check" class="icon-accent"></i>
+                <span>Estrategista Digital de Alta Performance</span>
+            </div>
+            <h1 class="handwritten">$promessa</h1>
+            <div class="subtitle">$intro</div>
+            
+            <div class="hero-actions">
+                <a href="https://wa.me/5519989590630" class="btn-primary pulse-effect">
+                    <i data-lucide="bot"></i>
+                    Diagnóstico de Automação Gratuito
+                </a>
+                <a href="#projects" class="btn-secondary">
+                    <i data-lucide="play-circle"></i>
+                    Ver o portfólio
+                </a>
+            </div>
+
+            $numeros
+            <div class="heroi-palco">$reel</div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Portfólio</span>
+                <h2 class="section-title">Sistemas que já estão de pé</h2>
+                <p class="section-sub">Cada um nasceu de uma operação de verdade e foi testado antes de chegar na mão de quem usa. Clique para ver as telas e como foi construído.</p>
+            </div>
+            <div class="projects-grid">
 $cartoes
-</section>
-<section class="diferenciais" aria-labelledby="t-diferenciais">
-  <h2 id="t-diferenciais">Por que me contratar</h2>
-  <div class="diferenciais-grade">
+            </div>
+        </div>
+    </section>
+
+    <section id="roi-calculator" class="roi-section">
+        <div class="container">
+            <div class="roi-grid glass-panel">
+                <div class="roi-content">
+                    <span class="eyebrow">Calculadora de Eficiência</span>
+                    <h2 class="section-title" style="font-size: 32px; text-align: left; margin-bottom: 20px;">Quanto você está deixando na mesa?</h3>
+                    <p style="margin-bottom: 30px; color: var(--text-secondary);">Pequenas automações geram grandes retornos. Calcule o potencial de economia da sua operação.</p>
+                    
+                    <div class="calculator-box">
+                        <div class="input-group" style="margin-bottom: 25px;">
+                            <label style="display: block; margin-bottom: 10px; font-weight: 700;">Horas gastas/semana em tarefas manuais</label>
+                            <input type="range" id="hours-range" min="5" max="100" value="20" style="width: 100%;">
+                            <div class="range-value" style="margin-top: 10px; font-weight: 700; color: var(--color-accent);"><span id="hours-display">20</span>h cada semana</div>
+                        </div>
+                        <div class="input-group">
+                            <label style="display: block; margin-bottom: 10px; font-weight: 700;">Custo médio da hora (R$$)</label>
+                            <input type="number" id="hourly-rate" value="150" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--card-border); background: rgba(255,255,255,0.05); color: white;">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="roi-result-card" style="background: rgba(14, 165, 233, 0.1); padding: 40px; border-radius: 20px; border: 1px solid rgba(14, 165, 233, 0.2); display: flex; flex-direction: column; justify-content: center; gap: 30px;">
+                    <div class="result-item">
+                        <span class="result-label" style="display: block; font-size: 14px; color: var(--text-secondary); margin-bottom: 5px;">Economia Anual Projetada</span>
+                        <span class="result-value" id="savings-value" style="display: block; font-size: 36px; font-weight: 800; color: #4ade80;">R$$ 144.000</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label" style="display: block; font-size: 14px; color: var(--text-secondary); margin-bottom: 5px;">Tempo Recuperado/Ano</span>
+                        <span class="result-value" id="time-value" style="display: block; font-size: 36px; font-weight: 800; color: var(--color-accent);">960 horas</span>
+                    </div>
+                    <a href="https://wa.me/5519989590630" class="btn-primary" style="width: 100%;">
+                        Reivindicar esse Tempo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-stack" style="padding: 60px 0; border-bottom: 1px solid var(--card-border);">
+        <div class="container">
+            <div class="stack-header" style="text-align: center; margin-bottom: 40px;">
+                <p style="color: var(--text-secondary); font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 2px;">Expertise em tecnologias de ponta para automação</p>
+            </div>
+            <div class="stack-grid" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 50px; opacity: 0.6;">
+                <div class="tech-item" title="OpenAI GPT-4o" style="display: flex; align-items: center; gap: 10px; font-weight: 700;">
+                    <i data-lucide="brain"></i>
+                    <span>GPT-4o</span>
+                </div>
+                <div class="tech-item" title="Claude 3.5 Sonnet" style="display: flex; align-items: center; gap: 10px; font-weight: 700;">
+                    <i data-lucide="sparkles"></i>
+                    <span>Claude 3.5</span>
+                </div>
+                <div class="tech-item" title="Make.com / Zapier" style="display: flex; align-items: center; gap: 10px; font-weight: 700;">
+                    <i data-lucide="workflow"></i>
+                    <span>Make / Zapier</span>
+                </div>
+                <div class="tech-item" title="Python / LangChain" style="display: flex; align-items: center; gap: 10px; font-weight: 700;">
+                    <i data-lucide="code-2"></i>
+                    <span>Custom AI</span>
+                </div>
+                <div class="tech-item" title="WhatsApp Automation" style="display: flex; align-items: center; gap: 10px; font-weight: 700;">
+                    <i data-lucide="message-square"></i>
+                    <span>WA Agents</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Por que IA?</span>
+                <h2 class="section-title">A vantagem injusta para negócios modernos</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="brain-circuit"></i>
+                    </div>
+                    <h4>Decisões Baseadas em Dados</h4>
+                    <p>Agentes de IA analisam vastas quantidades de dados em segundos, oferecendo insights precisos que humanos levariam semanas para compilar.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="workflow"></i>
+                    </div>
+                    <h4>Workflows Sem Atrito</h4>
+                    <p>Integração perfeita entre as ferramentas que você já usa (CRMs, ERPs, Slack, WhatsApp), criando um ecossistema autossuficiente.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="scale"></i>
+                    </div>
+                    <h4>Escalabilidade Infinita</h4>
+                    <p>Cresça suas vendas e atendimento de forma exponencial sem precisar aumentar proporcionalmente sua equipe e custos fixos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process-section" style="padding: 100px 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">The VictorAI Method</span>
+                <h2 class="section-title">De 0 a Automatizado em 3 Sprints</h2>
+            </div>
+            
+            <div class="process-grid" >
+                <div class="process-item" style="text-align: center;">
+                    <div class="step-num" style="font-size: 80px; font-weight: 800; color: rgba(14, 165, 233, 0.1); margin-bottom: -40px;">01</div>
+                    <div class="process-card glass-card" style="padding: 30px; position: relative; z-index: 1;">
+                        <i data-lucide="search" style="color: var(--color-accent); margin-bottom: 20px;"></i>
+                        <h4 style="margin-bottom: 15px;">Audit Digital</h4>
+                        <p>Mapeamos cada clique e tarefa repetitiva da sua operação para encontrar os vazamentos de produtividade.</p>
+                    </div>
+                </div>
+                <div class="process-item" style="text-align: center;">
+                    <div class="step-num" style="font-size: 80px; font-weight: 800; color: rgba(99, 102, 241, 0.1); margin-bottom: -40px;">02</div>
+                    <div class="process-card glass-card" style="padding: 30px; position: relative; z-index: 1;">
+                        <i data-lucide="cpu" style="color: var(--color-indigo); margin-bottom: 20px;"></i>
+                        <h4 style="margin-bottom: 15px;">AI Architecture</h4>
+                        <p>Desenhamos e treinamos seus Agentes de IA customizados com o tom de voz e dados da sua empresa.</p>
+                    </div>
+                </div>
+                <div class="process-item" style="text-align: center;">
+                    <div class="step-num" style="font-size: 80px; font-weight: 800; color: rgba(14, 165, 233, 0.1); margin-bottom: -40px;">03</div>
+                    <div class="process-card glass-card" style="padding: 30px; position: relative; z-index: 1;">
+                        <i data-lucide="rocket" style="color: var(--color-accent); margin-bottom: 20px;"></i>
+                        <h4 style="margin-bottom: 15px;">Scale & Profit</h4>
+                        <p>Implementação live, monitoramento de performance e escala do que está gerando mais lucro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenciais" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Por que me contratar</span>
+                <h2 class="section-title">O que você leva além do código</h2>
+            </div>
+            <div class="features-grid diferenciais-grade">
 $diferenciais
-  </div>
-</section>
-<section class="quem-faz" aria-labelledby="t-quem">
-  <h2 id="t-quem">Quem faz</h2>
-  <p class="quem-faz-nome">$autor</p>
-  <div class="quem-faz-texto">$quem_faz</div>
-  <p class="quem-faz-acao">$cta_final</p>
-</section>
+            </div>
+        </div>
+    </section>
+
+    <section id="methodology" class="methodology-section">
+        <div class="container">
+            <div class="methodology-content glass-panel">
+                <div class="methodology-text">
+                    <h3 class="handwritten" style="color: white; font-size: 36px;">Como transformamos seu negócio</h3>
+                    <p>Meu processo é estratégico, focado em ROI e implementação cirúrgica. Sem promessas vazias, apenas tecnologia aplicada a resultados de negócios.</p>
+                    
+                    <ul class="steps-list">
+                        <li>
+                            <div class="step-icon">1</div>
+                            <div class="step-desc">
+                                <strong>Mapeamento Operacional</strong>
+                                <span>Auditoria completa para identificar os maiores gargalos e vazamentos de capital intelectual.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-icon">2</div>
+                            <div class="step-desc">
+                                <strong>Arquitetura AI</strong>
+                                <span>Desenho de fluxos de automação utilizando LLMs (Claude, GPT-4) e agentes especializados.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-icon">3</div>
+                            <div class="step-desc">
+                                <strong>Deploy & Treinamento</strong>
+                                <span>Implementação contínua e treinamento da sua equipe para governar os novos sistemas.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="methodology-visual">
+                    <div class="floating-element float-1">
+                        <i data-lucide="database"></i> System Audit
+                    </div>
+                    <div class="floating-element float-2">
+                        <i data-lucide="cpu"></i> AI Integration
+                    </div>
+                    <div class="floating-element float-3">
+                        <i data-lucide="line-chart"></i> Profit Scale
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quem-faz">
+        <div class="container">
+            <div class="quem-faz-painel glass-panel">
+                <span class="eyebrow">Quem faz</span>
+                <h2 class="section-title">$autor</h2>
+                <div class="quem-faz-texto">$quem_faz</div>
+                <p class="quem-faz-acao">$cta_final</p>
+            </div>
+        </div>
+    </section>
+
 $notas
+
+    <section class="cta-section">
+        <div class="bg-vector-lines"></div>
+        <div class="container cta-content">
+            <div class="cta-icon-top">
+                <i data-lucide="zap"></i>
+            </div>
+            <h3 class="handwritten">Sua empresa continua analógica?</h3>
+            <p>A janela de oportunidade para se tornar uma empresa 'AI-First' está se fechando. Vamos desenhar o futuro digital da sua operação hoje.</p>
+            <a href="https://wa.me/5519989590630" class="btn-whatsapp pulse-effect">
+                <i data-lucide="message-circle"></i>
+                Falar com Victor no WhatsApp
+            </a>
+            <p class="cta-guarantee">
+                <i data-lucide="shield"></i> Resposta em até 2 horas. Diagnóstico inicial gratuito.
+            </p>
+        </div>
+    </section>
