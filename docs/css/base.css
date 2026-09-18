@@ -1,0 +1,48 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font: 400 var(--t-texto) / 1.6 var(--familia);
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, p, ul, dl, dd, figure { margin: 0; }
+ul { padding: 0; list-style: none; }
+img, video { display: block; max-width: 100%; height: auto; }
+
+h1, h2, .grito {
+  font-stretch: 125%;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-wrap: balance;
+}
+h1 { font-size: var(--t-mega); }
+h2 { font-size: var(--t-titulo); }
+h3 { font-size: var(--t-sub); font-weight: 700; line-height: 1.2; }
+
+a { color: inherit; text-decoration-thickness: 0.08em; text-underline-offset: 0.18em; }
+a:focus-visible, .botao:focus-visible, video:focus-visible {
+  outline: 3px solid var(--sinal);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.pular {
+  position: absolute; left: 1rem; top: -4rem; z-index: 10;
+  padding: 0.75rem 1rem; background: var(--sinal); color: var(--noite); font-weight: 700;
+}
+.pular:focus { top: 1rem; }
+
+@keyframes subir { from { opacity: 0; transform: translateY(1.5rem); } }
+@keyframes abrir { from { opacity: 0; transform: scale(0.96) translateY(2rem); } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

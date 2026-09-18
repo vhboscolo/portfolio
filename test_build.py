@@ -201,6 +201,28 @@ class TesteCamadaDeVenda(unittest.TestCase):
             self.assertIn("Chamar no WhatsApp", pagina)
 
 
+class TesteContatoECapaVetorial(unittest.TestCase):
+    def test_site_proprio_e_opcional_no_contato(self):
+        raiz = montar()
+        caminho = raiz / "conteudo/site.toml"
+        caminho.write_text(caminho.read_text(encoding="utf-8").replace('site = "https://exemplo.com"\n', ""),
+                           encoding="utf-8")
+        build.construir(raiz)
+        home = (raiz / "docs/index.html").read_text(encoding="utf-8")
+        self.assertNotIn('href="https://exemplo.com"', home)
+        self.assertIn("mailto:a@exemplo.com", home)
+
+    def test_capa_em_svg_entra_no_site_e_no_readme(self):
+        raiz = montar()
+        (raiz / "docs/img/beta/diagrama.svg").write_text('<svg viewBox="0 0 1200 700"></svg>', encoding="utf-8")
+        caminho = raiz / "conteudo/beta.toml"
+        caminho.write_text(caminho.read_text(encoding="utf-8").replace(
+            'capa = "img/beta/capa"', 'capa = "img/beta/diagrama.svg"'), encoding="utf-8")
+        build.construir(raiz)
+        self.assertIn('src="img/beta/diagrama.svg"', (raiz / "docs/index.html").read_text(encoding="utf-8"))
+        self.assertIn("(docs/img/beta/diagrama.svg)", (raiz / "README.md").read_text(encoding="utf-8"))
+
+
 class TesteDimensoes(unittest.TestCase):
     def escrever(self, dados: bytes) -> Path:
         caminho = Path(tempfile.mkdtemp()) / "x.webp"

@@ -23,8 +23,8 @@ CAMPOS_SITE = (
     "numeros", "diferenciais",
 )
 CAMPOS_CONTATO = (
-    "whatsapp", "whatsapp_exibir", "whatsapp_texto", "email", "site", "instagram", "linkedin",
-)
+    "whatsapp", "whatsapp_exibir", "whatsapp_texto", "email", "instagram", "linkedin",
+)  # "site" é opcional: link quebrado em peça de venda é pior que link ausente
 CAMPOS_SISTEMA = (
     "titulo", "chamada", "setor", "status", "resumo", "ganho", "capa", "capa_alt",
     "problema", "faz", "provas", "stack", "telas",
@@ -135,6 +135,14 @@ def fontes_da_imagem(docs: Path, base: str, origem: str) -> list[tuple[str, int,
     return achadas
 
 
+def caminho_para_readme(docs: Path, base: str, origem: str) -> str:
+    if base.endswith(".svg"):
+        if not (docs / base).is_file():
+            raise ErroDeConteudo(f"{origem}: imagem '{base}' não existe em docs/")
+        return base
+    return fontes_da_imagem(docs, base, origem)[0][0]
+
+
 def e(texto: object) -> str:
     return html.escape(str(texto), quote=True)
 
@@ -198,7 +206,7 @@ def links_de_contato(contato: dict) -> list[tuple[str, str]]:
     return [
         (f'WhatsApp {contato["whatsapp_exibir"]}', link_whatsapp(contato, contato["whatsapp_texto"])),
         (contato["email"], f'mailto:{contato["email"]}'),
-        (contato["site"].removeprefix("https://"), contato["site"]),
+        *([(contato["site"].removeprefix("https://"), contato["site"])] if contato.get("site") else []),
         (f'Instagram @{contato["instagram"]}', f'https://www.instagram.com/{contato["instagram"]}/'),
         (f'LinkedIn /in/{contato["linkedin"]}', f'https://www.linkedin.com/in/{contato["linkedin"]}/'),
     ]
@@ -217,7 +225,6 @@ def html_cartoes(docs: Path, sistemas: list[dict]) -> str:
                          sizes=SIZES_CARTAO, prioridade=numero == 1)
         cartoes.append(
             f'<article class="cartao">\n'
-            f'  <p class="indice" aria-hidden="true">{numero:02d}</p>\n'
             f'  <div class="cartao-imagem">{imagem}</div>\n'
             f'  <h2><a href="{e(sistema["slug"])}/">{e(sistema["titulo"])}</a></h2>\n'
             f'  <p class="chamada">{e(sistema["chamada"])}</p>\n'
@@ -240,7 +247,7 @@ def html_notas(docs: Path, notas: list[dict]) -> str:
         blocos.append(f'<article class="nota">{imagem}<h3>{e(nota["titulo"])}</h3>'
                       f'{paragrafos(nota["texto"])}</article>')
     return ('<section class="notas" aria-labelledby="t-notas">\n<h2 id="t-notas">Também fizemos</h2>\n'
-            + "\n".join(blocos) + "\n</section>")
+            '<div class="nota-grade">\n' + "\n".join(blocos) + "\n</div>\n</section>")
 
 
 def html_telas(docs: Path, sistema: dict, prefixo: str) -> str:
@@ -363,7 +370,7 @@ def readme(raiz: Path, site: dict, sistemas: list[dict]) -> str:
               f'**[Abrir o portfólio completo →]({site["base_url"]})**', ""]
     for numero, sistema in enumerate(sistemas, start=1):
         url = f'{site["base_url"]}{sistema["slug"]}/'
-        imagem = fontes_da_imagem(docs, sistema["capa"], f'{sistema["slug"]}.toml')[0][0]
+        imagem = caminho_para_readme(docs, sistema["capa"], f'{sistema["slug"]}.toml')
         linhas += ["---", "", f'## {numero:02d} · {sistema["titulo"]}', "",
                    f'**{sistema["chamada"]}**', "",
                    f'[![{sistema["capa_alt"]}](docs/{imagem})]({url})', "",
