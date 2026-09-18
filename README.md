@@ -32,7 +32,19 @@ Três pontas na mesma plataforma: a paciente, que agenda, preenche a ficha e man
 
 ---
 
-## 03 · RESTAURANT OS
+## 03 · CRM de vendas com prospecção por IA
+
+**A distribuidora acha o cliente no Google Maps, a IA qualifica e o vendedor fecha pelo WhatsApp**
+
+[![Dashboard da CRM com receita realizada, valor em estoque, pipeline de leads e validades críticas](docs/img/crm-solen/dashboard-p.webp)](https://vhboscolo.github.io/portfolio/crm-solen/)
+
+Sistema comercial de uma distribuidora de chocolates importados. Prospecta supermercados e empórios no Google Maps, qualifica os leads com inteligência artificial, dispara sequências de follow-up no WhatsApp, monta a proposta, controla o estoque pela validade e mostra ao dono o que fazer hoje.
+
+`Distribuição e vendas B2B` · `No ar, em uso` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/crm-solen/)
+
+---
+
+## 04 · RESTAURANT OS
 
 **O bar continua vendendo com a internet caída**
 
@@ -44,7 +56,7 @@ Salão, balcão, cozinha, delivery, estoque, ficha técnica e financeiro num sis
 
 ---
 
-## 04 · Jewelry OS
+## 05 · Jewelry OS
 
 **A live termina com pedido, estoque, cobrança e etiqueta prontos**
 
@@ -56,7 +68,7 @@ Live, balcão, loja online, atacado e consignação sobre o mesmo estoque, o mes
 
 ---
 
-## 05 · COBRANÇA OS
+## 06 · COBRANÇA OS
 
 **Quanto está na rua, quanto apodreceu e se a garantia cobre**
 
@@ -68,7 +80,7 @@ Sistema para casa de crédito que empresta com bem em custódia. Reparte cada pa
 
 ---
 
-## 06 · Catálogos de importação para lojistas
+## 07 · Catálogos de importação para lojistas
 
 **A lojista escolhe a peça de fábrica e vê quanto paga e quando**
 
@@ -80,7 +92,7 @@ Dois sistemas para vender peça importada no atacado. Um transforma a planilha d
 
 ---
 
-## 07 · Radar de leilões
+## 08 · Radar de leilões
 
 **Onde olhar primeiro nos leilões da Receita Federal**
 
@@ -92,7 +104,7 @@ Varre os leilões abertos, estima o custo real de cada lote com imposto e frete,
 
 ---
 
-## 08 · Agente autônomo auditável
+## 09 · Agente autônomo auditável
 
 **Uma IA que trabalha sozinha e deixa rastro de tudo que faz**
 

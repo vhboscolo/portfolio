@@ -1,0 +1,82 @@
+titulo = "CRM de vendas com prospecção por IA"
+chamada = "A distribuidora acha o cliente no Google Maps, a IA qualifica e o vendedor fecha pelo WhatsApp"
+setor = "Distribuição e vendas B2B"
+status = "No ar, em uso"
+resumo = "Sistema comercial de uma distribuidora de chocolates importados. Prospecta supermercados e empórios no Google Maps, qualifica os leads com inteligência artificial, dispara sequências de follow-up no WhatsApp, monta a proposta, controla o estoque pela validade e mostra ao dono o que fazer hoje."
+ganho = """
+O vendedor abre o dia sabendo quem cobrar, quem está esfriando e qual lote vence primeiro. Não existe mais lead esquecido: a sequência de follow-up avisa na hora certa, com a mensagem pronta.
+
+E a prospecção deixa de ser garimpo. Escolha o tipo de negócio e a cidade, e a lista chega pontuada pela IA, com a primeira mensagem já escrita.
+"""
+capa = "img/crm-solen/dashboard"
+capa_alt = "Dashboard da CRM com receita realizada, valor em estoque, pipeline de leads e validades críticas"
+problema = """
+Distribuidora pequena vende por WhatsApp e controla cliente em planilha. O lead que não respondeu some da memória, a proposta sai com desconto diferente a cada vendedor e o estoque vence na prateleira porque ninguém olhou a validade a tempo.
+
+Prospectar é pior: horas no Google procurando mercado por mercado, sem saber qual vale a ligação.
+"""
+faz = [
+  "Agenda do dia com o que é urgente, o que pede atenção e o que já fechou.",
+  "Prospecção no Google Maps por tipo de negócio e cidade, importando direto como lead.",
+  "Agente de IA que pontua cada lead e escreve a primeira mensagem.",
+  "Sequências de follow-up com dias e canais definidos, aplicadas a um lead com um clique.",
+  "Pipeline por canal: venda direta, atacarejo, marketplace e representante.",
+  "Propostas em PDF com política de desconto por volume e link que avisa quando o cliente abriu.",
+  "Estoque com alerta de validade e tabela de preço por canal.",
+  "Catálogo público para compartilhar, campanhas e rotas otimizadas para visita.",
+]
+stack = "React 19, TypeScript e Vite 8, com Tailwind 4, Supabase (Postgres) e publicação na Vercel. Inteligência artificial para qualificar leads e montar o briefing do dia."
+
+[[provas]]
+numero = "14"
+rotulo = "telas, da agenda do dia às sequências de follow-up"
+
+[[provas]]
+numero = "4"
+rotulo = "canais de venda no mesmo pipeline"
+
+[[provas]]
+numero = "9"
+rotulo = "tabelas: lead, pedido, estoque, campanha e o histórico de cada contato"
+
+[[decisoes]]
+titulo = "O estoque baixa sozinho quando o pedido é pago"
+texto = "Ninguém precisa lembrar de atualizar a planilha. A mudança de status do pedido é o que move o estoque."
+
+[[decisoes]]
+titulo = "Desconto é regra, não negociação de corredor"
+texto = "A política por volume está no sistema: até cinco mil, dez por cento; e assim por diante. Todo vendedor oferece a mesma condição."
+
+[[decisoes]]
+titulo = "Validade tem cor"
+texto = "Faltando trinta dias, o produto fica amarelo; faltando quinze, vermelho, e entra na agenda do dia. O lote que vence primeiro sai primeiro."
+
+[[telas]]
+arquivo = "img/crm-solen/estoque"
+alt = "Estoque com cada produto, unidades, valor total e alerta de validade"
+legenda = "Estoque com validade: o que vence primeiro aparece em vermelho."
+
+[[telas]]
+arquivo = "img/crm-solen/catalogo"
+alt = "Catálogo de produtos com fotos, preço e botões para compartilhar"
+legenda = "Catálogo público com foto e preço, compartilhado por link."
+
+[[telas]]
+arquivo = "img/crm-solen/pipeline"
+alt = "Pipeline de pedidos por etapa e filtros por canal de venda"
+legenda = "Pipeline por canal, da proposta à entrega."
+
+[[telas]]
+arquivo = "img/crm-solen/sequencias"
+alt = "Sequências de follow-up com os passos de cada dia"
+legenda = "Sequências de follow-up: o sistema lembra de cada contato."
+
+[[telas]]
+arquivo = "img/crm-solen/campanhas"
+alt = "Campanhas e modelos de mensagem para WhatsApp"
+legenda = "Campanhas com modelos de mensagem prontos para o WhatsApp."
+
+[[telas]]
+arquivo = "img/crm-solen/relatorios"
+alt = "Relatórios com receita do mês, taxa de conversão e funil"
+legenda = "Relatórios: receita, conversão e funil do mês."

@@ -15,20 +15,20 @@ descricao = "Sistemas sob medida para bar, joalheria, clínica, crédito e impor
 base_url = "https://vhboscolo.github.io/portfolio/"
 fontes_css = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap"
 og_imagem = "img/og.jpg"
-ordem = ["gma", "clinicas", "restaurant-os", "jewelry-os", "cobranca-os", "catalogos-importacao", "radar-leiloes", "agente-auditavel"]
+ordem = ["gma", "clinicas", "crm-solen", "restaurant-os", "jewelry-os", "cobranca-os", "catalogos-importacao", "radar-leiloes", "agente-auditavel"]
 
 [reel]
 arquivo = "video/reel.mp4"
 poster = "img/reel"
-alt = "Sequência de telas dos sistemas: certificação de joias, agenda de clínica, salão de bar, painel de joalheria, ficha de saúde no celular, carteira de crédito, atlas do corpo em 3D e catálogo de atacado"
+alt = "Sequência de telas dos sistemas: certificação de joias, agenda de clínica, painel de vendas, salão de bar, painel de joalheria, ficha de saúde no celular, carteira de crédito e atlas do corpo em 3D"
 
 [[numeros]]
-numero = "8"
+numero = "9"
 rotulo = "sistemas nesta página, todos com tela para você ver"
 
 [[numeros]]
-numero = "7"
-rotulo = "setores: bar, joias, certificação, saúde, crédito, importação e leilões"
+numero = "8"
+rotulo = "setores: certificação, saúde, distribuição, bar, joias, crédito, importação e leilões"
 
 [[numeros]]
 numero = "3"
