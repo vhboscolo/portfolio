@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">Arquitetura do agente autônomo auditável</title>
+<desc id="d">As fontes de informação passam por um portão de validação antes de chegar ao orquestrador. Toda ação vai para um registro que só cresce. Ações sensíveis esperam aprovação humana por mensagem. Um auditor independente, em outro modelo, revisa o orquestrador duas vezes por dia. Um teto de gasto desliga tudo.</desc>
+<style>
+  text { font-family: Archivo, "Helvetica Neue", Arial, sans-serif; }
+  .t { font-size: 30px; font-weight: 800; }
+  .s { font-size: 22px; font-weight: 500; }
+  .p { font-size: 20px; font-weight: 500; }
+  .seta { stroke: #fff; stroke-width: 4; fill: none; marker-end: url(#ponta); }
+  .seta-sinal { stroke: #ffd23f; stroke-width: 4; fill: none; stroke-dasharray: 10 8; marker-end: url(#ponta-sinal); }
+</style>
+<defs>
+  <marker id="ponta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#fff"/></marker>
+  <marker id="ponta-sinal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#ffd23f"/></marker>
+</defs>
+<rect width="1600" height="900" fill="#1b2acf"/>
+
+<!-- fontes -->
+<text x="70" y="96" class="s" fill="#ffffffd1">O que entra</text>
+<g fill="#0a1046">
+  <rect x="70" y="120" width="260" height="76" rx="12"/><rect x="70" y="212" width="260" height="76" rx="12"/>
+  <rect x="70" y="304" width="260" height="76" rx="12"/><rect x="70" y="396" width="260" height="76" rx="12"/>
+</g>
+<g class="s" fill="#fff">
+  <text x="98" y="166">E-mail</text><text x="98" y="258">WhatsApp</text>
+  <text x="98" y="350">Reuniões transcritas</text><text x="98" y="442">Notion</text>
+</g>
+
+<!-- portão -->
+<path class="seta" d="M330 296 H418"/>
+<rect x="424" y="196" width="230" height="200" rx="14" fill="#fff"/>
+<text x="539" y="278" text-anchor="middle" class="t" fill="#10142b">Portão</text>
+<text x="539" y="316" text-anchor="middle" class="p" fill="#4a5070">só entra o que passa</text>
+<text x="539" y="344" text-anchor="middle" class="p" fill="#4a5070">na validação</text>
+
+<!-- orquestrador -->
+<path class="seta" d="M654 296 H742"/>
+<rect x="748" y="156" width="340" height="280" rx="18" fill="#ffd23f"/>
+<text x="918" y="266" text-anchor="middle" class="t" fill="#0a1046">Orquestrador</text>
+<text x="918" y="308" text-anchor="middle" class="p" fill="#0a1046">observa, organiza e age</text>
+<text x="918" y="336" text-anchor="middle" class="p" fill="#0a1046">dentro do teto de gasto</text>
+
+<!-- ações -->
+<path class="seta" d="M1088 236 H1196"/>
+<rect x="1202" y="156" width="330" height="130" rx="14" fill="#0a1046"/>
+<text x="1367" y="214" text-anchor="middle" class="s" fill="#fff">Ação comum</text>
+<text x="1367" y="246" text-anchor="middle" class="p" fill="#ffffffd1">executa e registra</text>
+<path class="seta" d="M1088 376 H1196"/>
+<rect x="1202" y="306" width="330" height="150" rx="14" fill="#0a1046"/>
+<text x="1367" y="362" text-anchor="middle" class="s" fill="#fff">Ação sensível</text>
+<text x="1367" y="394" text-anchor="middle" class="p" fill="#ffffffd1">espera um sim humano</text>
+<text x="1367" y="422" text-anchor="middle" class="p" fill="#ffffffd1">por mensagem</text>
+
+<!-- registro -->
+<path class="seta" d="M918 436 V564"/>
+<rect x="424" y="570" width="1108" height="110" rx="14" fill="#fff"/>
+<text x="460" y="620" class="t" fill="#10142b">Registro que só cresce</text>
+<text x="460" y="654" class="p" fill="#4a5070">toda ação vira uma linha com quem, quando, o quê e por quê. Nada é apagado nem reescrito.</text>
+
+<!-- auditor -->
+<rect x="424" y="740" width="520" height="110" rx="14" fill="#0a1046" stroke="#ffd23f" stroke-width="4"/>
+<text x="460" y="790" class="t" fill="#ffd23f">Auditor independente</text>
+<text x="460" y="824" class="p" fill="#ffffffd1">outro modelo de IA, duas vezes por dia</text>
+<path class="seta-sinal" d="M684 740 V686"/>
+<path class="seta-sinal" d="M944 795 H1010 Q1040 795 1040 765 V442"/>
+<text x="1062" y="800" class="p" fill="#ffffffd1">lê o registro, confere o orquestrador</text>
+<text x="1062" y="828" class="p" fill="#ffffffd1">e desfaz sozinho só o que é grave e reversível</text>
+</svg>

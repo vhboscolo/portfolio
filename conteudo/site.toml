@@ -1,0 +1,73 @@
+assinatura = "VH BRANDS"
+subtitulo = "Sistemas sob medida"
+autor = "Victor Boscolo"
+promessa = "Eu construo o sistema que roda o seu negócio."
+intro = """
+Bar, joalheria, clínica, casa de crédito, importadora. Cada sistema desta página nasceu de uma operação de verdade, com as regras dela, e foi testado antes de chegar na mão de quem usa.
+"""
+cta_rotulo = "Chamar no WhatsApp"
+quem_faz = """
+Desenho, construo e coloco no ar sistemas para negócios que não cabem em software de prateleira. Começo pela sua operação, não pela tecnologia: como o pedido entra, onde o dinheiro some, o que hoje mora em planilha e caderno.
+
+Se o seu negócio tem uma regra que nenhum sistema pronto respeita, é por aí que a conversa começa.
+"""
+descricao = "Sistemas sob medida para bar, joalheria, clínica, crédito e importação. Veja as telas, o que cada um resolve e como foi construído."
+base_url = "https://vhboscolo.github.io/portfolio/"
+fontes_css = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap"
+og_imagem = "img/og.jpg"
+ordem = ["restaurant-os", "jewelry-os", "gma", "clinicas", "cobranca-os", "catalogos-importacao", "radar-leiloes", "agente-auditavel"]
+
+[reel]
+arquivo = "video/reel.mp4"
+poster = "img/reel"
+alt = "Sequência de telas dos sistemas: salão de bar, painel de joalheria, certificação de joias, carteira de crédito, atlas do corpo em 3D e catálogo de atacado"
+
+[[numeros]]
+numero = "8"
+rotulo = "sistemas nesta página, todos com tela para você ver"
+
+[[numeros]]
+numero = "7"
+rotulo = "setores: bar, joias, certificação, saúde, crédito, importação e leilões"
+
+[[numeros]]
+numero = "4"
+rotulo = "com operação de verdade rodando hoje"
+
+[[numeros]]
+numero = "4.300+"
+rotulo = "testes automáticos somados, rodando a cada mudança"
+
+[[diferenciais]]
+titulo = "Você fala com quem constrói"
+texto = "Sem atendente e sem repasse. Quem ouve o seu problema é quem desenha e entrega o sistema."
+
+[[diferenciais]]
+titulo = "Feito para a sua regra, não para a média"
+texto = "Comanda por pessoa no bar. Garantia calculada pelo valor de liquidação, não pelo de vitrine. Laudo que só sai se for conclusivo. A regra do seu negócio vira regra do sistema."
+
+[[diferenciais]]
+titulo = "O que quebraria na sua mão quebra antes na minha"
+texto = "Cada sistema carrega centenas ou milhares de testes automáticos. Eles rodam sozinhos a cada mudança, antes de qualquer coisa chegar em você."
+
+[[diferenciais]]
+titulo = "Seu dado protegido desde a primeira linha"
+texto = "Acesso por papel, rastro de quem fez o quê, cópia de segurança cifrada. No prontuário, isso foi desenhado sob a LGPD antes da primeira tela existir."
+
+[contato]
+whatsapp = "5519989590630"
+whatsapp_exibir = "(19) 98959-0630"
+whatsapp_texto = "Oi, Victor. Vi o portfólio de sistemas e quero conversar."
+email = "vhboscolo@gmail.com"
+instagram = "vhboscolo"
+linkedin = "vhboscolo"
+
+[[notas]]
+titulo = "Identidade visual gerada por código"
+texto = "Marca completa da D'Boscolli, confeitaria artesanal: onze versões do logotipo, manual e etiquetas de produto saem de scripts. Mudou a cor ou o lote, tudo é regerado em segundos, sem redesenhar nada à mão."
+imagem = "img/notas/dboscolli.svg"
+imagem_alt = "Logotipo circular da D'Boscolli, Salgados e Doces, em marrom sobre creme"
+
+[[notas]]
+titulo = "Programa de formação para quem lidera código escrito por IA"
+texto = "Vinte e duas semanas desenhadas a partir de pesquisa sobre como adulto aprende a programar: revisão espaçada antes de conteúdo novo, exame feito por quem não deu a aula, e o código que já está em produção como bancada de leitura."

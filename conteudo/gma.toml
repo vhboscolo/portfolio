@@ -1,0 +1,65 @@
+titulo = "GMA"
+chamada = "O laudo é do laboratório, e o cliente confere pelo QR"
+setor = "Certificação de joias e gemas"
+status = "No ar"
+link = "https://gmassay.com"
+link_rotulo = "Abrir gmassay.com"
+resumo = "Plataforma de certificação: o laboratório emite o laudo, a peça sai com um cartão numerado e qualquer pessoa confere a autenticidade apontando o celular para o código. Funciona como aplicativo instalável, em três idiomas."
+ganho = """
+A joalheria deixa de ser a única fiadora da própria palavra. Quem atesta é o laboratório, e o comprador valida sozinho, na hora, sem cadastro.
+
+De brinde, a marca ganha um dado que antes dependia do relatório da loja: cada leitura do código é sinal de que a peça foi vendida, com lugar e data.
+"""
+capa = "img/gma/home"
+capa_alt = "Página inicial da GMA com o campo para consultar um certificado e o cartão dourado numerado"
+problema = """
+Quando uma joalheria diz que o ouro é 18 quilates e a pedra é natural, quem garante é ela mesma. Do outro lado do balcão, ninguém tem como conferir.
+
+A GMA separa quem vende de quem atesta. O laudo só vira certificado se for conclusivo, o número do cartão tem dígito verificador, e a cadeia de posse da peça fica registrada até o dono atual.
+"""
+faz = [
+  "Consulta pública do laudo pelo número do cartão ou pelo QR, sem cadastro.",
+  "Emissão de certificado com rascunho salvo mesmo sem internet.",
+  "Credenciamento de joalherias só por convite, com fila de análise.",
+  "Painel da marca com inteligência de leitura: onde e quando cada peça foi conferida.",
+  "Garantia, clientes e transferência de posse da peça.",
+  "Esteira de produção, folha de gravação a laser e etiquetas.",
+  "Aplicativo instalável, em português, inglês e francês.",
+]
+stack = "React 18, TypeScript e Vite, com Supabase (Postgres) e publicação na Vercel. Aplicativo instalável com funcionamento offline."
+
+[[provas]]
+numero = "146"
+rotulo = "testes automáticos"
+
+[[provas]]
+numero = "83"
+rotulo = "regras de acesso dentro do banco: cada loja só enxerga o que é dela"
+
+[[provas]]
+numero = "60"
+rotulo = "migrações de banco, todas reaplicadas do zero a cada entrega"
+
+[[provas]]
+numero = "4"
+rotulo = "conferências automáticas antes e depois de publicar"
+
+[[decisoes]]
+titulo = "A permissão mora no banco, não na tela"
+texto = "Mesmo que alguém burle a interface, o banco recusa: cada linha sabe a que organização pertence. É a única forma de isolar lojas de verdade."
+
+[[decisoes]]
+titulo = "Se falta credencial, o teste reprova"
+texto = "Conferência que pula em silêncio e aparece verde é pior que não ter conferência. Aqui, o que não pôde ser verificado conta como falha."
+
+[[telas]]
+arquivo = "img/gma/credenciamento"
+alt = "Página de credenciamento da GMA com formulário para a joalheria"
+legenda = "Credenciamento de joalherias: entrada só por análise."
+demo = false
+
+[[telas]]
+arquivo = "img/gma/celular"
+alt = "Página inicial da GMA na largura de um celular"
+legenda = "No celular, onde a consulta realmente acontece."
+demo = false

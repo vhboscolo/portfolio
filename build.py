@@ -226,11 +226,13 @@ def html_cartoes(docs: Path, sistemas: list[dict]) -> str:
         cartoes.append(
             f'<article class="cartao">\n'
             f'  <div class="cartao-imagem">{imagem}</div>\n'
-            f'  <h2><a href="{e(sistema["slug"])}/">{e(sistema["titulo"])}</a></h2>\n'
-            f'  <p class="chamada">{e(sistema["chamada"])}</p>\n'
-            f'  <p class="resumo">{e(sistema["resumo"])}</p>\n'
-            f'  <p class="meta"><span>{e(sistema["setor"])}</span> '
+            f'  <div class="cartao-texto">\n'
+            f'    <h2><a href="{e(sistema["slug"])}/">{e(sistema["titulo"])}</a></h2>\n'
+            f'    <p class="chamada">{e(sistema["chamada"])}</p>\n'
+            f'    <p class="resumo">{e(sistema["resumo"])}</p>\n'
+            f'    <p class="meta"><span>{e(sistema["setor"])}</span> '
             f'<span class="status">{e(sistema["status"])}</span></p>\n'
+            f'  </div>\n'
             f'</article>')
     return "\n".join(cartoes)
 

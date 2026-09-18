@@ -1,0 +1,84 @@
+titulo = "Operação digital de uma rede de clínicas"
+chamada = "Site, atlas do corpo em 3D, calculadora clínica e prontuário sob LGPD"
+setor = "Saúde"
+status = "Site no ar, prontuário em construção"
+link = "https://serfatyclinicas.com.br/atlas/"
+link_rotulo = "Abrir o atlas 3D no site da Serfaty Clínicas"
+resumo = "Um caso só, quatro entregas: o site institucional da Serfaty Clínicas, um atlas anatômico navegável, uma calculadora de risco cardiovascular conferida contra 160 casos de referência e um prontuário eletrônico desenhado sob a LGPD desde a primeira linha."
+ganho = """
+A clínica para de ter um site que só lista especialidades e passa a oferecer duas ferramentas que o paciente usa de verdade. A autoridade médica vira motivo para marcar consulta.
+
+No prontuário, a direção ganha o que sistema de prateleira não entrega: saber quem abriu qual ficha, por quê, e poder provar isso numa auditoria.
+"""
+capa = "img/clinicas/atlas"
+capa_alt = "Atlas anatômico em 3D no site da clínica, com órgãos destacados e o efeito de cada nutriente"
+problema = """
+Clínica com décadas de história costuma ter um site que não converte essa história em consulta, e um prontuário de terceiro que cobra por usuário e trata dado de paciente como campo de texto.
+
+Dado de saúde é o mais sensível que existe. Decidir acesso só pelo cargo, como quase todo sistema faz, é exatamente o que a lei não aceita.
+"""
+faz = [
+  "Site institucional rápido, com páginas por especialidade, unidade e artigo.",
+  "Atlas do corpo em 3D com oito sistemas, anotações e nomes em português.",
+  "Calculadora de risco cardiovascular que roda inteira no navegador: nenhum dado do paciente sai do aparelho.",
+  "Prontuário em que ninguém lê ficha por ter cargo: precisa de vínculo de atendimento ativo com aquele paciente.",
+  "Receita que confere alergia antes de deixar assinar, a partir de catálogo de substâncias.",
+  "Leitura preliminar de exame por IA, que só vale depois de validada por quem assina.",
+  "Portal do paciente: conta própria, ficha de saúde, exames, remarcação.",
+  "Registro de cada acesso, encadeado de forma que ninguém consegue reescrever.",
+]
+stack = "Site em Astro 7 com React e three.js. Prontuário em React 19 com componentes de servidor, banco SQLite com Drizzle, rodando em Node. Aplicativo do paciente instalável."
+
+[[provas]]
+numero = "1.105"
+rotulo = "testes automáticos no prontuário"
+
+[[provas]]
+numero = "121"
+rotulo = "gatilhos no banco guardando regras que a aplicação não consegue burlar"
+
+[[provas]]
+numero = "160"
+rotulo = "casos de referência conferem a calculadora de risco"
+
+[[provas]]
+numero = "8"
+rotulo = "decisões de arquitetura registradas por escrito"
+
+[[decisoes]]
+titulo = "A diretora recebe recusa ao abrir um prontuário"
+texto = "E está certo. Ela tem o cargo, mas não tem vínculo de atendimento com aquele paciente. Acesso emergencial existe, exige justificativa escrita e fica em destaque na auditoria."
+
+[[decisoes]]
+titulo = "O teste passava e o número saía errado"
+texto = "Na calculadora, os dois casos oficiais tinham valores que zeravam um termo da equação, e o erro ficava escondido. A matriz de 160 casos existe para que um termo zerado nunca mais esconda nada."
+
+[[decisoes]]
+titulo = "Só dados de demonstração até a liberação"
+texto = "O servidor recusa CPF verdadeiro e e-mail de domínio real. O prontuário ainda não está liberado para uso com pacientes, e o próprio sistema garante isso."
+
+[[telas]]
+arquivo = "img/clinicas/calculadora"
+alt = "Calculadora de risco cardiovascular com controles de exames e o resultado em dez e trinta anos"
+legenda = "Calculadora de risco: o resultado aparece sozinho, sem enviar nada."
+demo = false
+
+[[telas]]
+arquivo = "img/clinicas/prontuario-exames"
+alt = "Prontuário com a ficha de saúde respondida pelo paciente e a leitura preliminar de um exame de sangue"
+legenda = "Prontuário: a leitura do exame chega marcada como preliminar até a médica validar."
+
+[[telas]]
+arquivo = "img/clinicas/prontuario-receita"
+alt = "Tela de nova receita com medicamento escolhido de catálogo"
+legenda = "Receita a partir de catálogo de substâncias, com conferência de alergia."
+
+[[telas]]
+arquivo = "img/clinicas/prontuario-alergia"
+alt = "Correção de um registro de alergia com campo de justificativa"
+legenda = "Corrigir não apaga: a versão anterior permanece no histórico."
+
+[[telas]]
+arquivo = "img/clinicas/prontuario-sessoes"
+alt = "Tela de sessões abertas com opção de encerrar as outras"
+legenda = "Estação esquecida aberta é risco: cada pessoa vê e encerra as próprias sessões."

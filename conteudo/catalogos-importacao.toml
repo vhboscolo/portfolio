@@ -1,0 +1,65 @@
+titulo = "Catálogos de importação para lojistas"
+chamada = "A lojista escolhe a peça de fábrica e vê quanto paga e quando"
+setor = "Importação e atacado de joias"
+status = "Dois catálogos no ar"
+link = "https://esmeralda.victorboscolo.com.br"
+link_rotulo = "Abrir o catálogo de atacado que está no ar"
+resumo = "Dois sistemas para vender peça importada no atacado. Um transforma a planilha da fábrica em catálogo técnico com foto tratada. O outro deixa a lojista montar o pedido vendo o preço de fábrica, a taxa de intermediação em linha separada e o sinal que vai pagar."
+ganho = """
+A planilha ilegível da fábrica vira vitrine em horas, não em dias. Entrou cotação nova, o catálogo é regerado.
+
+Quem intermedeia para de perder cliente para a fábrica: o nome do fornecedor nunca chega ao navegador, e existe teste automático que barra a publicação se chegar.
+"""
+capa = "img/catalogos-importacao/atacado"
+capa_alt = "Abertura do catálogo de atacado: Esmeralda sobre Prata 925, com brincos de gota em destaque"
+problema = """
+Quem importa joia não sabe o preço real, descobre tarde que paga trinta por cento de sinal antes da produção e, quando descobre quem é a fábrica, passa a comprar direto.
+
+Do outro lado, a cotação chega como planilha com fotos embutidas e legenda queimada em cima da peça. Transformar aquilo em algo que um comprador consiga decidir olhando é trabalho manual, repetido a cada cotação.
+"""
+faz = [
+  "Lê a planilha ou o PDF da fábrica e extrai fotos, peso, medidas e preço de cada linha.",
+  "Limpa a legenda queimada na foto e gera a versão com a pedra do cliente.",
+  "Separa na tela o que a fábrica cotou do que é estimativa, peça por peça.",
+  "Catálogo privado por link: vazou, dá para saber de quem e revogar só aquele.",
+  "Pedido com preço de fábrica, taxa de intermediação destacada e sinal explícito.",
+  "Folhas de impressão diferentes para o cliente e para a fábrica.",
+  "Adicionar fábrica nova é escrever um perfil, não um programa.",
+]
+stack = "Next.js 15, React 19 e TypeScript, com validação em Zod e testes em Vitest. Leitura de cotações em Python."
+
+[[provas]]
+numero = "974"
+rotulo = "itens no catálogo de importação"
+
+[[provas]]
+numero = "62"
+rotulo = "testes cobrindo preço, anonimato do fornecedor e leitura de cotação"
+
+[[provas]]
+numero = "3"
+rotulo = "conferências contra vazamento de fornecedor antes de cada publicação"
+
+[[decisoes]]
+titulo = "O sinal sai do preço de fábrica, sem a taxa dentro"
+texto = "Sinal é dinheiro da fábrica, taxa é de quem intermedeia. Somar os dois e tirar trinta por cento inventa um fluxo de caixa que não existe. Está fixado em teste."
+
+[[decisoes]]
+titulo = "O teste de anonimato nasceu de um vazamento"
+texto = "Uma vez, o nome de um arquivo entregou o contato da fábrica. Hoje um teste lê a lista privada de nomes e reprova qualquer página em que um deles apareça."
+
+[[decisoes]]
+titulo = "Preço que a fábrica não deu não aparece"
+texto = "Se a cotação trouxe só o metal, a peça fica sob consulta. Publicar um número deduzido seria prometer o que ninguém prometeu."
+
+[[telas]]
+arquivo = "img/catalogos-importacao/atacado-grade"
+alt = "Grade do catálogo de atacado com anéis, pingentes e pulseiras de prata com esmeralda"
+legenda = "Catálogo de atacado: foto tratada, medida da pedra e peso do metal em cada peça."
+demo = false
+
+[[telas]]
+arquivo = "img/catalogos-importacao/vitrine"
+alt = "Catálogo de importação com filtros por categoria e pedra e preço de fábrica por peça"
+legenda = "Catálogo de importação: preço de fábrica por peça, pedido montado pela própria lojista."
+demo = false

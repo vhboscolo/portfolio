@@ -1,0 +1,82 @@
+titulo = "Jewelry OS"
+chamada = "A live termina com pedido, estoque, cobrança e etiqueta prontos"
+setor = "Joias e semijoias"
+status = "Em teste com loja-modelo"
+resumo = "Live, balcão, loja online, atacado e consignação sobre o mesmo estoque, o mesmo cliente e o mesmo resultado. A tela inicial não mostra o que aconteceu: mostra o que fazer agora."
+ganho = """
+A lojista que vende ao vivo para de digitar a mesma venda em cinco lugares. O pedido da live já baixa o estoque, entra na fila de cobrança e aparece na expedição.
+
+De manhã, a primeira tela responde duas perguntas: quem cobrar hoje, em ordem de valor, e quantos pedidos pagos estão esperando despacho.
+"""
+capa = "img/jewelry-os/hoje"
+capa_alt = "Tela O que fazer agora do Jewelry OS com faturamento do mês, fila de cobrança e pedidos para despachar"
+problema = """
+Quem vende joia por live opera em cinco lugares: a planilha do estoque, o caderno dos pedidos, o print do comprovante no WhatsApp, o banco para conferir o Pix e outro caderno para a expedição.
+
+Cada venda vira trabalho repetido em todos eles, e ninguém enxerga o todo: quanto sobrou no mês, quem não pagou, o que precisa ser recomprado, qual peça encalhou.
+"""
+faz = [
+  "Painel de live com faturamento, público, conversão e retorno por transmissão.",
+  "Pedidos de todos os canais numa lista só, com linha do tempo de cada um.",
+  "Expedição em quatro etapas, com o rastreio na própria linha.",
+  "Recuperação de venda: quem contatar, quanto vale e qual o próximo passo.",
+  "Venda de balcão com leitura de código e várias formas de pagamento.",
+  "Resultado do mês calculado: receita, custo das peças, mídia, folha, comissões e imposto.",
+  "Reposição que cruza giro, curva de vendas e estoque disponível.",
+  "Loja online própria, maletas de consignação e cotações de atacado.",
+]
+stack = "Painel e loja em Next.js 16 e React 19 com CSS puro. Servidor e central de lojas em Python só com a biblioteca padrão e SQLite."
+
+[[provas]]
+numero = "720"
+rotulo = "testes de tela e de fluxo no painel e na loja"
+
+[[provas]]
+numero = "75"
+rotulo = "suítes de teste no servidor e na central de lojas"
+
+[[provas]]
+numero = "6"
+rotulo = "papéis de acesso, da dona à expedição"
+
+[[decisoes]]
+titulo = "A inteligência artificial sugere, a pessoa aprova"
+texto = "Toda sugestão de IA entra numa fila de aprovação. Se a IA falhar, o sistema responde por regra e diz de onde veio o número. Nunca inventa valor."
+
+[[decisoes]]
+titulo = "A central pode cair que a loja continua vendendo"
+texto = "O que cada loja contratou viaja como documento assinado e fica gravado na própria loja. Nenhuma venda depende de consultar um servidor central."
+
+[[decisoes]]
+titulo = "Legível com o celular numa mão"
+texto = "Um teste calcula o contraste das cores reais da tela e outro mede o tamanho dos botões. A vendedora opera no meio da live, e a tela reprova se dificultar."
+
+[[telas]]
+arquivo = "img/jewelry-os/live"
+alt = "Painel de live com a transmissão atual e o histórico de lives com faturamento e conversão"
+legenda = "Cada live com faturamento, público, conversão e retorno."
+
+[[telas]]
+arquivo = "img/jewelry-os/pedidos"
+alt = "Lista de pedidos de vários canais com estado de pagamento e expedição"
+legenda = "Pedidos de cinco canais numa lista só."
+
+[[telas]]
+arquivo = "img/jewelry-os/dre"
+alt = "Demonstrativo de resultado com receita, custos e lucro líquido em barras"
+legenda = "O resultado do mês, linha por linha, sem planilha."
+
+[[telas]]
+arquivo = "img/jewelry-os/reposicao"
+alt = "Tela de reposição com peças a recomprar e curva ABC"
+legenda = "O que recomprar antes de faltar, por giro."
+
+[[telas]]
+arquivo = "img/jewelry-os/expedicao"
+alt = "Fila de expedição com campo de rastreio em cada pedido"
+legenda = "Expedição em quatro etapas, rastreio na linha."
+
+[video]
+arquivo = "video/jewelry-os.mp4"
+poster = "img/jewelry-os/hoje"
+legenda = "O filme de apresentação do produto, em três minutos."

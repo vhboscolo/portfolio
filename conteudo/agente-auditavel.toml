@@ -1,0 +1,53 @@
+titulo = "Agente autônomo auditável"
+chamada = "Uma IA que trabalha sozinha e deixa rastro de tudo que faz"
+setor = "Automação com inteligência artificial"
+status = "Protótipo funcional, pausado"
+resumo = "Um agente que observa e-mail, WhatsApp, reuniões e Notion, organiza o que importa e age. Cada ação vira uma linha num registro que ninguém reescreve, e um segundo agente, em outro modelo de IA, audita o primeiro duas vezes por dia."
+ganho = """
+A diferença entre contratar uma IA e ter um sistema cujas decisões você consegue ler, reverter e levar embora. Tudo o que o agente sabe está em arquivo de texto versionado, não numa caixa-preta.
+
+O que é sensível espera o seu sim por mensagem. E existe um teto de gasto que desliga tudo sozinho.
+"""
+capa = "img/agente-auditavel/arquitetura.svg"
+capa_alt = "Diagrama: fontes passam por um portão de validação, chegam ao orquestrador, toda ação vai para um registro que só cresce e um auditor independente revisa"
+problema = """
+A informação de uma operação pequena mora espalhada em e-mail, WhatsApp, transcrição de reunião e Notion, e ninguém liga os pontos.
+
+Ferramenta de IA comum resolve isso virando caixa-preta: você não sabe o que ela sabe nem por que decidiu o que decidiu. Em negócio, isso não serve.
+"""
+faz = [
+  "Captura de e-mail, WhatsApp, reuniões transcritas e Notion.",
+  "Portão de validação: nada entra na memória sem passar por um esquema.",
+  "Registro de toda ação, uma linha por vez, que só cresce.",
+  "Fila de aprovação humana com botões de aceitar, editar e recusar no celular.",
+  "Auditor independente em outro modelo, para não repetir os mesmos pontos cegos.",
+  "Teto diário de gasto com chave de desligar.",
+  "Relatórios em PDF e radar de tendências com filtro de novidade.",
+]
+stack = "Python 3.11, Docker Compose, mensageria por Telegram e WhatsApp, e Git como fonte da verdade. Modelos de IA diferentes para executar e para auditar."
+
+[[provas]]
+numero = "202"
+rotulo = "testes automáticos em 36 arquivos"
+
+[[provas]]
+numero = "39"
+rotulo = "módulos, cada um com uma responsabilidade"
+
+[[provas]]
+numero = "2"
+rotulo = "modelos de IA diferentes: um age, outro confere"
+
+[[decisoes]]
+titulo = "O auditor usa outro modelo de propósito"
+texto = "O mesmo modelo auditando a si mesmo compartilha os mesmos pontos cegos. Quem confere precisa errar em lugares diferentes."
+
+[[decisoes]]
+titulo = "Só desfaz sozinho o que é grave e reversível"
+texto = "Todo o resto vira alerta para uma pessoa decidir. Autonomia com supervisão, não no lugar dela."
+
+[[telas]]
+arquivo = "img/agente-auditavel/arquitetura.svg"
+alt = "Diagrama da arquitetura do agente com portão de validação, orquestrador, registro e auditor"
+legenda = "A arquitetura em uma imagem. O conteúdo que o agente guarda é privado e não aparece aqui."
+demo = false

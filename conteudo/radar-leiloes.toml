@@ -1,0 +1,52 @@
+titulo = "Radar de leilões"
+chamada = "Onde olhar primeiro nos leilões da Receita Federal"
+setor = "Leilões de mercadoria apreendida"
+status = "Em uso próprio"
+resumo = "Varre os leilões abertos, estima o custo real de cada lote com imposto e frete, lê o edital atrás de travas escondidas e destaca onde há menos gente disputando. Conferido contra 12.813 arremates que o modelo nunca tinha visto."
+ganho = """
+Em vez de ler centenas de lotes, você lê oito. O radar separa o que tem trava regulatória, o que tem unidade de medida suspeita e o que costuma fechar perto do mínimo.
+
+E ele diz o próprio limite: serve para escolher onde olhar, nunca para decidir o lance.
+"""
+capa = "img/radar-leiloes/painel"
+capa_alt = "Relatório do radar de leilões com lotes, custo esperado e pistas de cada um"
+problema = """
+O valor mínimo do edital não diz nada sobre o preço final. E o lote barato costuma ser barato por um motivo escondido no texto: cláusula que proíbe revenda, exigência de registro em órgão regulador, unidade de medida errada por um fator de mil.
+
+Quem compra sem isso perde o lote e o dinheiro.
+"""
+faz = [
+  "Coleta diária dos editais abertos e do histórico de arremates.",
+  "Estimativa do preço final por categoria e região, com imposto e frete rodoviário.",
+  "Leitura de todas as linhas do lote atrás de trava regulatória.",
+  "Alerta de unidade suspeita quando peso e quantidade não fecham.",
+  "Pontuação de baixa disputa, explicada em pistas que dá para conferir.",
+  "Relatório único, legível no celular, em tema claro e escuro.",
+]
+stack = "Python só com a biblioteca padrão mais um leitor de PDF, SQLite e um relatório em HTML. Pouco mais de mil linhas."
+
+[[provas]]
+numero = "72.900"
+rotulo = "lotes no histórico que alimenta o modelo"
+
+[[provas]]
+numero = "12.813"
+rotulo = "arremates de anos seguintes usados só para conferir, nunca para ajustar"
+
+[[provas]]
+numero = "6"
+rotulo = "fatores descartados por não sobreviverem à conferência"
+
+[[decisoes]]
+titulo = "O que não replicou saiu do modelo"
+texto = "Seis ideias que pareciam boas pioravam o acerto em dados novos. Todas saíram, com o número que as derrubou anotado."
+
+[[decisoes]]
+titulo = "Desconto grande é vitrine"
+texto = "Quanto maior o desconto aparente sobre a avaliação, mais caro o lote fecha. O radar mede isso em vez de se encantar com o mínimo baixo."
+
+[[telas]]
+arquivo = "img/radar-leiloes/painel"
+alt = "Relatório do radar com dois lotes de chapas de aço, custo esperado e pistas"
+legenda = "Cada lote com custo esperado e as pistas que explicam a nota. Dados públicos de edital."
+demo = false

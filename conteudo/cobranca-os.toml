@@ -1,0 +1,77 @@
+titulo = "COBRANÇA OS"
+chamada = "Quanto está na rua, quanto apodreceu e se a garantia cobre"
+setor = "Crédito com garantia"
+status = "Pronto para demonstração"
+resumo = "Sistema para casa de crédito que empresta com bem em custódia. Reparte cada pagamento em multa, mora, juros e principal, e calcula a cobertura pelo valor de liquidação do bem, não pelo de vitrine."
+ganho = """
+O dono abre uma tela e lê a carteira em um número: quanto está na rua, quanto disso passou de noventa dias e se o que está no cofre cobre o que falta receber.
+
+De manhã, a fila do dia já diz quem cobrar primeiro: promessa quebrada, atraso novo, atraso antigo. Ninguém decide isso olhando planilha.
+"""
+capa = "img/cobranca-os/painel"
+capa_alt = "Painel do COBRANÇA OS com o total na rua, a régua de atraso por faixa e a cobertura de garantia"
+problema = """
+Casa de crédito pequena controla carteira em planilha, e a planilha mente em três lugares ao mesmo tempo. O pior deles é o quanto o cliente já pagou: dez mil pagos podem ter abatido oitocentos da dívida, porque o resto foi multa, mora e juros.
+
+Cobertura calculada pelo valor de avaliação também é ilusão. Avaliação é preço de vitrine, e garantia só é acionada quando não há tempo de vitrine.
+"""
+faz = [
+  "Três modalidades de contrato: parcela fixa, só juros e juros simples divididos.",
+  "Baixa de pagamento que reparte o valor parcela a parcela e mostra para onde foi cada real.",
+  "Cofre com avaliação dupla, fotos e conferência física dos bens.",
+  "Fila do dia com promessas, atrasos e pontuação de cada cliente.",
+  "Propostas com simulação e texto pronto para enviar no WhatsApp.",
+  "Conciliação de extrato bancário em duas pilhas: no banco sem baixa, no sistema sem extrato.",
+  "Caixa do dia em que contar é conferir, nunca corrigir: a diferença fica registrada.",
+  "Mapa da carteira por bairro, com montante e inadimplência.",
+]
+stack = "Python 3 só com a biblioteca padrão, SQLite, HTML, CSS e JavaScript sem framework. Cópia de segurança cifrada com AES-256."
+
+[[provas]]
+numero = "219"
+rotulo = "testes automáticos em 29 arquivos, um por módulo"
+
+[[provas]]
+numero = "27"
+rotulo = "tabelas, nenhuma com saldo gravado: saldo é sempre calculado"
+
+[[provas]]
+numero = "0"
+rotulo = "dependências externas"
+
+[[decisoes]]
+titulo = "Nada que envolve dinheiro é sobrescrito"
+texto = "Saldo, situação de parcela e saldo de conta são calculados a partir de um registro que só cresce. Correção é lançamento novo, nunca edição do antigo."
+
+[[decisoes]]
+titulo = "Cliente novo não é cliente ruim"
+texto = "Quem não tem histórico fica com pontuação neutra. Zero significaria que quebrou todas as promessas, que é o oposto de não sabermos nada."
+
+[[decisoes]]
+titulo = "Sem senha configurada, o sistema avisa que está aberto"
+texto = "Em vez de fingir proteção, a instalação declara o próprio estado. E por padrão só responde na máquina local."
+
+[[telas]]
+arquivo = "img/cobranca-os/cofre"
+alt = "Tela do cofre com oito bens em custódia, valor avaliado, valor de liquidação e deságio"
+legenda = "Cofre: o valor de vitrine ao lado do valor que realmente cobre a dívida."
+
+[[telas]]
+arquivo = "img/cobranca-os/checklist"
+alt = "Fila de cobrança do dia separada em promessa quebrada, atraso recente e atraso antigo"
+legenda = "Quem cobrar hoje, na ordem que importa."
+
+[[telas]]
+arquivo = "img/cobranca-os/mapa"
+alt = "Mapa de bolhas com a concentração da carteira por bairro"
+legenda = "Onde a carteira está concentrada, e onde ela atrasa."
+
+[[telas]]
+arquivo = "img/cobranca-os/conciliacao"
+alt = "Conciliação com extrato do banco de um lado e lançamentos do sistema do outro"
+legenda = "Conciliação: o que está no banco sem baixa e o que está no sistema sem extrato."
+
+[video]
+arquivo = "video/cobranca-os.mp4"
+poster = "img/cobranca-os/painel"
+legenda = "O produto em 78 segundos."
