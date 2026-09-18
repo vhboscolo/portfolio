@@ -2,25 +2,49 @@
 
 # VH BRANDS — Sistemas sob medida
 
-Bar, joalheria, clínica, casa de crédito, importadora. Cada sistema desta página nasceu de uma operação de verdade, com as regras dela, e foi testado antes de chegar na mão de quem usa.
+De uma empresa suíça de certificação de joias a uma rede de clínicas: sistemas completos, do banco de dados ao aplicativo no celular, construídos para a regra de cada negócio e testados antes de chegar na mão de quem usa.
 
 **[Abrir o portfólio completo →](https://vhboscolo.github.io/portfolio/)**
 
 ---
 
-## 01 · RESTAURANT OS
+## 01 · GMA
+
+**Uma empresa suíça me contratou para construir o sistema inteiro de certificação e garantia de joias**
+
+[![Página inicial da GMA com o campo para consultar um certificado e o cartão dourado numerado](docs/img/gma/home-p.webp)](https://vhboscolo.github.io/portfolio/gma/)
+
+Software de gestão de garantias para joias. Do zero ao ar: servidor, banco, painel de gestão, validação pública dos certificados, aplicativo que grava os cartões NFC e tudo o que envolve o certificado, do laudo ao cartão físico.
+
+`Certificação e garantia de joias` · `No ar, em produção` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/gma/)
+
+---
+
+## 02 · Plataforma de saúde da Serfaty Clínicas
+
+**Do agendamento pelo celular ao prontuário assinado, a clínica inteira numa plataforma**
+
+[![Agenda do dia da clínica com a chegada da paciente registrada e a fila de documentos](docs/img/clinicas/hub-recepcao-p.webp)](https://vhboscolo.github.io/portfolio/clinicas/)
+
+Três pontas na mesma plataforma: a paciente, que agenda, preenche a ficha e manda exames pelo celular; a equipe, que recebe, atende, prescreve e assina; e a direção, que controla quem acessa cada prontuário. Mais o site da clínica, com atlas do corpo em 3D e calculadora de risco.
+
+`Saúde` · `Plataforma completa, site no ar` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/clinicas/)
+
+---
+
+## 03 · RESTAURANT OS
 
 **O bar continua vendendo com a internet caída**
 
 [![Tela do salão do RESTAURANT OS com dezoito mesas, as ocupadas mostrando comanda aberta e valor](docs/img/restaurant-os/salao-p.webp)](https://vhboscolo.github.io/portfolio/restaurant-os/)
 
-Salão, balcão, cozinha, delivery, estoque, ficha técnica e financeiro num sistema só, rodando na máquina do próprio salão. Sexta à noite, com o Wi-Fi do shopping fora, a casa segue lançando pedido.
+Salão, balcão, cozinha, delivery, estoque, ficha técnica e financeiro num sistema só, rodando na máquina do próprio salão. Se o Wi-Fi cair numa sexta à noite, a casa segue lançando pedido.
 
-`Bar e restaurante` · `Em uso num bar de shopping` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/restaurant-os/)
+`Bar e restaurante` · `Pronto para implantar` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/restaurant-os/)
 
 ---
 
-## 02 · Jewelry OS
+## 04 · Jewelry OS
 
 **A live termina com pedido, estoque, cobrança e etiqueta prontos**
 
@@ -28,31 +52,7 @@ Salão, balcão, cozinha, delivery, estoque, ficha técnica e financeiro num sis
 
 Live, balcão, loja online, atacado e consignação sobre o mesmo estoque, o mesmo cliente e o mesmo resultado. A tela inicial não mostra o que aconteceu: mostra o que fazer agora.
 
-`Joias e semijoias` · `Em teste com loja-modelo` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/jewelry-os/)
-
----
-
-## 03 · GMA
-
-**O laudo é do laboratório, e o cliente confere pelo QR**
-
-[![Página inicial da GMA com o campo para consultar um certificado e o cartão dourado numerado](docs/img/gma/home-p.webp)](https://vhboscolo.github.io/portfolio/gma/)
-
-Plataforma de certificação: o laboratório emite o laudo, a peça sai com um cartão numerado e qualquer pessoa confere a autenticidade apontando o celular para o código. Funciona como aplicativo instalável, em três idiomas.
-
-`Certificação de joias e gemas` · `No ar` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/gma/)
-
----
-
-## 04 · Operação digital de uma rede de clínicas
-
-**Site, atlas do corpo em 3D, calculadora clínica e prontuário sob LGPD**
-
-[![Atlas anatômico em 3D no site da clínica, com órgãos destacados e o efeito de cada nutriente](docs/img/clinicas/atlas-p.webp)](https://vhboscolo.github.io/portfolio/clinicas/)
-
-Um caso só, quatro entregas: o site institucional da Serfaty Clínicas, um atlas anatômico navegável, uma calculadora de risco cardiovascular conferida contra 160 casos de referência e um prontuário eletrônico desenhado sob a LGPD desde a primeira linha.
-
-`Saúde` · `Site no ar, prontuário em construção` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/clinicas/)
+`Joias e semijoias` · `Pronto para implantar` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/jewelry-os/)
 
 ---
 
@@ -64,7 +64,7 @@ Um caso só, quatro entregas: o site institucional da Serfaty Clínicas, um atla
 
 Sistema para casa de crédito que empresta com bem em custódia. Reparte cada pagamento em multa, mora, juros e principal, e calcula a cobertura pelo valor de liquidação do bem, não pelo de vitrine.
 
-`Crédito com garantia` · `Pronto para demonstração` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/cobranca-os/)
+`Crédito com garantia` · `Pronto para implantar` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/cobranca-os/)
 
 ---
 
@@ -100,7 +100,7 @@ Varre os leilões abertos, estima o custo real de cada lote com imposto e frete,
 
 Um agente que observa e-mail, WhatsApp, reuniões e Notion, organiza o que importa e age. Cada ação vira uma linha num registro que ninguém reescreve, e um segundo agente, em outro modelo de IA, audita o primeiro duas vezes por dia.
 
-`Automação com inteligência artificial` · `Protótipo funcional, pausado` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/agente-auditavel/)
+`Automação com inteligência artificial` · `Protótipo funcional` — [ver telas e engenharia →](https://vhboscolo.github.io/portfolio/agente-auditavel/)
 
 ---
 

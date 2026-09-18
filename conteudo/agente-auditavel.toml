@@ -1,7 +1,7 @@
 titulo = "Agente autônomo auditável"
 chamada = "Uma IA que trabalha sozinha e deixa rastro de tudo que faz"
 setor = "Automação com inteligência artificial"
-status = "Protótipo funcional, pausado"
+status = "Protótipo funcional"
 resumo = "Um agente que observa e-mail, WhatsApp, reuniões e Notion, organiza o que importa e age. Cada ação vira uma linha num registro que ninguém reescreve, e um segundo agente, em outro modelo de IA, audita o primeiro duas vezes por dia."
 ganho = """
 A diferença entre contratar uma IA e ter um sistema cujas decisões você consegue ler, reverter e levar embora. Tudo o que o agente sabe está em arquivo de texto versionado, não numa caixa-preta.

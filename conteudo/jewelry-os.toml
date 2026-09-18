@@ -1,7 +1,7 @@
 titulo = "Jewelry OS"
 chamada = "A live termina com pedido, estoque, cobrança e etiqueta prontos"
 setor = "Joias e semijoias"
-status = "Em teste com loja-modelo"
+status = "Pronto para implantar"
 resumo = "Live, balcão, loja online, atacado e consignação sobre o mesmo estoque, o mesmo cliente e o mesmo resultado. A tela inicial não mostra o que aconteceu: mostra o que fazer agora."
 ganho = """
 A lojista que vende ao vivo para de digitar a mesma venda em cinco lugares. O pedido da live já baixa o estoque, entra na fila de cobrança e aparece na expedição.

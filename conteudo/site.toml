@@ -3,7 +3,7 @@ subtitulo = "Sistemas sob medida"
 autor = "Victor Boscolo"
 promessa = "Eu construo o sistema que roda o seu negócio."
 intro = """
-Bar, joalheria, clínica, casa de crédito, importadora. Cada sistema desta página nasceu de uma operação de verdade, com as regras dela, e foi testado antes de chegar na mão de quem usa.
+De uma empresa suíça de certificação de joias a uma rede de clínicas: sistemas completos, do banco de dados ao aplicativo no celular, construídos para a regra de cada negócio e testados antes de chegar na mão de quem usa.
 """
 cta_rotulo = "Chamar no WhatsApp"
 quem_faz = """
@@ -15,12 +15,12 @@ descricao = "Sistemas sob medida para bar, joalheria, clínica, crédito e impor
 base_url = "https://vhboscolo.github.io/portfolio/"
 fontes_css = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap"
 og_imagem = "img/og.jpg"
-ordem = ["restaurant-os", "jewelry-os", "gma", "clinicas", "cobranca-os", "catalogos-importacao", "radar-leiloes", "agente-auditavel"]
+ordem = ["gma", "clinicas", "restaurant-os", "jewelry-os", "cobranca-os", "catalogos-importacao", "radar-leiloes", "agente-auditavel"]
 
 [reel]
 arquivo = "video/reel.mp4"
 poster = "img/reel"
-alt = "Sequência de telas dos sistemas: salão de bar, painel de joalheria, certificação de joias, carteira de crédito, atlas do corpo em 3D e catálogo de atacado"
+alt = "Sequência de telas dos sistemas: certificação de joias, agenda de clínica, salão de bar, painel de joalheria, ficha de saúde no celular, carteira de crédito, atlas do corpo em 3D e catálogo de atacado"
 
 [[numeros]]
 numero = "8"
@@ -31,8 +31,8 @@ numero = "7"
 rotulo = "setores: bar, joias, certificação, saúde, crédito, importação e leilões"
 
 [[numeros]]
-numero = "4"
-rotulo = "com operação de verdade rodando hoje"
+numero = "3"
+rotulo = "no ar hoje, com link para você abrir agora"
 
 [[numeros]]
 numero = "4.300+"

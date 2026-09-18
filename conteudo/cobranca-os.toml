@@ -1,7 +1,7 @@
 titulo = "COBRANÇA OS"
 chamada = "Quanto está na rua, quanto apodreceu e se a garantia cobre"
 setor = "Crédito com garantia"
-status = "Pronto para demonstração"
+status = "Pronto para implantar"
 resumo = "Sistema para casa de crédito que empresta com bem em custódia. Reparte cada pagamento em multa, mora, juros e principal, e calcula a cobertura pelo valor de liquidação do bem, não pelo de vitrine."
 ganho = """
 O dono abre uma tela e lê a carteira em um número: quanto está na rua, quanto disso passou de noventa dias e se o que está no cofre cobre o que falta receber.
@@ -48,8 +48,8 @@ titulo = "Cliente novo não é cliente ruim"
 texto = "Quem não tem histórico fica com pontuação neutra. Zero significaria que quebrou todas as promessas, que é o oposto de não sabermos nada."
 
 [[decisoes]]
-titulo = "Sem senha configurada, o sistema avisa que está aberto"
-texto = "Em vez de fingir proteção, a instalação declara o próprio estado. E por padrão só responde na máquina local."
+titulo = "Cópia de segurança cifrada, todo dia"
+texto = "O banco guarda CPF, dívida e bens de terceiros. Por isso a cópia é feita todo dia, conferida, cifrada com AES-256 e mantida por trinta dias."
 
 [[telas]]
 arquivo = "img/cobranca-os/cofre"

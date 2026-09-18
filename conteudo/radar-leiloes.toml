@@ -6,7 +6,7 @@ resumo = "Varre os leilões abertos, estima o custo real de cada lote com impost
 ganho = """
 Em vez de ler centenas de lotes, você lê oito. O radar separa o que tem trava regulatória, o que tem unidade de medida suspeita e o que costuma fechar perto do mínimo.
 
-E ele diz o próprio limite: serve para escolher onde olhar, nunca para decidir o lance.
+Você chega ao leilão sabendo onde a disputa é menor e quanto o lote tende a custar de verdade, com imposto e frete dentro.
 """
 capa = "img/radar-leiloes/painel"
 capa_alt = "Relatório do radar de leilões com lotes, custo esperado e pistas de cada um"

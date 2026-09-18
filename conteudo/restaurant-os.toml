@@ -1,8 +1,8 @@
 titulo = "RESTAURANT OS"
 chamada = "O bar continua vendendo com a internet caída"
 setor = "Bar e restaurante"
-status = "Em uso num bar de shopping"
-resumo = "Salão, balcão, cozinha, delivery, estoque, ficha técnica e financeiro num sistema só, rodando na máquina do próprio salão. Sexta à noite, com o Wi-Fi do shopping fora, a casa segue lançando pedido."
+status = "Pronto para implantar"
+resumo = "Salão, balcão, cozinha, delivery, estoque, ficha técnica e financeiro num sistema só, rodando na máquina do próprio salão. Se o Wi-Fi cair numa sexta à noite, a casa segue lançando pedido."
 ganho = """
 Um cadastro, um login e um número só. O dono para de conciliar quatro programas no olho e passa a abrir uma tela que mostra o que está fora do lugar, com valor em reais e com dono.
 
@@ -56,6 +56,11 @@ titulo = "O botão do caminho quente tem 64 pixels"
 texto = "O garçom opera com uma mão e pressa. Um teste mede o tamanho dos botões que ele mais usa e reprova a tela se encolherem."
 
 [[telas]]
+arquivo = "img/restaurant-os/delivery"
+alt = "Quadro de delivery com pedidos a decidir, na cozinha e prontos para sair"
+legenda = "Delivery próprio e de aplicativo no mesmo quadro, do aceite à entrega."
+
+[[telas]]
 arquivo = "img/restaurant-os/pin"
 alt = "Tela de entrada com teclado numérico para o PIN de cada pessoa"
 legenda = "Cada pessoa entra com o seu PIN e só vê as telas que opera."
@@ -84,3 +89,8 @@ legenda = "O dinheiro do mês: venda, recebível e obrigação sem se confundire
 arquivo = "img/restaurant-os/clientes"
 alt = "Busca de clientes com ficha mostrando compras e gasto"
 legenda = "Quem compra, quanto gasta e quem sumiu."
+
+[video]
+arquivo = "video/restaurant-os.mp4"
+poster = "img/restaurant-os/poster"
+legenda = "Do toque no produto ao dinheiro na gaveta, em dois minutos."
