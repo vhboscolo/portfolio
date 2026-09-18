@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>$titulo</title>
+<meta name="description" content="$descricao">
+<link rel="canonical" href="$canonica">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="$titulo">
+<meta property="og:description" content="$descricao">
+<meta property="og:url" content="$canonica">
+<meta property="og:image" content="$og_imagem">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="$fontes_css">
+<link rel="stylesheet" href="${raiz}css/tokens.css">
+<link rel="stylesheet" href="${raiz}css/base.css">
+<link rel="stylesheet" href="${raiz}css/componentes.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <a class="assinatura" href="${raiz}">$assinatura <span class="assinatura-sub">$subtitulo</span></a>
+  <nav aria-label="Navegação principal"><a href="${raiz}#sistemas">Sistemas</a> <a href="#contato">Contato</a></nav>
+</header>
+<main id="conteudo">
+$corpo
+</main>
+<footer class="rodape" id="contato">
+  <h2>Vamos conversar sobre o seu sistema</h2>
+  $contato
+  <p class="rodape-nota">$assinatura · $autor. As telas usam dados de demonstração.</p>
+</footer>
+</body>
+</html>
